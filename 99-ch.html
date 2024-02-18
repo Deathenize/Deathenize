@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SKULLMARE</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="faviconnie.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        .selectedLabel {
+            font-weight: bold;
+        }
+
+
+
+        .buttonize a {
+            border-radius: 10px;
+
+            padding: 20px;
+            background-color: rgb(0, 121, 121);
+            color: white;
+            text-decoration: none;
+            border: 1px white solid;
+            border-top: 3px white solid;
+        }
+
+        .buttonize a:hover {
+            background-color: rgb(159, 219, 216);
+            color: rgb(0, 0, 0);
+
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.575);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 4px 4px rgba(0, 0, 0, 0.425);
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .closebuttonandshit {
+            top: 10px;
+            cursor: pointer;
+            right: 10px;
+            background: white;
+            padding: 10px;
+            color: black;
+            border-radius: 20px;
+            border: 1px black solid;
+
+
+        }
+
+        .modal-content button {
+            background-color: #b60000;
+            box-shadow: 2px 1px 1px black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .modal-content button:hover {
+            background-color: #009b93;
+
+        }
+
+        th .comment {
+            display: none;
+        }
+
+        th:hover .thought {
+            display: none;
+        }
+
+        th:hover .comment {
+            display: inline;
+        }
+
+        .menu th {
+            padding: 10px
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            flex: 0 0 100%;
+        }
+
+        .iwillrot img:hover {
+            transform: rotate(-20deg);
+
+
+        }
+
+        .Socialpop img:hover {
+            transform: rotate(-20deg);
+
+
+        }
+
+        .Socialpop a img:hover {
+            animation: rotate-pulse 1s ease-in-out infinite;
+        }
+
+        @keyframes rotate-pulse {
+            0% {
+                transform: rotate(0deg) scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: rotate(180deg) scale(1.2);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: rotate(360deg) scale(1);
+                opacity: 1;
+            }
+        }
+
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgb(189, 211, 212);
+            border: none;
+            border-radius: 20px;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .carousel-button-prev {
+            left: 50px;
+        }
+
+        .carousel-button-next {
+            right: 50px;
+        }
+
+        .carousel-slide img {
+            height: 400px;
+            margin-top: 10px;
+            border-radius: 20px;
+            border: 2px solid white;
+
+        }
+
+        .flag img {
+            height: 20px;
+        }
+    </style>
+
+</head>
+
+<body class="HomeBG">
+
+    <div id="Modalius" class="modal">
+        <div class="modal-content">
+            <div style="padding-bottom: 10px;"> close <br>
+                <i class="fa-solid fa-down-long"></i>
+            </div>
+
+            <span class="closebuttonandshit" onclick="closeModal()">&times;</span>
+            <!-- write biography here -->
+            <h3>Biography <img src="pixels/skullbook.png" alt=""></h3>
+            <p>Latavan is the eldritch leader from the Pole Districts; he is quite the coward. In certain situations,
+                even serious ones, he tends to be goofy. Despite being the weakest in physical strength among the three,
+                he knows all about prestige. If the situation calls for an upgrade, whether it's objects or buildings to
+                a higher degree, A corrupt bussiness man. However, he is afraid that his population might rise up
+                against him. To prevent this, he feeds them with 'soy.' Due to this, a strange effect occurs over the
+                years, and everyone in his population looks quite feminine. Strangely, this aligns with his overall
+                taste.(weird) <br>
+                <span style="font-size: 12px;"> Hes based on the new world order</span>
+
+                <br>
+                <img src="pixels/star.png" alt="">
+            </p>
+
+          
+<pre>
+Species: Eldericth
+Civilian status: Leader
+District location: The Poles(▲★▲) 
+
+
+Relationships
+
+<span style="display: flex; justify-content: center; justify-content: space-evenly;">
+?
+</span>
+</pre>
+
+
+            <div style="margin-top: 20px;">
+
+            </div>
+
+
+            <br>
+        </div>
+
+    </div>
+    <div style="margin-top: 20px;">
+
+    </div>
+
+
+    <br>
+    </div>
+    </div>
+    <center>
+
+
+        <div
+            style="background: rgb(0, 97, 104); border-to-left-radius; padding: 10px; border-radius: 50px; width: 800px;padding-top: 70px;margin-top: -70px;">
+            <a href="TheDeathfeed.html">
+                <div id="top" class="Header"></div>
+            </a>
+        </div>
+        <div
+            style="background: white; width: 800px; margin-top: 40px; border: 5px solid rgb(0, 48, 63);border-radius: 20px; ">
+
+            <div style=" margin-top: 40px;margin-bottom: 20px; margin-top: -10px;" class="buttonize">
+                <a href="About.html">About DTNE</a>
+                <a href="Personages.html">Character Listing</a>
+                <a href="Storylog.html">StoryLlog</a>
+                <a href="Portfolio.html">ArtPortfolio</a>
+                <a href="Bookmarkies.html">Bookmarkies</a>
+            </div>
+
+            <br>
+<pre>
+<a style="text-decoration: none;" href="Filenotfound.html"> <img src="pixels/arrowgoldleft.png" alt=""></a> <a style="text-decoration: none;" href="filenotfound.html"> <img src="pixels/arrowgoldright.png" alt=""></a>
+</pre>
+            <p style="color: rgb(0, 70, 102); font-weight: bold;"><img src="pixels/diamondblue.png" alt="">Numeral code:
+                0099</p>
+
+
+            <hr style="width: 300px;">
+            <!-- portrait -->
+            <div style=" display:flex; justify-content: center;">
+                <div> <img style="height: 800px; margin-left:20px;" src="ports/latavan.png" alt="">
+                </div>
+
+                <div style="margin-left: 15px;" class="informationBox">
+                    <h4 style="color: white;">
+
+                        <a href="#" onclick="TOS()"> <img src="pixels/3dskul.png" alt=""></a>
+
+                        <br> Click the skull!
+                    </h4>
+                    <hr>
+                    <p style="background: white; width: 300px; border-radius: 20px;">
+                        <span style="font-weight: bolder;">
+                            <img src="pixels/skullstraightside.png" alt=""> Naam: </span> Ortevius latavan
+                    </p>
+
+
+                    <p style="background: white; width: 300px; border-radius: 20px;">
+                        <span style="font-weight: bolder;">
+                            <img src="pixels/skullstraightside.png" alt=""> Realm: </span> <img
+                            src="pixels/realmelderitch.png" alt="">
+                    </p>
+                    <p style="background: white; width: 300px; border-radius: 20px;">
+                        <span style="font-weight: bolder;">
+                            <img src="pixels/skullstraightside.png" alt=""> Geslacht: </span> ♂
+                    </p>
+
+                    <p style="background: white; width: 300px; border-radius: 20px;">
+                        <span style="font-weight: bolder;">
+                            <img src="pixels/skullstraightside.png" alt=""> sexualiteit: </span>
+                        <img src="pixels/pansexual.png" alt="">
+                        <img src="pixels/enby.png" alt="">
+                    </p>
+                    <p style="background: white; width: 300px; border-radius: 20px;"><span style="font-weight: bolder;">
+                </div>
+            </div>
+
+
+            <table id="tophere" style=" border-spacing:20px; ">
+                <tr>
+                    <th style=";border-radius: 10px; background: white; height: 100%; width: 650px">
+
+
+
+
+
+
+
+
+
+                    </th>
+
+
+            </table>
+
+            <img src="pixels/date.png" alt="">
+            <div style="  color: rgba(0, 71, 77, 0.589); border-radius: 100px;">
+
+                <i class="fa-solid fa-skull"></i>
+                Copyright © 2024 Skullmare. All rights reserved.
+
+            </div>
+
+        </div>
+    </center>
+    <script>
+        var modal = document.getElementById('Modalius');
+
+        function TOS() {
+            showModal();
+        }
+
+        function showModal() {
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        function accept() {
+            window.location.href = 'blog2.html';
+        }
+    </script>
+
+    <script>
+
+
+
+
+
+
+
+
+
+        const slides = document.querySelector(".carousel-slides");
+        const slideWidth = slides.children[0].getBoundingClientRect().width;
+        let currentIndex = 0;
+
+        function slideTo(index) {
+            slides.style.transform = `translateX(-${index * slideWidth}px)`;
+            currentIndex = index;
+        }
+
+        function slidePrev() {
+            if (currentIndex > 0) {
+                slideTo(currentIndex - 1);
+            } else {
+                slideTo(slides.children.length - 1);
+            }
+        }
+
+        function slideNext() {
+            if (currentIndex < slides.children.length - 1) {
+                slideTo(currentIndex + 1);
+            } else {
+                slideTo(0);
+            }
+        }
+        const prevButton = document.querySelector(".carousel-button-prev");
+        const nextButton = document.querySelector(".carousel-button-next");
+        prevButton.addEventListener("click", slidePrev);
+        nextButton.addEventListener("click", slideNext);
+        slideTo(0);
+    </script>
+
+</body>
+<!-- font-family: 'Holtwood One SC', serif;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'Playfair Display SC', serif;-->
+
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Graveyard Citizen</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="faviconnie.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        .selectedLabel {
+            font-weight: bold;
+        }
+
+
+
+        .buttonize a {
+            border-radius: 10px;
+
+            padding: 20px;
+            background-color: rgb(0, 121, 121);
+            color: white;
+            text-decoration: none;
+            border: 1px white solid;
+            border-top: 3px white solid;
+        }
+
+        .buttonize a:hover {
+            background-color: rgb(159, 219, 216);
+            color: rgb(0, 0, 0);
+
+        }
+
+        th .comment {
+            display: none;
+        }
+
+        th:hover .thought {
+            display: none;
+        }
+
+        th:hover .comment {
+            display: inline;
+        }
+
+        .menu th {
+            padding: 10px
+        }
+
+
+
+        .Socialpop img:hover {
+            transform: rotate(-20deg);
+
+
+        }
+
+        .Socialpop a img:hover {
+            animation: rotate-pulse 1s ease-in-out infinite;
+        }
+
+        @keyframes rotate-pulse {
+            0% {
+                transform: rotate(0deg) scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: rotate(180deg) scale(1.2);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: rotate(360deg) scale(1);
+                opacity: 1;
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.575);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: url(Subs/background3.png);
+            background-size: 500px;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 4px 4px rgba(0, 0, 0, 0.425);
+            min-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .closebuttonandshit {
+            top: 10px;
+            cursor: pointer;
+            right: 10px;
+            background: white;
+            padding: 10px;
+            color: black;
+            border-radius: 20px;
+            border: 1px black solid;
+
+
+        }
+
+        .modal-content button {
+            background-color: #b60000;
+            box-shadow: 2px 1px 1px black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .modal-content button:hover {
+            background-color: #009b93;
+
+        }
+    </style>
+
+</head>
+
+<body class="HomeBG">
+    
+<!-- copy from here -->
+    <div id="Modal1" class="modal">
+        <div class="modal-content">
+            <span class="closebuttonandshit" onclick="closeModal('Modal1')">&times;</span>
+            <br>
+            <div style="margin-top: 20px;">
+                <img style="height: 500px; border: 2px solid white ;" src="plaatjes/maiddiaz.png" alt="">
+                <br>
+                <span style="color: white;">1</span>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- copy  -->
+    <div id="Modal2" class="modal">
+        <div class="modal-content">
+            <span class="closebuttonandshit" onclick="closeModal('Modal2')">&times;</span>
+            <br>
+            <div style="margin-top: 20px;">
+                <img style="height: 500px; border: 2px solid white ;" src="Artwork/Illustrations/ficione.png" alt="">
+                <br>
+                <span style="color: white;">2</span>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- copy  -->
+    <div id="Modal3" class="modal">
+        <div class="modal-content">
+            <span class="closebuttonandshit" onclick="closeModal('Modal3')">&times;</span>
+            <br>
+            <div style="margin-top: 20px;">
+                <img style="height: 500px; border: 2px solid white ;" src="plaatjes/Madhatter.png" alt="">
+                <br>
+                <span style="color: white;">3</span>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- copy  -->
+    <div id="Modal4" class="modal">
+        <div class="modal-content">
+            <span class="closebuttonandshit" onclick="closeModal('Modal4')">&times;</span>
+            <br>
+            <div style="margin-top: 20px;">
+                <img style="height: 500px; border: 2px solid white ;" src="plaatjes/americanpsychovincent.png" alt="">
+                <br>
+                <span style="color: white;">4</span>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- copy  -->
+    <div id="Modal5" class="modal">
+        <div class="modal-content">
+            <span class="closebuttonandshit" onclick="closeModal('Modal5')">&times;</span>
+            <br>
+            <div style="margin-top: 20px;">
+                <img style="height: 500px; border: 2px solid white ;" src="plaatjes/manouvre.png" alt="">
+                <br>
+                <span style="color: white;">5</span>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- tekeningtejes -->
+    <!-- copyhere -->
+    <div id="ModalT1" class="modal">
+        <div class="modal-content">
+            <span class="closebuttonandshit" onclick="closeModal('ModalT1')">&times;</span>
+            <br>
+            <div style="margin-top: 20px;">
+                <img style=" border: 2px solid white ;" src="pixels/funtime1.png" alt="">
+                <br>
+                <span style="color: white;">1</span>
+            </div>
+        </div>
+    </div>
+    <!-- endhere -->
+    <!-- copyhere -->
+    <div id="ModalT2" class="modal">
+        <div class="modal-content">
+            <span class="closebuttonandshit" onclick="closeModal('ModalT2')">&times;</span>
+            <br>
+            <div style="margin-top: 20px;">
+                <img style=" border: 2px solid white ;" src="plaatjes/noxemi.png" alt="">
+                <br>
+                <span style="color: white;">2</span>
+            </div>
+        </div>
+    </div>
+    <!-- endhere -->
+ 
+    <center>
+
+
+        <div
+            style="background: rgb(0, 97, 104); border-to-left-radius; padding: 10px; border-radius: 50px; width: 800px;padding-top: 70px;margin-top: -70px;">
+            <a href="TheDeathfeed.html">
+                <div id="top" class="Header"></div>
+            </a>
+        </div>
+
+
+
+
+        <div
+            style="background: white; width: 800px; margin-top: 40px; border: 5px solid rgb(0, 48, 63);border-radius: 20px; ">
+
+            <div style=" margin-top: 40px;margin-bottom: 20px; margin-top: -10px;" class="buttonize">
+                <a href="About.html">About DTNE</a>
+                <a href="Personages.html">Character Listing</a>
+                <a href="Storylog.html">StoryLlog</a>
+                <a href="Portfolio.html">ArtPortfolio</a>
+                <a href="Bookmarkies.html">Bookmarkies</a>
+            </div>
+            <img style="border-radius: 20px; margin-top: 50px; border: 1px solid rgb(102, 119, 175);"
+                src="plaatjes/banner.png" alt="">
+
+
+            <h4 style="font-size: 30px;"> <img style="height: 50px;" src="symbols/squig.png" alt=""> ART PORTFOLIO <img
+                    style="height: 50px;" src="symbols/squig.png" alt=""></h4>
+            <p style="color: rgb(0, 70, 102); font-weight: bold;"><img src="pixels/diamondblue.png" alt=""> General Illust: from most recent to oldest <img src="pixels/arrowgoldright.png" alt=""></p>
+
+            <div style="display: flex; justify-content: center;">
+                  <!-- copy from here -->
+                  <div>
+                    <a href="#" onclick="TOS('Modal5')"><img style="height: 100px; border-radius: 20px;" src="krant/manouvre.png" alt=""></a>
+                </div>
+              <!-- end -->
+                  <!-- copy from here -->
+                  <div>
+                    <a href="#" onclick="TOS('Modal4')"><img style="height: 100px; border-radius: 20px;" src="krant/americanpsychovincent.png" alt=""></a>
+                </div>
+              <!-- end -->
+                  <!-- copy from here -->
+                  <div>
+                    <a href="#" onclick="TOS('Modal3')"><img style="height: 100px; border-radius: 20px;" src="krant/Madhatter.png" alt=""></a>
+                </div>
+              <!-- end -->
+                  <!-- copy from here -->
+                  <div>
+                    <a href="#" onclick="TOS('Modal2')"><img style="height: 100px; border-radius: 20px;" src="krant/ficione.png" alt=""></a>
+                </div>
+              <!-- end -->
+                <!-- copy from here -->
+                <div>
+                    <a href="#" onclick="TOS('Modal1')"><img style="height: 100px; border-radius: 20px;" src="krant/maiddiaz.png" alt=""></a>
+                </div>
+              <!-- end -->
+              
+            </div>
+            <p style="color: rgb(0, 70, 102); font-weight: bold;"><img src="pixels/diamondblue.png" alt="">Tekeningetjes <img src="pixels/arrowgoldright.png" alt=""></p>
+
+            <div style="display: flex; justify-content: center;">
+              
+                  <div>
+                    <a href="#" onclick="TOS('ModalT2')"><img style="height: 70px; border-radius: 20px;" src="krant/noxemi.png" alt=""></a>
+                </div>
+              <!-- end -->
+                <!-- copy from here -->
+                <div>
+                    <a href="#" onclick="TOS('ModalT1')"><img style="height: 70px; border-radius: 20px;" src="krant/funtime1.png" alt=""></a>
+                </div>
+              <!-- end -->
+              
+            </div>
+
+
+
+
+            <img src="pixels/date.png" alt="">
+            <div style="  color: rgba(0, 71, 77, 0.589); border-radius: 100px;">
+
+                <i class="fa-solid fa-skull"></i>
+                Copyright © 2024 Skullmare. All rights reserved.
+
+            </div>
+
+        </div>
+    </center>
+    
+    
+    <script>
+        var modal1 = document.getElementById('Modal1');
+        var modal2 = document.getElementById('Modal2');
+    
+        function TOS(modalId) {
+            showModal(modalId);
+        }
+    
+        function showModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = 'flex';
+        }
+    
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+        }
+    
+        function accept() {
+            window.location.href = 'https://ghosticface.github.io/Skullmare/Homefeed.html';
+        }
+    </script>
+    <script>
+
+
+
+
+
+
+
+
+
+        const slides = document.querySelector(".carousel-slides");
+        const slideWidth = slides.children[0].getBoundingClientRect().width;
+        let currentIndex = 0;
+
+        function slideTo(index) {
+            slides.style.transform = `translateX(-${index * slideWidth}px)`;
+            currentIndex = index;
+        }
+
+        function slidePrev() {
+            if (currentIndex > 0) {
+                slideTo(currentIndex - 1);
+            } else {
+                slideTo(slides.children.length - 1);
+            }
+        }
+
+        function slideNext() {
+            if (currentIndex < slides.children.length - 1) {
+                slideTo(currentIndex + 1);
+            } else {
+                slideTo(0);
+            }
+        }
+        const prevButton = document.querySelector(".carousel-button-prev");
+        const nextButton = document.querySelector(".carousel-button-next");
+        prevButton.addEventListener("click", slidePrev);
+        nextButton.addEventListener("click", slideNext);
+        slideTo(0);
+    </script>
+
+</body>
+<!-- font-family: 'Holtwood One SC', serif;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'Playfair Display SC', serif;-->
+
+</html>

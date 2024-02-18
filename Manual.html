@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SKULLMARE</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="icon" type="image/x-icon" href="faviconnie.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    .selectedLabel {
+      font-weight: bold;
+    }
+
+
+
+    .buttonize a {
+      border-radius: 10px;
+
+      padding: 20px;
+      background-color: rgb(0, 121, 121);
+      color: white;
+      text-decoration: none;
+      border: 1px white solid;
+      border-top: 3px white solid;
+    }
+
+    .buttonize a:hover {
+      background-color: rgb(159, 219, 216);
+      color: rgb(0, 0, 0);
+
+    }
+
+    th .comment {
+      display: none;
+    }
+
+    th:hover .thought {
+      display: none;
+    }
+
+    th:hover .comment {
+      display: inline;
+    }
+
+    .menu th {
+      padding: 10px
+    }
+
+    .carousel-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+      flex: 0 0 100%;
+    }
+
+    .iwillrot img:hover {
+      transform: rotate(-20deg);
+
+
+    }
+
+    .Socialpop img:hover {
+      transform: rotate(-20deg);
+
+
+    }
+
+    .Socialpop a img:hover {
+      animation: rotate-pulse 1s ease-in-out infinite;
+    }
+
+    @keyframes rotate-pulse {
+      0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: rotate(180deg) scale(1.2);
+        opacity: 0.5;
+      }
+
+      100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
+      }
+    }
+
+
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background-color: rgb(189, 211, 212);
+      border: none;
+      border-radius: 20px;
+      font-size: 24px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .carousel-button-prev {
+      left: 50px;
+    }
+
+    .carousel-button-next {
+      right: 50px;
+    }
+
+    .carousel-slide img {
+      height: 400px;
+      margin-top: 10px;
+      border-radius: 20px;
+      border: 2px solid white;
+
+    }
+
+    .flag img {
+      height: 20px;
+    }
+  </style>
+
+</head>
+
+<body class="HomeBG">
+  <center>
+
+
+    <div
+      style="background: rgb(0, 97, 104); border-to-left-radius; padding: 10px; border-radius: 50px; width: 800px;padding-top: 70px;margin-top: -70px;">
+      <a href="TheDeathfeed.html">
+        <div id="top" class="Header"></div>
+      </a>
+    </div>
+    <div
+      style="background: white; width: 800px; margin-top: 40px; border: 5px solid rgb(0, 48, 63);border-radius: 20px; ">
+
+      <div style=" margin-top: 40px;margin-bottom: 20px; margin-top: -10px;" class="buttonize">
+        <a href="About.html">About DTNE</a>
+        <a href="Personages.html">Character Listing</a>
+        <a href="Storylog.html">StoryLlog</a>
+        <a href="Portfolio.html">ArtPortfolio</a>
+        <a href="Bookmarkies.html">Bookmarkies</a>
+      </div>
+
+
+      <h4 style="font-size: 30px;"> <img style="height: 50px;" src="symbols/squig.png" alt=""> The Manual <img
+          style="height: 50px;" src="symbols/squig.png" alt=""></h4>
+      <p style="color: rgb(0, 70, 102); font-weight: bold;"><img src="pixels/diamondblue.png" alt="">World and physical
+        structure that resides in the universe of skullmare
+      </p>
+
+
+      <hr style="width: ">
+      <div class="dropdown">
+        <button>Gen Info</button>
+        <div class="dropdown-content">
+          <a href="Classification">Classification</a>
+          <a href="#">Age Embodiment</a>
+
+        </div>
+      </div>
+      <div class="dropdown">
+        <button>Realm</button>
+        <div class="dropdown-content">
+        N/A
+        </div>
+      </div>
+
+
+      <div style="color: rgb(8, 76, 101);" id="Classification">
+        <h3><i class="fa-solid fa-skull"></i> Classification </h3>
+        <h5 style="opacity: 70%;"> ★ Universal Rules </h5>
+
+        <div style="color: black;">
+          <em>
+            <p>- All species in the universe of Skullmare are divided into 5 categories, often also referred to as
+              families</p>
+          </em>
+          <em>
+            <p style="width: 700px;">- Under the main five categories, you have two other categories, and those are
+              species that are universal balancers. They're often not allowed to interfere with how the realms operate,
+              and everything is decided by what they call the "The wheel of fate." </p>
+          </em>
+          <em>
+            <p style="width: 700px;">- A realm can consist of several other states </p>
+          </em>
+          <!-- Image of the wheel of fate -->
+          <h5 style="opacity: 70%;"> ★ Species division </h5>
+          <h6 style="opacity: 70%;"> Eartkins </h6>
+
+          <div id="Tableorder">
+            <div style="display: flex; justify-content: center; justify-content: space-evenly; width: 500px;">
+              <div> <a href="1-ch.html"> <img src="icons/pechi.png" alt=""></a> </div>
+              <div> <a href="2-ch.html"> <img src="icons/Hilda.png" alt=""></a> </div>
+              <div> <a href="3-ch.html"> <img src="icons/cleora.png" alt=""></a> </div>
+              <div> <a href="4-ch.html"> <img src="icons/bibi.png" alt=""></a> </div>
+              <div> <a href="5-ch.html"> <img src="icons/Maria.png" alt=""></a> </div>
+              <div> <a href="5-ch.html"> <img src="icons/elise.png" alt=""></a> </div>
+              <div> <a href="5-ch.html"> <img src="icons/manouvre.png" alt=""></a> </div>
+            </div>
+            <div style="display: flex; justify-content: center; justify-content: space-evenly; width: 500px;">
+              <div> <a href="13-ch.html"> <img src="icons/pucho.png" alt=""></a> </div>
+              <div> <a href="25-ch.html"> <img src="icons/alexander.png" alt=""></a> </div>
+              <div> <a href="29-ch.html"> <img src="icons/rune.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+
+
+            </div>
+
+          </div>
+
+          <h6 style="opacity: 70%;"> Mythicals </h6>
+
+          <div id="Tableorder">
+            <div style="display: flex; justify-content: center; justify-content: space-evenly; width: 500px;">
+              <div> <a href="64-ch.html"> <img src="icons/scorvus.png" alt=""></a> </div>
+              <div> <a href="71-ch.html"> <img src="icons/veterenilumberjack.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+
+            </div>
+
+
+          </div>
+          <h6 style="opacity: 70%;"> The Eths </h6>
+
+          <div id="Tableorder">
+            <div style="display: flex; justify-content: center; justify-content: space-evenly; width: 500px;">
+
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+
+            </div>
+
+
+          </div>
+          <h6 style="opacity: 70%;"> The Cryptids </h6>
+
+          <div id="Tableorder">
+            <div style="display: flex; justify-content: center; justify-content: space-evenly; width: 500px;">
+
+              <div> <a href="155-ch.html"> <img src="icons/alcatraz.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+
+            </div>
+
+
+          </div>
+          <h6 style="opacity: 70%;"> The Elderitch </h6>
+
+          <div id="Tableorder">
+            <div style="display: flex; justify-content: center; justify-content: space-evenly; width: 500px;">
+
+              <div> <a href="99-ch.html"> <img src="icons/latavan.png" alt=""></a> </div>
+              <div> <a href="113-ch.html"> <img src="icons/boroque.png" alt=""></a> </div>
+              <div> <a href="114-ch.html"> <img src="icons/aiko.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+              <div> <a href="Filenotfound.html"> <img src="icons/xxx.png" alt=""></a> </div>
+
+            </div>
+
+
+          </div>
+
+          <!-- New section -->
+          <div style="color: rgb(8, 76, 101);" id="Classification">
+            <h3><i class="fa-solid fa-skull"></i> Age Embodiment </h3>
+            <h5 style="opacity: 70%;"> ★ How does age operate in skullmare?</h5>
+            <em>
+              <p style="width: 700px;">- An Indiviual can have an implied age </p>
+              <p style="width: 700px;">- An Indiviual can age in human years, earthkins age in human years, and can die
+                of old age </p>
+              <p style="width: 700px;">- There are entities that live over a thousand years but still can grow from a child to an adult, its just that time works different in that particular place, and that is shown in their behaviour. Other entities could be described as
+                "ageless" this is a special case when the particular entity is either born as an adult or a child and does not
+                change in their appeareance or physical development despite years passing by</p>
+
+              <p style="width: 700px;">- A particular case with the elderitch is that they can reform to the appeareance of an child when not enough "black blood" is given, these are cases when the dark sauna malfunctions. 
+              <br> theres two ways the elderitch combat this: <br>
+              <li>They let the elderitch grow over time by eating other living beings</li>
+              <li> They put them in the black sauna again hoping that it does not malfuntion again</li>
+            </p>
+            </em>
+
+          </div>
+
+          <div style="border: black 1px solid; width: 300px; padding: 10px;" >
+            <br>
+            1000+ years(Physical appeareance of an adult)
+            <br> Aging process takes place? : Yes
+            <hr>
+            <p>Aiko</p>
+            <p>Boroque</p>
+            <p>Scorvil</p>
+            <p>Vetereni</p>
+           
+
+          </div>
+<br>
+          <div style="border: black 1px solid; width: 300px; padding: 10px;" >
+            <br>
+           Human years(Physical appeareance of an Child)
+            <br> Aging process takes place? : Yes
+            <hr>
+            <p>Pechi</p>
+            <p>Hilda</p>
+            <p>Cleora</p>
+            <p>Bibi</p>
+            <p>Viollette</p>
+            <p>Elise</p>
+            <p>Manouvre</p>
+            <p>rune</p>
+           
+
+          </div>
+<br>
+          <div style="border: black 1px solid; width: 300px; padding: 10px;" >
+            <br>
+           Human years(Physical appeareance of an Adult)
+            <br> Aging process takes place? : Yes
+            <hr>
+            <p>Alexander</p>
+           
+           
+
+          </div>
+<br>
+          <div style="border: black 1px solid; width: 300px; padding: 10px;" >
+            <br>
+            Ageless(Physical appeareance of an Adult)
+            <br> Aging process takes place? : No
+            <hr>
+            <p>Latavan</p>
+            <p>Alcatraz</p>
+           
+           
+
+          </div>
+<br>
+          <div style="border: black 1px solid; width: 300px; padding: 10px;" >
+            <br>
+            Ageless(Physical appeareance of an Child)
+            <br> Aging process takes place? : No
+            <hr>
+            <p>N/A</p>
+           
+           
+
+          </div>
+
+        </div>
+
+
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+        <img src="pixels/date.png" alt="">
+        <div style="  color: rgba(0, 71, 77, 0.589); border-radius: 100px;">
+
+          <i class="fa-solid fa-skull"></i>
+          Copyright © 2024 Skullmare. All rights reserved.
+
+
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+  </center>
+  <script>
+
+
+
+
+
+
+
+
+
+    const slides = document.querySelector(".carousel-slides");
+    const slideWidth = slides.children[0].getBoundingClientRect().width;
+    let currentIndex = 0;
+
+    function slideTo(index) {
+      slides.style.transform = `translateX(-${index * slideWidth}px)`;
+      currentIndex = index;
+    }
+
+    function slidePrev() {
+      if (currentIndex > 0) {
+        slideTo(currentIndex - 1);
+      } else {
+        slideTo(slides.children.length - 1);
+      }
+    }
+
+    function slideNext() {
+      if (currentIndex < slides.children.length - 1) {
+        slideTo(currentIndex + 1);
+      } else {
+        slideTo(0);
+      }
+    }
+    const prevButton = document.querySelector(".carousel-button-prev");
+    const nextButton = document.querySelector(".carousel-button-next");
+    prevButton.addEventListener("click", slidePrev);
+    nextButton.addEventListener("click", slideNext);
+    slideTo(0);
+  </script>
+
+</body>
+<!-- font-family: 'Holtwood One SC', serif;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'Playfair Display SC', serif;-->
+
+</html>

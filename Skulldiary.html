@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SKULLMARE</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="faviconnie.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="skullicon.png">
+    <link rel="icon" type="image/x-icon" href="skullicon.png">
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        .selectedLabel {
+            font-weight: bold;
+        }
+
+
+
+        .buttonize a {
+            border-radius: 10px;
+
+            padding: 20px;
+            background-color: rgb(0, 121, 121);
+            color: white;
+            text-decoration: none;
+            border: 1px white solid;
+            border-top: 3px white solid;
+        }
+
+        .buttonize a:hover {
+            background-color: rgb(159, 219, 216);
+            color: rgb(0, 0, 0);
+
+        }
+
+        th .comment {
+            display: none;
+        }
+
+        th:hover .thought {
+            display: none;
+        }
+
+        th:hover .comment {
+            display: inline;
+        }
+
+        .menu th {
+            padding: 10px
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            flex: 0 0 100%;
+        }
+
+        .iwillrot img:hover {
+            transform: rotate(-20deg);
+
+
+        }
+
+        .Socialpop img:hover {
+            transform: rotate(-20deg);
+
+
+        }
+
+        .Socialpop a img:hover {
+            animation: rotate-pulse 1s ease-in-out infinite;
+        }
+
+        @keyframes rotate-pulse {
+            0% {
+                transform: rotate(0deg) scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: rotate(180deg) scale(1.2);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: rotate(360deg) scale(1);
+                opacity: 1;
+            }
+        }
+
+        .boxnote {
+            border: 1px rgb(37, 82, 93) dashed;
+        }
+
+        .containermenu img {
+            border-bottom: 5px white solid;
+            border-top: 5px white solid;
+        }
+
+        .boxfiller {
+            border: 1px rgb(37, 82, 93) solid;
+            width: 750px;
+            margin: 20px auto;
+            min-height: 50px;
+            border-radius: 4px;
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgb(189, 211, 212);
+            border: none;
+            border-radius: 20px;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .carousel-button-prev {
+            left: 50px;
+        }
+
+        .carousel-button-next {
+            right: 50px;
+        }
+
+        .carousel-slide img {
+            height: 400px;
+            margin-top: 10px;
+            border-radius: 20px;
+            border: 2px solid white;
+
+        }
+
+        .flag img {
+            height: 20px;
+        }
+    </style>
+
+</head>
+
+<body style="background: rgb(1, 0, 41);">
+    <center>
+
+
+        <div
+            style="background: rgb(0, 97, 104); border-to-left-radius; padding: 10px; border-radius: 50px; width: 800px;padding-top: 70px;margin-top: -70px;">
+            <a href="TheDeathfeed.html">
+                <div id="top" class="Header"></div>
+            </a>
+        </div>
+        <div
+            style="background: white; width: 800px; margin-top: 40px; border: 5px solid rgb(0, 48, 63);border-radius: 20px; ">
+
+            <div style=" margin-top: 40px;margin-bottom: 20px; margin-top: -10px;" class="buttonize">
+                <a href="About.html">About DTNE</a>
+                <a href="Personages.html">Character Listing</a>
+                <a href="Storylog.html">StoryLlog</a>
+                <a href="Portfolio.html">ArtPortfolio</a>
+                <a href="Bookmarkies.html">Bookmarkies</a>
+            </div>
+            <!-- font-family: 'Dancing Script', cursive; -->
+
+
+            <br>
+               <!-- copyherre -->
+
+               <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 14#
+                </p>
+                <hr>
+                <!-- actual content -->
+                - some of the characters portrait differ from style, and apologies for that. im refraining myself from editing them until
+                i have a sizable amount of characters.. im quite testing to see what works for me you know..
+                <hr>
+                i cant proceed with the game (sad) that i was busy making. school gets in the waya and the finals i near, i will have to 
+                proceed with it when summer holidays hit! still thank you for enjoying skullmare
+              
+        
+
+               
+                <div style="padding: 20px;">
+<br>
+
+
+                </div>
+
+            </div>
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 13#
+                </p>
+                <hr>
+                <!-- actual content -->
+                So an update i am rewriting the manual and theres already some progress, gathering imporant information
+                and getting some things done! more will be added soon : D
+                <hr>
+                So i think im starting to have trouble writing my large stories since they inlove allot of lore 
+                and i think it is a bit of a terrible thing to start off with. one weird thing that i also 
+                wanted to do was join a game project to get also more expirience making games.. only for the 
+                owner, guy to come out as a writer. err everything seems a bit mismanaged in that group
+                so whatever comes off there will see how that happens, other than thats
+                my little story that im planning involves something with worms! funny right :D.
+
+
+                het zijn hele simpele dieren zeggen ze en ze zijn best interressant!! 
+
+                even tho they can be funny and freaky a little. love them wriggly creatures stay tuned!
+
+        
+
+                <img style="height: 700px;" src="Artwork/dump/worms.jpg" alt="">
+                <img style="height: 700px;" src="Artwork/dump/bird.jpg" alt="">
+               
+                <div style="padding: 20px;">
+<br>
+
+
+                </div>
+
+            </div>
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+         
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 12#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <img style="height: 700px;" src="Artwork/dump/pechijump.png" alt="">
+               
+                <div style="padding: 20px;">
+<br>
+
+
+                </div>
+
+            </div>
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 11#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <img style="height: 300px;" src="Artwork/dump/discordkittenmuer.png" alt="">
+                <img style="height: 300px;" src="Artwork/dump/deathofthesun.png" alt="">
+                <img style="height: 300px;" src="Artwork/dump/graveyardcitizen.png" alt="">
+                <div style="padding: 20px;">
+<br>
+rough doodles
+
+
+                </div>
+
+            </div>
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 10#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <img style="height: 700px;" src="Artwork/dump/dancingfruit.png" alt="">
+                <div style="padding: 20px;">
+
+
+
+                </div>
+
+            </div>
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 9#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <div style="padding: 20px;">
+
+
+
+                    <span> I HAVE BEEN SIIIICK. AUUUgh.. OMy goodness im glad thats over, theres a flu pandemic
+                        surrounding the netherlands, and i caught it, which was absolutley awful. im just glad that i
+                        got better and that i was finally able to draw again normally</span>
+                    <br>
+                    <hr>
+                    I changed my name back to deathenize because there is just toomany people that know me by that name
+                    for hat work, so itd be a dumb choice for me leave that, you can still call me mal/Ghosticface or
+                    Skullmare but graveyard citizen and dethenize are the names of the project itself. Other than that
+                    im glad that its now easier creating stories and coming up with description for my characters, it
+                    really shows that aslong you keep practicing and experimenting that things will eventually figure
+                    out or open itself
+                    <hr>
+                    Im sorry if i ahve been late with replying to comments on twitter, my friends rn have adviced that i
+                    should dim down on it as it clogs mentions and might give viewers a bit toomuch leeway with the way
+                    they could treat me, have been lately getting weird back handed/ meanish/ weirdish comments on other socials that make me a bit
+                    annoyed , upset and sad. tho i dont feel speaking about it toomuch. other than that i cant really rn
+                    give the reason why i moved accounts. it is not adviced for me to talk about it. but just wanted to
+                    say its getting better. there comes good days after depressing times and im glad the support
+                    graveyard citizen has received. i might open a survey soon to get feedback from yall. setting
+                    thinggs up!! and im glad that all of you guys enjoy my works
+                    <hr>
+                    While strawpage is orignally a joke, i do plan to do something with it either later or sooner, but
+                    that will be for another time
+                    <br>
+                    <img style="border-radius: 10px;" height="300px" src="Artwork/dump/berflying.png" alt="">
+                    <br>
+                </div>
+
+            </div>
+
+
+
+
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 8#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <div style="padding: 20px;">
+
+
+
+                    <span>- make stories, short or long whatever the artist mood days feel like <br>
+                        i dont exactly have a schedule, i think of planning something and then
+                        i make it or see what i can do. i do not have an order on what story i create or resume
+                        just to let you know they exit, all my characters will come back. a thing to note is
+                        that i scrapped the rule of making 100 characters a year, due to the system i now made.
+                        there isnt any specifc rule now anymore... i just make the portrait when i feel
+                        like the time reaches! <br></span>
+                    <br>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 7#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <div style="padding: 20px;">
+                    <pre>
+<img style="height: 400px;" src="Artwork/dump/dump1.png" alt="">  <img  style="height: 500px;"  src="Artwork/dump/2.png" alt=""> <br>
+<img  style="height: 400px;"  src="Artwork/dump/3.png" alt=""><img  style="height: 400px;"  src="Artwork/dump/4.png" alt=""> 
+</pre>
+
+
+                    <span>Charachter design planning</span>
+                    <br>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 6#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <div style="padding: 20px;">
+
+
+                    <img src="stories/soulsocietysub.png" alt=""> <br>
+                    <span>Mental torment</span>
+                    <br>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 5#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <div style="padding: 20px;">
+
+
+                    <img src="krant/valerianscreen.png" alt="">
+                    <img src="krant/screenbed.png" alt="">
+                    <br>
+                    <span> In progress making a short game, before i make a big game, want to get familliar with how
+                        things work. i have huge ideas for it.
+                        heres valerians sprite and his room showcase
+                    </span>
+                    <br>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 4#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <div style="padding: 20px;">
+
+
+                    <img src="Dump/vinnythink.png" alt=""> <br>
+                    <span> inactive on twitter, sorry for responding on comments late. overall better for my mental
+                        health</span>
+                    <br>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 3#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <div style="padding: 20px;">
+
+
+                    <img src="pixels/snake.png" alt="">
+                    <br>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 2#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <div style="padding: 20px;">
+
+                    <pre style="font-family: 'Pixelify Sans', sans-serif;">
+    My new stylistic choices look quite unique.
+    It's a weird combination of what I wanted to have.
+    I was not sure what I wanted, so these came quite by luck.
+    It's interesting that by watching Panty and the Cuphead show, 
+    it formed a new kind of aesthetic. 
+    I like it this time.
+    
+    <img style="height: 160px;" src="Blogextrapictures/cuphead.jpg" alt="">   <img src="Blogextrapictures/pantyandstocking.jpg" alt="">
+    
+    mixing cartoons from the 2000s and 1930s, gives something new? 
+    still quite unsure, but its the best things
+    that i rn could come up with
+    </pre>
+                    <img style="height: 30px;" src="symbols/cakered.png" alt="">
+                    <img style="height: 30px;" src="symbols/cakered.png" alt="">
+                    <img style="height: 30px;" src="symbols/cakered.png" alt="">
+                    <img style="height: 30px;" src="symbols/cakered.png" alt="">
+                    <img style="height: 30px;" src="symbols/cakered.png" alt="">
+                    <img style="height: 30px;" src="symbols/cakered.png" alt="">
+
+                </div>
+
+            </div>
+
+
+
+
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+
+            <!-- copyherre -->
+
+            <div class="boxfiller">
+                <p>
+                    <img src="pixels/skullwhite.png" alt="">
+                    Diary Note 1#
+                </p>
+                <hr>
+                <!-- actual content -->
+                <div style="padding: 20px;">
+
+                    <pre style=" font-family: 'Pixelify Sans', sans-serif ;">
+    I obviously have a problem, and im looking to fix it sooner, but today i could finally say
+    <span style="color: rgb(0, 110, 110);">hey, im finally happy with what i have created.</span>
+    I continously have selfdoubt about my work, and due to that, i have been
+    experimenting, making work over again, redesigning and on and on and on.. 
+    
+    I will quit redesigning until it does not fit the lore, and i will 
+    try my best from now on to learn leave things as it is... 
+    again, apologies.. i will try to be less of a perfectionist about my work 
+    
+    
+    </pre>
+                    <img style="height: 30px;" src="symbols/banana.png" alt="">
+                    <img style="height: 30px;" src="symbols/banana.png" alt="">
+                    <img style="height: 30px;" src="symbols/banana.png" alt="">
+                    <img style="height: 30px;" src="symbols/banana.png" alt="">
+                    <img style="height: 30px;" src="symbols/banana.png" alt="">
+                    <img style="height: 30px;" src="symbols/banana.png" alt="">
+
+                </div>
+
+            </div>
+
+
+
+
+            <div style="text-align: left;"> <img src="pixels/moonleft.png" alt="">
+                <img src="pixels/moonleft2.png" alt="">
+                <img src="pixels/moonhalf2.png" alt="">
+                <img src="pixels/moonhalf.png" alt="">
+                <img src="pixels/moonright2.png" alt="">
+                <img src="pixels/moonrighthalf.png" alt="">
+
+                <div class="boxnote"></div>
+            </div>
+            <!-- to here -->
+
+
+
+
+
+            <img he src="pixels/date.png" alt="">
+            <div style="  color: rgba(0, 71, 77, 0.589); border-radius: 100px;">
+
+                <i class="fa-solid fa-skull"></i>
+                Copyright © 2024 Skullmare. All rights reserved.
+
+            </div>
+
+        </div>
+    </center>
+    <script>
+
+
+
+
+
+
+
+
+
+        const slides = document.querySelector(".carousel-slides");
+        const slideWidth = slides.children[0].getBoundingClientRect().width;
+        let currentIndex = 0;
+
+        function slideTo(index) {
+            slides.style.transform = `translateX(-${index * slideWidth}px)`;
+            currentIndex = index;
+        }
+
+        function slidePrev() {
+            if (currentIndex > 0) {
+                slideTo(currentIndex - 1);
+            } else {
+                slideTo(slides.children.length - 1);
+            }
+        }
+
+        function slideNext() {
+            if (currentIndex < slides.children.length - 1) {
+                slideTo(currentIndex + 1);
+            } else {
+                slideTo(0);
+            }
+        }
+        const prevButton = document.querySelector(".carousel-button-prev");
+        const nextButton = document.querySelector(".carousel-button-next");
+        prevButton.addEventListener("click", slidePrev);
+        nextButton.addEventListener("click", slideNext);
+        slideTo(0);
+    </script>
+
+</body>
+<!-- font-family: 'Holtwood One SC', serif;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'Playfair Display SC', serif;-->
+
+</html>
