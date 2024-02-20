@@ -2,136 +2,17 @@
 <html class="no-js" lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-    <link href="https://toyhou.se/css/site_bootstrap.css?cachebust=1702717457" rel="stylesheet">
-    <meta name="layout-dark" content="0" rel="stylesheet">
+  
     <style>
-      .pill{
-      }
-        .bg-faded{
-            background: white;
-        }
+
     </style>
 
 </head>
 
-<body class="page-body page-body-character">
+<body >
 
-            <div class="profile-section profile-content-section">
-
-                <div class="container" style="max-width:650px;" align="center">
-                    <div class="card m-2 p-2" style="max-width:650px;border-radius:0px;">
-                        <div class="card pb-2 px-2 border-left-0 border-right-0 border-top-0 bg-faded">
-                            <ul class="nav nav-pills nav-justified" id="twittertablist">
-                                <li class="nav-item"><a class="nav-link active" data-toggle="pill"
-                                        style="border-radius:0px;" href="#tweets-tab">Profile</a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px;"
-                                        href="#replies-tab">Biography</a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px;"
-                                        href="#media-tab">Relationships</a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px;"
-                                        href="#likes-tab">Likes and dislikes</a></li>
-                            </ul>
-                        </div>
-                        <div class="tab-content bg-faded" style="overflow:auto;height:700px;" align="left">
-                            <div class="tab-pane fade show active" id="tweets-tab">
-                                <center>
-                                    <img height="700px" src="ports/scorvius.png" alt="">
-
-                                </center>
-
-
-                            </div>
-                            <div class="tab-pane fade" id="replies-tab">
-                                <p>Tweets & replies content goes here...</p>
-                            </div>
-                            <div class="tab-pane fade" id="media-tab">
-                                <p>Media content goes here...</p>
-                            </div>
-                            <div class="tab-pane fade" id="likes-tab">
-                                <p>Likes content goes here...</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-        <script>
-            // Get all tab links
-            var tabLinks = document.querySelectorAll('.nav-link');
-
-            // Add click event listener to each tab link
-            tabLinks.forEach(function (link) {
-                link.addEventListener('click', function (event) {
-                    // Prevent default link behavior
-                    event.preventDefault();
-
-                    // Remove 'active' class from all tab links
-                    tabLinks.forEach(function (link) {
-                        link.classList.remove('active');
-                    });
-
-                    // Add 'active' class to the clicked tab link
-                    this.classList.add('active');
-
-                    // Get the ID of the corresponding tab pane
-                    var target = this.getAttribute('href');
-
-                    // Hide all tab panes
-                    document.querySelectorAll('.tab-pane').forEach(function (pane) {
-                        pane.classList.remove('show', 'active');
-                    });
-
-                    // Show the corresponding tab pane
-                    document.querySelector(target).classList.add('show', 'active');
-                });
-            });
-        </script>
-
-        <script>
-            var modalCount = 0;
-            $('.modal').on('show.bs.modal', function (e) {
-                modalCount++;
-            });
-            $('.modal').on('hidden.bs.modal', function (e) {
-                modalCount--;
-                if (modalCount > 0) {
-                    e.stopPropagation();
-                    $('body').addClass('modal-open');
-                }
-            });
-        </script>
-        <script>
-            stickyFooter.init();
-        </script>
+ 
+   
 </body>
 
 </html>

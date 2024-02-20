@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Graveyard Citizen</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="faviconnie.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        .button {
+            padding: 20px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #494545;
+            border: transparent;
+            box-shadow: 0 9px #000000;
+            border-radius: 70px;
+            position: relative;
+            margin-bottom: -00px;
+        }
+
+        .button:hover {
+            background-color: #ffa358
+        }
+
+        .button:active {
+            background-color: #d10000;
+            box-shadow: 0 9px #000000;
+            transform: translateY(10px);
+        }
+
+        .page {
+
+            box-sizing: border-box;
+            background: url(pixels/fameboy.png);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            width: 880px;
+            height: 618px;
+
+            box-sizing: border-box;
+            background: url(pixels/fameboy2.png);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+
+
+
+
+        .page1 img:hover {
+            height: 45px;
+
+            box-shadow: 1px 1px rgb(255, 0, 0);
+
+
+        }
+
+
+
+
+        .page1 div {
+            padding-bottom: 7px;
+
+        }
+
+
+
+
+
+        .page1 a {
+            text-decoration: none;
+
+
+
+        }
+
+
+
+
+        .Book4 {
+            height: 882px;
+            width: 881px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            margin-top: -9px;
+
+        }
+
+        .pages-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .page1 img {
+            border: 2px rgb(0, 0, 0) solid;
+            height: 50px;
+            background: rgb(90, 90, 90);
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 2px 2px rgb(0, 0, 0);
+
+
+        }
+
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip-container:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            width: 120px;
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            font-weight: bold;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            bottom: 110%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .selectedLabel {
+            font-weight: bold;
+        }
+
+
+
+        .buttonize a {
+            border-radius: 10px;
+
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-decoration: none;
+            border: 1px white solid;
+            border-top: 3px white solid;
+        }
+
+        .buttonize a:hover {
+            background-color: rgb(159, 219, 216);
+            color: rgb(0, 0, 0);
+
+        }
+
+        th .comment {
+            display: none;
+        }
+
+        th:hover .thought {
+            display: none;
+        }
+
+        th:hover .comment {
+            display: inline;
+        }
+
+        .menu th {
+            padding: 10px
+        }
+    </style>
+
+</head>
+
+<body class="HomeBG">
+    <center>
+
+
+        <div
+            style="background: rgb(0, 0, 0); border-to-left-radius; padding: 10px; border-radius: 50px; width: 800px;padding-top: 70px;margin-top: -70px;">
+            <a href="TheDeathfeed.html">
+                <div id="top" class="Header"></div>
+            </a>
+        </div>
+        <div
+            style="background: white; width: 900px; margin-top: 40px; border: 5px solid rgb(0, 48, 63);border-radius: 20px; ">
+
+            <div style=" margin-top: 40px;margin-bottom: 20px; margin-top: -10px;" class="buttonize">
+                <a href="About.html">About DTNE</a>
+                <a href="Personages.html">Character Listing</a>
+                <a href="Storylog.html">StoryLlog</a>
+                <a href="Portfolio.html">ArtPortfolio</a>
+                <a href="Bookmarkies.html">Bookmarkies</a>
+            </div>
+
+            <img style="border-radius: 20px; margin-top: 50px; border: 1px solid rgb(102, 119, 175);"
+                src="plaatjes/banner.png" alt="">
+
+            <h4 style="font-size: 30px;"> <img style="height: 50px;" src="symbols/bird.png" alt=""> CAST <img
+                    style="height: 50px;" src="symbols/bird.png" alt=""></h4>
+
+
+            <!-- NNN -->
+
+            <div style="border-bottom: 1px solid black; width: 300px; margin: auto; padding-top: 20px;">
+                <img src="pixels/bubble.png" alt=""> total characters made :10/245 <img src="pixels/bubble.png" alt="">
+            </div>
+
+            <h4>Want to go to a characters page directly?</h4>
+            <p><img src="pixels/star.png" alt=""> Enter their numeral code ( <span style="color: green;">Ex:
+                    0001 <img src="pixels/pointerright.png" alt=""> Pechi</span> )</p>
+            <p><img src="pixels/diamondblue.png" alt=""> some characters have an additional special code (
+                <span style="color: rgb(0, 108, 170);">Ex: ▲★▲ <img src="pixels/pointerright.png" alt="">
+                    Latavan</span> )
+            </p>
+
+            <form id="passwordForm" onsubmit="checkPassword(); return false;">
+                <input type="text" id="codeInput" placeholder="Enter Character Numeral" />
+                <button type="submit">Submit</button>
+            </form>
+
+            <div style="margin-top: 10px;">
+                <img src="pixels/smoothieyellow.png" alt="">
+                <img src="pixels/smoothieblue.png" alt="">
+                <img src="pixels/smoothiegreen.png" alt="">
+                <img src="pixels/smoothiebrown.png" alt="">
+                <img src="pixels/smoothiepink.png" alt="">
+                <img src="pixels/smoothiepurple.png" alt="">
+            </div>
+
+
+
+            <div
+                style=" height: 50px; width: 300px; display: flex; justify-content: space-evenly; align-items: center;padding-bottom: 50px; margin-top: 20px;">
+                <button class="button" onclick="nextSlide()">
+                    <img src="pixels/pointerright.png" alt="">
+
+                </button>
+                <button class="button" onclick="prevSlide()">
+                    <img src="pixels/pointerleft.png" alt="">
+
+                </button>
+            </div>
+
+            <div class="Book4" style="display: flex;  ">
+
+                <div class="page1">
+
+                    <div>
+
+
+                    </div>
+                    <div class="Book4">
+
+                        <div class="pages-container">
+                            <!-- page con start -->
+                            <div class="page">
+
+                                <span style=" position: relative; top: 5px; left: -10px; margin-bottom: 5px;">
+                                    <i class="fa-solid fa-star"></i> SECTION 1 <i class="fa-solid fa-star"></i>
+                                    <br> Characters
+                                    Ilustrated: 8/50</span>
+
+
+
+                                <div>
+
+                                </div>
+
+
+
+                                <div class="icons-container">
+
+
+                                    <!-- Ch-1 -->
+                                    <div class="tooltip-container">
+                                        <a href="1-ch.html"> <img id="NoChar" src="icons/veroni.png" alt=""> </a>
+                                        <div class="tooltip-text">Pechi/Pellina</div>
+                                    </div>
+                                    <!-- Ch-2 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="2-ch.html"> <img id="NoChar" src="icons/liz.png" alt=""> </a>
+                                        <div class="tooltip-text">Liz</div>
+                                    </div>
+                                    <!-- Ch-3 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="3-ch.html"> <img id="NoChar" src="icons/lars.jpg" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Lars</div>
+                                    </div>
+                                    <!-- Ch-4 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="4-ch.html"> <img id="NoChar" src="icons/diphonix.png" alt=""> </a>
+                                        <div class="tooltip-text">Diph</div>
+                                    </div>
+                                    <!-- Ch-5 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="5-ch.html"> <img id="NoChar" src="icons/Paula.png" alt=""> </a>
+                                        <div class="tooltip-text">Paula</div>
+                                    </div>
+                                    <!-- Ch-6 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="6-ch.html"> <img id="NoChar" src="icons/leo.png" alt=""> </a>
+                                        <div class="tooltip-text">Leo</div>
+                                    </div>
+                                    <!-- Ch-7 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="7-ch.html"> <img id="NoChar" src="icons/veterenilumberjack.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">LaumberJack</div>
+                                    </div>
+                                    <!-- Ch-8 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="8-ch.html"> <img id="NoChar" src="icons/Muertoz.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Muertoz</div>
+                                    </div>
+                                    <!-- Ch-9 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="9-ch.html"> <img id="NoChar" src="icons/Diaz.png" alt=""> </a>
+                                        <div class="tooltip-text">Diaz</div>
+                                    </div>
+                                    <!-- Ch-10 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="10-ch.html"> <img id="NoChar" src="icons/fish.png" alt=""> </a>
+                                        <div class="tooltip-text">Fish</div>
+                                    </div>
+
+
+
+
+
+                                </div>
+
+                                <div class="icons-container">
+
+
+
+                                    <!-- Ch-11 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="11-ch.html"> <img id="NoChar" src="icons/roque.png" alt=""> </a>
+                                        <div class="tooltip-text">Roque</div>
+                                    </div>
+                                    <!-- Ch-12 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="12-ch.html"> <img id="NoChar" src="icons/aiko.png" alt=""> </a>
+                                        <div class="tooltip-text">Aiko</div>
+                                    </div>
+                                    <!-- Ch-13 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="13-ch.html"> <img id="NoChar" src="icons/rune.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Rune</div>
+                                    </div>
+                                    <!-- Ch-14 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="14-ch.html"> <img id="NoChar" src="icons/Delosa.jpg" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Delosa</div>
+                                    </div>
+
+                                    <!-- Ch-15 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="15-ch.html"> <img id="NoChar" src="icons/ViperPRT.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Viper</div>
+                                    </div>
+                                    <!-- Ch-16 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="16-ch.html"> <img id="NoChar" src="icons/ShirangPRT.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Shirang</div>
+                                    </div>
+                                    <!-- Ch-17 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="17-ch.html"> <img id="NoChar" src="icons/Seshuri.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Seshuri</div>
+                                    </div>
+                                    <!-- Ch-18 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="18-ch.html"> <img id="NoChar" src="icons/Tech.jpg" alt=""> </a>
+                                        <div class="tooltip-text">Tech</div>
+                                    </div>
+                                    <!-- Ch-19-->
+
+                                    <div class="tooltip-container">
+                                        <a href="19-ch.html"> <img id="NoChar" src="icons/TJK.jpg" alt=""> </a>
+                                        <div class="tooltip-text">Teppei</div>
+                                    </div>
+                                    <!-- Ch-20 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="20-ch.html"> <img id="NoChar" src="icons/Phasapphia.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Phasapphia</div>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+                                
+
+                                <div class="icons-container">
+                                    <!-- 21 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/caramelo.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">caramelo</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/Nouri.jpg" alt=""> </a>
+                                        <div class="tooltip-text">Nouri</div>
+                                    </div>
+                                    <!-- Ch-23 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/alcatraz.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Alcatraz</div>
+                                    </div>
+                                    <!-- Ch-24 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/zal.png" alt=""> </a>
+                                        <div class="tooltip-text">Zal</div>
+                                    </div>
+                                    <!-- Ch-25 -->
+
+
+                                    <div class="tooltip-container">
+                                        <a href="25-ch.html"> <img id="NoChar" src="icons/eendje.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Eendje</div>
+                                    </div>
+                                    <!-- Ch-26 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/MuusjePRT.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Muuretje</div>
+                                    </div>
+                                    <!-- Ch-27 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/francis.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Francisco</div>
+                                    </div>
+                                    <!-- Ch-28 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/may.png" alt=""> </a>
+                                        <div class="tooltip-text">May</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/minetir.jpg" alt=""> </a>
+                                        <div class="tooltip-text">Minetir</div>
+                                    </div>
+                                    
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/livee.png" alt=""> </a>
+                                        <div class="tooltip-text">Livee</div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <!-- Ch-36 -->
+
+
+                                <div class="icons-container">
+
+                                    <!-- Ch-43 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- Ch-44 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- Ch-45 -->
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- Ch-46 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- Ch-47 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- Ch-48 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- Ch-49 -->
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+                                <div class="icons-container">
+                                    <!-- 21 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">XXX</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">XXX</div>
+                                    </div>
+                                    <!-- Ch-23 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Alcatraz</div>
+                                    </div>
+                                    <!-- Ch-24 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">XXX</div>
+                                    </div>
+                                    <!-- Ch-25 -->
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">XXX</div>
+                                    </div>
+                                    <!-- Ch-26 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">XXX</div>
+                                    </div>
+                                    <!-- Ch-27 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">XXX</div>
+                                    </div>
+                                    <!-- Ch-28 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">XXX</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">XXX</div>
+                                    </div>
+                                    
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">XXX</div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                            </div>
+
+                            <!-- end -->
+                            <!-- page con start -->
+                            <div class="page">
+
+                                <span style=" position: relative; top: 5px; left: -10px; margin-bottom: 5px;">
+                                    <i class="fa-solid fa-star"></i> Cattagory: Mythicals <i
+                                        class="fa-solid fa-star"></i> <br> Characters
+                                    Ilustrated: 2/50</span>
+                                <span
+                                    style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px; font-size: 10px;">
+                                </span>
+
+                                <div class="icons-container">
+                                    <!-- 50ch -->
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 51ch -->
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 52ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 53ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 54ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 55ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 56ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="icons-container">
+                                    <!-- 57 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 58 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 59 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 60 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 61 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 62 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html">
+                                            <img class="iconimage" id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <!-- 63 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="icons-container">
+                                    <!-- 64 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="64-ch.html"> <img id="NoChar" src="icons/scorvus.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Scorvil</div>
+                                    </div>
+                                    <!-- 65 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 66-->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 67 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 68 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 69 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 70 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+                                </div>
+
+
+
+
+
+                                <div class="icons-container">
+                                    </div>
+                                    
+                                <div class="icons-container">
+                                    <!-- 71 -->
+
+
+                                    <!-- 72 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 73 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 74 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 75-->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 76 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 77 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+</div>
+
+
+                                
+                                <div class="icons-container">
+
+                                    <!-- 78 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="78-ch.html"> <img id="NoChar" src="icons/Rufus.png" alt=""> </a>
+                                        <div class="tooltip-text">Rufus</div>
+                                    </div>
+                                    <!-- 79 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 80 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 81 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 82 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 83 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 84 -->
+
+
+                                    <div class="tooltip-container">
+                                        <!-- 85 -->
+
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+                                <!-- 86 -->
+
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 87 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 88 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 89 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 90 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 91 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 92 -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+
+                                </div>
+                                <div class="icons-container">
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                            </div>
+
+                            <!-- end -->
+                            <!-- page con start -->
+                            <div class="page">
+                                <span style=" position: relative; top: 5px; left: -10px; margin-bottom: 5px;">
+                                    <i class="fa-solid fa-star"></i> Cattagory: Elderitch <i
+                                        class="fa-solid fa-star"></i> <br> Characters
+                                    Ilustrated: 1/49</span>
+
+
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="99-ch.html"> <img id="NoChar" src="icons/latavan.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Ortevius Latavan</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="icons-container">
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="113-ch.html"> <img id="NoChar" src="icons/roque.png" alt=""> </a>
+                                        <div class="tooltip-text">Roque</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="114-ch.html"> <img id="NoChar" src="icons/aiko.png" alt=""> </a>
+                                        <div class="tooltip-text">Aiko</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+
+                                </div>
+                                <div class="icons-container">
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="134-ch.html"> <img id="Phasaphir" src="icons/Phasaphir.png" alt="">
+                                        </a>
+                                        <div class="tooltip-text">Marcellus</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+
+                                </div>
+                                <div class="icons-container">
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                            <!-- end -->
+                            <!-- page con start -->
+                            <div class="page">
+
+                                <span style=" position: relative; top: 5px; left: -10px; margin-bottom: 5px;">
+                                    <i class="fa-solid fa-star"></i> Cattagory: Cryptids <i
+                                        class="fa-solid fa-star"></i> <br> Characters
+                                    Ilustrated: 0/49</span>
+
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="icons-container">
+                                    <!-- 155 ch -->
+                                    <div class="tooltip-container">
+                                        <a href="155-ch.html"> <img id="NoChar" src="icons/alcatraz.png" alt=""> </a>
+                                        <div class="tooltip-text">Alcatraz</div>
+                                    </div>
+                                    <!-- 156 ch -->
+                                    <div class="tooltip-container">
+                                        <a href=""> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">XXX</div>
+                                    </div>
+
+                                    <!-- 157 ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 158 ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 159 ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 160 ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 161 ch -->
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- 162 ch -->
+
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 163ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 164 ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 165 ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 166 ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 167 ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 168 ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="icons-container">
+                                    <!-- 169 ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <!-- 1 ch -->
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+
+                                </div>
+                                <div class="icons-container">
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+
+                                </div>
+                                <div class="icons-container">
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                            </div>
+
+                            <!-- end -->
+                            <!-- page con start -->
+                            <div class="page">
+                                <span style=" position: relative; top: 5px; left: -10px; margin-bottom: 5px;">
+                                    <i class="fa-solid fa-star"></i> Cattagory: Ethereals <i
+                                        class="fa-solid fa-star"></i> <br> Characters
+                                    Ilustrated: 0/49</span>
+
+
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="icons-container">
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+
+                                </div>
+                                <div class="icons-container">
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+                                <div class="icons-container">
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+
+
+                                </div>
+                                <div class="icons-container">
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                    <div class="tooltip-container">
+                                        <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                        <div class="tooltip-text">???</div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                            <!-- end -->
+
+                            <!-- page con start -->
+                            <div class="page">
+
+                                <span
+                                    style=" position: relative; top: 150px; left: 3px; margin-bottom: 10px; font-size: 20px;">
+                                    <i class="fa-solid fa-star"></i> Game over! See you Next
+                                    year <i class="fa-solid fa-star"></i></span>
+
+                                <div>
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                            </div>
+
+                            <!-- end -->
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <img src="pixels/date.png" alt="">
+                <div style="  color: rgba(0, 71, 77, 0.589); border-radius: 100px;">
+
+                    <i class="fa-solid fa-skull"></i>
+                    Copyright © 2024 Skullmare. All rights reserved.
+
+                </div>
+
+            </div>
+    </center>
+    <script src="character.js"></script>
+    <script>
+        let currentPage = 0;
+        const slideDistance = 882; // Adjust this value to control the slide distance
+
+        function nextSlide() {
+            currentPage++;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentPage--;
+            updateSlide();
+        }
+
+        function updateSlide() {
+            const slideWidth = document.querySelector('.Book4').offsetWidth;
+            const transformValue = -currentPage * slideDistance + 'px';
+            document.querySelector('.pages-container').style.transform = 'translateX(' + transformValue + ')';
+        }
+
+        // Adding click event listeners to the Book4 div
+        document.querySelector('.Book4 .next').addEventListener('click', nextSlide);
+        document.querySelector('.Book4 .prev').addEventListener('click', prevSlide);
+    </script>
+
+    <script>
+
+
+
+
+
+
+
+
+
+        const slides = document.querySelector(".carousel-slides");
+        const slideWidth = slides.children[0].getBoundingClientRect().width;
+        let currentIndex = 0;
+
+        function slideTo(index) {
+            slides.style.transform = `translateX(-${index * slideWidth}px)`;
+            currentIndex = index;
+        }
+
+        function slidePrev() {
+            if (currentIndex > 0) {
+                slideTo(currentIndex - 1);
+            } else {
+                slideTo(slides.children.length - 1);
+            }
+        }
+
+        function slideNext() {
+            if (currentIndex < slides.children.length - 1) {
+                slideTo(currentIndex + 1);
+            } else {
+                slideTo(0);
+            }
+        }
+        const prevButton = document.querySelector(".carousel-button-prev");
+        const nextButton = document.querySelector(".carousel-button-next");
+        prevButton.addEventListener("click", slidePrev);
+        nextButton.addEventListener("click", slideNext);
+        slideTo(0);
+    </script>
+
+</body>
+<!-- font-family: 'Holtwood One SC', serif;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'Playfair Display SC', serif;-->
+
+</html>
