@@ -226,10 +226,9 @@ color: rgb(182, 118, 0);
 
 .Header {
     background: url(Subs/titleskull.png);
-    height:145px;
-    width:550px;
-    background-size: 550px;
-    background-position: px 0px;
+    height:230px;
+    width:500px;
+    background-size: 500px;
     padding-bottom: 10px;
 }
 .Header18 {
@@ -242,17 +241,18 @@ color: rgb(182, 118, 0);
 
 .Header:hover {
     background: url(Subs/titleskullh.png);
-    height:170px;
-    width:550px;
-    background-size: 550px;
-    background-position: px 0px;
+    height:230px;
+    width:500px;
+    background-size: 500px;
     padding-bottom: 10px;
 
 
  
    
 }
-
+.soc a{
+    padding:10px;
+}
 
 .menu a {
     text-decoration: none;

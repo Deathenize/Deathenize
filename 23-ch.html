@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deathenize</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="faviconnie.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Style.css">
+
+    <link href="https://toyhou.se/css/site_bootstrap.css?cachebust=1702717457" rel="stylesheet">
+    <meta name="layout-dark" content="0" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        .selectedLabel {
+            font-weight: bold;
+        }
+
+
+
+        .buttonize a {
+            border-radius: 10px;
+
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-decoration: none;
+            border: 1px white solid;
+            border-top: 3px white solid;
+        }
+
+        .buttonize a:hover {
+            background-color: rgb(116, 119, 119);
+            color: rgb(0, 0, 0);
+
+        }
+
+
+        .bg-faded {
+            background: white;
+        }
+
+        .nav-link.active {
+            background-color: black !important;
+            color: white;
+            font-weight: bold;
+            border-radius: 20px !important;
+        }
+
+        .nav-link {
+            color: black;
+            font-weight: bold;
+
+        }
+
+
+
+
+
+        .menu th {
+            padding: 10px
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            flex: 0 0 100%;
+        }
+
+        .iwillrot img:hover {
+            transform: rotate(-20deg);
+
+
+        }
+
+        .Socialpop img:hover {
+            transform: rotate(-20deg);
+
+
+        }
+
+        .Socialpop a img:hover {
+            animation: rotate-pulse 1s ease-in-out infinite;
+        }
+
+        @keyframes rotate-pulse {
+            0% {
+                transform: rotate(0deg) scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: rotate(180deg) scale(1.2);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: rotate(360deg) scale(1);
+                opacity: 1;
+            }
+        }
+
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgb(189, 211, 212);
+            border: none;
+            border-radius: 20px;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .carousel-button-prev {
+            left: 50px;
+        }
+
+        .carousel-button-next {
+            right: 50px;
+        }
+
+        .carousel-slide img {
+            height: 400px;
+            margin-top: 10px;
+            border-radius: 20px;
+            border: 2px solid white;
+
+        }
+
+        .flag img {
+            height: 20px;
+        }
+    </style>
+
+</head>
+
+<body class="HomeBG">
+
+
+
+
+
+
+
+
+
+
+
+
+    <center>
+
+
+        <div
+            style="background: rgb(0, 0, 0); border-to-left-radius; padding: 10px; border-radius: 50px; width: 800px;padding-top: 70px;margin-top: -70px;">
+            <a href="TheDeathfeed.html">
+                <div id="top" class="Header"></div>
+            </a>
+        </div>
+        <div
+            style="background: white; width: 800px; margin-top: 40px; border: 5px solid rgb(0, 0, 0);border-radius: 20px; ">
+
+            <div style=" margin-top: 40px;margin-bottom: 20px; margin-top: -10px;" class="buttonize">
+                <a href="About.html">About DTNE</a>
+                <a href="Cast.html">Character Listing</a>
+                <a href="Storylog.html">StoryLlog</a>
+                <a href="Portfolio.html">ArtPortfolio</a>
+                <a href="Bookmarkies.html">Bookmarkies</a>
+            </div>
+
+
+
+            <div style=" border: 2px solid black; width: 700px; border-radius: 5px; margin-top: 50px;" class="">
+
+                <div style="max-width:750px;" align="center">
+
+                    <div style="max-width:650px;border-radius:0px;">
+                        <ul class="nav nav-pills nav-justified" id="twittertablist">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="pill"
+                                    style="border-radius:0px;" href="#tweets-tab">Profile <img src="pixels/cloud.png"
+                                        alt=""> </a></li>
+
+                            <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px;"
+                                    href="#replies-tab">Biography <img src="pixels/moonhalf.png" alt=""></a></li>
+
+
+                        </ul>
+                    </div>
+                    <div style="border: 1px solid black;"></div>
+                    <div class="tab-content bg-faded" style="overflow:auto;height:900px;" align="left">
+                        <!-- Portrait section -->
+
+                        <br>
+                        <div class="tab-pane fade show active" id="tweets-tab">
+                            <center>
+                                <h5
+                                    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration-line:underline;">
+                                    <img src="pixels/diamondblack.png" alt=""> Nummeral: 0023
+                                </h5>
+
+                            </center>
+                            <center>
+                                <img height="800px" src="Characterportraits/alcatraz.png" alt="">
+
+                            </center>
+
+
+                        </div>
+                        <!-- End of portrait section -->
+
+                        <!-- biography section -->
+                        <div class="tab-pane fade" id="replies-tab" style="overflow-x: hidden;">
+                            <h4><i class="fa-solid fa-star"></i> Biography</h4>
+                            <img src="Subs/dotterin.png" alt="">
+                            <center>
+                                <div>
+                                    <i class="fa-solid fa-crow"></i>
+                                    <h5 style="background: black; color: white; border-radius: 10px; width: 400px;">
+                                        Information</h5>
+                                    <br>
+                                    <div>
+                                        A very nervous person, they're quite shy and easily anxious, but that does not stop them from trying to
+                                        proceed to the top! Alcatraz is one of Mimi's best friends; he might have feelings for them, but it
+                                        seems that it won't quite be reciprocated. Other than that, they enjoy cooking and playing the piano
+                                        often. Their favorite animals are swans, and they keep and take care of them.
+
+                                    </div>
+                                </div>
+                                <br>
+                                <img src="pixels/diamondyellow.png" alt="">
+                                <br>
+                                <br>
+                                <i class="fa-solid fa-table"></i>
+                                <h5
+                                    style="background: black; color: white; border-radius: 10px; width: 400px; padding: 3px;">
+                                    <div> General physical Information</div>
+                                </h5>
+
+                                <div
+                                    style=" height: 300px; width: 300px; margin-top: 10px; border-radius: 20px; border: 1px solid black;">
+                                    <div class="infopil" style="width: 200px;">
+                                        <br>
+
+
+                                        <p style="color: black; background: white; font-weight: bolder;"> <i
+                                                class="fa-solid fa-star"></i>Naam: Alcatraz</p>
+
+                                        <p style="color: black;   background: white; font-weight: bolder;">
+                                            <i class="fa-solid fa-font-awesome"></i> Gender: <i
+                                                class="fa-solid fa-genderless"></i>
+                                        </p>
+
+                                        <p style="color: black;   background: white; font-weight: bolder;">
+                                            <i class="fa-solid fa-font-awesome"></i> sexualiteit:
+                                             <img
+                                                style="height: 15px; border-radius: 20px;" src="Flags/NonBinary.png"
+                                                alt="">
+                                          
+                                        </p>
+
+                                        <p style="color: black; font-weight: bolder;  background: white;"><i
+                                                class="fa-regular fa-star"></i> VoornaamW: They/Them</p>
+
+                                        <p style="color: black; background: white; font-weight: bolder;"><i
+                                                class="fa-solid fa-earth-asia"></i> Species Type: Cryptid</p>
+
+                                        <p style="color: black; background: white; font-weight: bolder;"><i
+                                                class="fa-solid fa-earth-asia"></i> Realm: <img
+                                                src="pixels/realmmycryptid.png" alt=""></p>
+
+                                        <p style="color: black;  background: white;font-weight: bolder;">
+                                            <i class="fa-regular fa-calendar"></i> Birthdate: 15 Febuary
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                                <br>
+                                <br>
+                                <i class="fa-solid fa-link"></i>
+                                <h5
+                                    style="background: black; color: white; border-radius: 10px; width: 400px; padding: 3px;">
+                                    Relationships</h5>
+
+
+
+                                <a href="file.html"><img style="height: 50px; border: 1px black solid;"
+                                        src="icons/xxx.png" alt=""></a>
+                              
+
+
+                            </center>
+
+                        </div>
+
+
+                        <!-- End of biography section -->
+
+                        <!-- Extra beta section -->
+                        <div class="tab-pane fade" id="Beta-section">
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <img src="pixels/date.png" alt="">
+            <div style="  color: rgba(124, 128, 128, 0.589); border-radius: 100px;">
+
+                <i class="fa-solid fa-skull"></i>
+                Copyright © 2024 Skullmare. All rights reserved.
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </center>
+    <script>
+        var modal = document.getElementById('Modalius');
+
+        function TOS() {
+            showModal();
+        }
+
+        function showModal() {
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        function accept() {
+            window.location.href = 'blog2.html';
+        }
+    </script>
+
+    <script>
+
+
+
+
+
+
+
+
+
+        const slides = document.querySelector(".carousel-slides");
+        const slideWidth = slides.children[0].getBoundingClientRect().width;
+        let currentIndex = 0;
+
+        function slideTo(index) {
+            slides.style.transform = `translateX(-${index * slideWidth}px)`;
+            currentIndex = index;
+        }
+
+        function slidePrev() {
+            if (currentIndex > 0) {
+                slideTo(currentIndex - 1);
+            } else {
+                slideTo(slides.children.length - 1);
+            }
+        }
+
+        function slideNext() {
+            if (currentIndex < slides.children.length - 1) {
+                slideTo(currentIndex + 1);
+            } else {
+                slideTo(0);
+            }
+        }
+        const prevButton = document.querySelector(".carousel-button-prev");
+        const nextButton = document.querySelector(".carousel-button-next");
+        prevButton.addEventListener("click", slidePrev);
+        nextButton.addEventListener("click", slideNext);
+        slideTo(0);
+    </script>
+    <script>
+        // Get all tab links
+        var tabLinks = document.querySelectorAll('.nav-link');
+
+        // Add click event listener to each tab link
+        tabLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                // Prevent default link behavior
+                event.preventDefault();
+
+                // Remove 'active' class from all tab links
+                tabLinks.forEach(function (link) {
+                    link.classList.remove('active');
+                });
+
+                // Add 'active' class to the clicked tab link
+                this.classList.add('active');
+
+                // Get the ID of the corresponding tab pane
+                var target = this.getAttribute('href');
+
+                // Hide all tab panes
+                document.querySelectorAll('.tab-pane').forEach(function (pane) {
+                    pane.classList.remove('show', 'active');
+                });
+
+                // Show the corresponding tab pane
+                document.querySelector(target).classList.add('show', 'active');
+            });
+        });
+    </script>
+
+    <script>
+        var modalCount = 0;
+        $('.modal').on('show.bs.modal', function (e) {
+            modalCount++;
+        });
+        $('.modal').on('hidden.bs.modal', function (e) {
+            modalCount--;
+            if (modalCount > 0) {
+                e.stopPropagation();
+                $('body').addClass('modal-open');
+            }
+        });
+    </script>
+    <script>
+        stickyFooter.init();
+    </script>
+</body>
+<!-- font-family: 'Holtwood One SC', serif;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'Playfair Display SC', serif;-->
+
+</html>
