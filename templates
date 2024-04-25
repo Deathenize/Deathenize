@@ -1,0 +1,118 @@
+personages template
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fameboy Carousel</title>
+<style>
+  .carousel-container {
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto;
+    margin-left: 300px;
+  }
+
+  .carousel {
+    position: relative;
+    width: 881px;
+    height: 618px;
+    overflow: hidden;
+    background-image: url(pixels/fameboy2.png);
+    margin: auto ;
+
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    position: relative;
+    text-align: center;
+  }
+
+  .carousel-item img {
+  
+    margin-top: 100px;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Ensure buttons are above background image */
+  }
+
+  .carousel-btn.prev {
+    left: 0;
+  }
+
+  .carousel-btn.next {
+    right: 0;
+  }
+</style>
+</head>
+<body>
+
+<center>
+    <!-- Whole container -->
+    <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-inner">
+
+            <!-- First batch -->
+            <div class="carousel-item">
+                <a href=""></a>
+
+
+            </div>
+            <!-- Second batch -->
+            <div class="carousel-item">
+              <img src="image2.jpg" alt="Slide 2">
+            </div>
+
+
+            <!-- Add more carousel items with additional images as needed -->
+          </div>
+          <button class="carousel-btn prev" onclick="prevSlide()">Prev</button>
+          <button class="carousel-btn next" onclick="nextSlide()">Next</button>
+        </div>
+      </div>
+      <!-- end container -->
+</center>
+
+<script>
+  const carousel = document.querySelector('.carousel');
+  const carouselInner = document.querySelector('.carousel-inner');
+  const totalItems = carouselInner.children.length;
+  let currentIndex = 0;
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    updateCarousel();
+  }
+
+  function updateCarousel() {
+    const offset = -currentIndex * carousel.offsetWidth;
+    carouselInner.style.transform = `translateX(${offset}px)`;
+  }
+</script>
+
+</body>
+</html>

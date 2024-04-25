@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+
+
+
+<title>DEATHENIZE</title>
+
+<html>
+
+<head>
+  <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-style-type" content="text/css">
+  <meta http-equiv="content-script-type" content="text/javascript">
+
+  <style>
+    body {
+      overflow-x: hidden;
+
+    }
+
+    /* CSS for smaller screens (mobile devices) */
+    @media only screen and (max-width: 768px) {
+      .TTT {
+        width: 150%;
+        /* Make the table full width */
+        overflow-x: auto;
+        /* Enable horizontal scrolling for content that overflows */
+      }
+
+      .TTT table {
+        width: 120%;
+        /* Increase table width to allow content to overflow */
+      }
+
+      .TTT table td {
+        white-space: nowrap;
+        /* Prevent text from wrapping */
+      }
+    }
+
+    .custom-box {
+      width: 700px;
+      min-height: 120px;
+      border: 1px solid #3c4345;
+      border-radius: 10px;
+      overflow: hidden;
+      /* Hides overflow from child elements */
+    }
+
+    .top-part {
+      background-color: #568a97;
+      padding: 1px;
+      color: white;
+    }
+
+    .bottom-part {
+      background-color: white;
+      padding: 20px;
+      color: black;
+    }
+    .button {
+            padding: 20px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #494545;
+            border: transparent;
+            box-shadow: 0 9px #000000;
+            border-radius: 70px;
+            position: relative;
+            margin-bottom: -00px;
+        }
+
+        .button:hover {
+            background-color: #ffa358
+        }
+
+        .button:active {
+            background-color: #d10000;
+            box-shadow: 0 9px #000000;
+            transform: translateY(10px);
+        }
+
+        .page {
+
+            box-sizing: border-box;
+            background: url(pixels/fameboy.png);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            width: 880px;
+            height: 618px;
+
+            box-sizing: border-box;
+            background: url(pixels/fameboy2.png);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+
+
+
+
+        .page1 img:hover {
+            height: 45px;
+
+            box-shadow: 1px 1px rgb(255, 0, 0);
+
+
+        }
+
+
+
+
+        .page1 div {
+            padding-bottom: 7px;
+
+        }
+
+
+
+
+
+        .page1 a {
+            text-decoration: none;
+
+
+
+        }
+
+
+
+
+        .Book4 {
+
+            height: 882px;
+            width: 881px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            margin-top: 9px;
+
+        }
+
+        .pages-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .page1 img {
+            border: 2px rgb(0, 0, 0) solid;
+            height: 50px;
+            background: rgb(90, 90, 90);
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 2px 2px rgb(0, 0, 0);
+
+
+        }
+
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip-container:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            width: 120px;
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            bottom: 110%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .selectedLabel {
+            font-weight: bold;
+        }
+        <style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+        .buttonize a {
+            border-radius: 10px;
+
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-decoration: none;
+            border: 1px white solid;
+            border-top: 3px white solid;
+        }
+
+        .buttonize a:hover {
+            background-color: rgb(116, 119, 119);
+            color: rgb(0, 0, 0);
+
+        }
+
+        th .comment {
+            display: none;
+        }
+
+        th:hover .thought {
+            display: none;
+        }
+
+        th:hover .comment {
+            display: inline;
+        }
+
+        .menu th {
+            padding: 10px
+        }
+  </style>
+</head>
+
+<body style="background: url(Subs/backgound.png); background-size: 400px; background-attachment: fixed; margin: 0">
+   
+    <table width="100%" height="155" cellspacing="0" cellpadding="0" border="0" background="Subs/checking.png"
+    align="center">
+    <tbody>
+      <tr>
+        <td style="text-align: center;">
+          <table width="1060" height="125" cellspacing="0" cellpadding="0" border="0" align="center">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="TheDeathfeed.html">
+                    <img hspace="" style="" src="Subs/titleskull.png" height="140px" onmouseover="this.src='Subs/titleskullH.png' "
+                      onmouseout="this.src='Subs/titleskull.png'" alt="" />
+                  </a>
+                </td>
+                <td>
+                  <img src="foruse/headD.png" alt="" width="" hspace="22" height="100" />
+                </td>
+                <!-- title -->
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+  <div style="text-align: center;">
+    <div class="sss" style="display: flex; justify-content: center;">
+      <a style="text-decoration: none;" href="About.html">
+        <img style="height: 120px;" src="Subs/1mrnu.png" onmouseover="this.src='Subs/1mrnuH.png'"
+          onmouseout="this.src='Subs/1mrnu.png'" alt="" />
+      </a>
+      <a style="text-decoration: none;" href="Manual.html">
+        <img style="height: 120px;" src="Subs/2menu.png" onmouseover="this.src='Subs/2menuH.png'"
+          onmouseout="this.src='Subs/2menu.png'" alt="" />
+      </a>
+      <a style="text-decoration: none;" href="Minilore.html">
+        <img style="height: 120px;" src="Subs/manual.png" onmouseover="this.src='Subs/manualH.png'"
+          onmouseout="this.src='Subs/manual.png'" alt="" />
+      </a>
+      <a style="text-decoration: none;" href="personages.html">
+        <img style="height: 120px;" src="Subs/3menu.png" onmouseover="this.src='Subs/3menuH.png'"
+          onmouseout="this.src='Subs/3menu.png'" alt="" />
+      </a>
+      <a style="text-decoration: none;" href="Portfolio.html">
+        <img style="height: 120px;" src="Subs/4menu.png" onmouseover="this.src='Subs/4menuH.png'"
+          onmouseout="this.src='Subs/4menu.png'" alt="" />
+      </a>
+      <a style="text-decoration: none;" href="Manual.html">
+        <img style="height: 120px;" src="Subs/officals.png" onmouseover="this.src='Subs/officalsH.png'"
+          onmouseout="this.src='Subs/officals.png'" alt="" />
+      </a>
+      <a style="text-decoration: none;" href="Bookmarkies.html">
+        <img style="height: 120px;" src="Subs/5menu.png" onmouseover="this.src='Subs/5menuH.png'"
+          onmouseout="this.src='Subs/5menu.png'" alt="" />
+      </a>
+    </div>
+    <table align="center" cellspacing="5">
+      <tr>
+        <th style="background-color: white; border: 5px #000000 solid; border-radius: 10px;" min-height="1000px"
+          width="900px">
+          <div>
+            <!--  -->
+
+          </div>
+  </div>
+
+  <!-- menu -->
+
+
+
+  <!-- content -->
+
+  <center>
+      <!-- Main content -->
+                        
+      <div>
+        <br>
+
+        <h1 style="color: #605555;">Personages<i class="fa-solid fa-star"></i></h1>
+        <h4 style="color: #494545;"> <img src="pixels/skullightergold.png" alt=""> The Entire cast that resides in the Deathenize universe</h4>
+        <h4 style="color: #494545;"> <img src="pixels/skullightergold.png" alt=""> Use the GameBoy arrows to switch between cattagories <br> click on the personage icon to see more about the characters profile</h4>
+        
+        <!-- copy -->
+        <div
+        style=" height: 50px; width: 300px; display: flex; justify-content: space-evenly; align-items: center;padding-bottom: 50px; margin-top: 20px;">
+     
+        <button class="button" onclick="prevSlide()">
+            <img src="pixels/pointerleft.png" alt="">
+
+        </button>
+        <button class="button" onclick="nextSlide()">
+          <img src="pixels/pointerright.png" alt="">
+
+      </button>
+    </div>
+        <div class="Book4" style="display: flex;  ">
+
+          <div class="page1">
+
+              
+              
+              <div class="Book4">
+
+                  <div class="pages-container">
+                      <!-- page con start -->
+                      <div class="page">
+
+                          <span style=" position: relative; top: 5px; left: -10px; margin-bottom: 5px;">
+                              <br> SECTION 1
+                              <hr style="width: 200px;">                                                    <br> Characters Ilustrated: 0/50
+                              <br> <i class="fa-solid fa-genderless"></i> No defined gender = Non binary, agender or genderfluid
+                              <br> <i class="fa-solid fa-mars"></i> Male 
+                              <br> <i class="fa-solid fa-venus"></i> Female
+
+                          
+                          </span>
+
+
+
+                          <div>
+
+                          </div>
+
+
+                          <div class="icons-container">
+
+
+                            <!-- Ch-1 -->
+                            <div class="tooltip-container">
+                                <a href="1-ch.html"> <img id="NoChar" src="icon/pechi.png" alt=""> </a>
+                                <div class="tooltip-text">Pechi</div>
+                            </div>
+                            <!-- Ch-2 -->
+
+                            <div class="tooltip-container">
+                                <a href="2-ch.html"> <img id="NoChar" src="icon/Liz.png" alt=""> </a>
+                                <div class="tooltip-text">Liz</div>
+                            </div>
+                            <!-- Ch-3 -->
+
+                            <div class="tooltip-container">
+                                <a href="3-ch.html"> <img id="NoChar" src="icons/cleora.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Cleora</div>
+                            </div>
+                            <!-- Ch-4 -->
+
+                            <div class="tooltip-container">
+                                <a href="4-ch.html"> <img id="NoChar" src="icon/diphonix.png" alt=""> </a>
+                                <div class="tooltip-text">Diph</div>
+                            </div>
+                            <!-- Ch-5 -->
+
+                            <div class="tooltip-container">
+                                <a href="5-ch.html"> <img id="NoChar" src="icon/Paula.png" alt=""> </a>
+                                <div class="tooltip-text">Paula</div>
+                            </div>
+                            <!-- Ch-6 -->
+
+                            <div class="tooltip-container">
+                                <a href="6-ch.html"> <img id="NoChar" src="icon/leo.png" alt=""> </a>
+                                <div class="tooltip-text">Leo</div>
+                            </div>
+                            <!-- Ch-7 -->
+
+                            <div class="tooltip-container">
+                                <a href="7-ch.html"> <img id="NoChar" src="icon/veterenilumberjack.png" alt="">
+                                </a>
+                                <div class="tooltip-text">LaumberJack</div>
+                            </div>
+                            <!-- Ch-8 -->
+
+                            <div class="tooltip-container">
+                                <a href="8-ch.html"> <img id="NoChar" src="icon/Muertoz.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Muertoz</div>
+                            </div>
+                            <!-- Ch-9 -->
+
+                            <div class="tooltip-container">
+                                <a href="9-ch.html"> <img id="NoChar" src="icon/Diaz.png" alt=""> </a>
+                                <div class="tooltip-text">Diaz</div>
+                            </div>
+                            <!-- Ch-10 -->
+
+                            <div class="tooltip-container">
+                                <a href="10-ch.html"> <img id="NoChar" src="icons/fish.png" alt=""> </a>
+                                <div class="tooltip-text">Fish</div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                        <div class="icons-container">
+
+
+
+                            <!-- Ch-11 -->
+
+                            <div class="tooltip-container">
+                                <a href="11-ch.html"> <img id="NoChar" src="icons/boroque.png" alt=""> </a>
+                                <div class="tooltip-text">Roque</div>
+                            </div>
+                            <!-- Ch-12 -->
+
+                            <div class="tooltip-container">
+                                <a href="12-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Aiko</div>
+                            </div>
+                            <!-- Ch-13 -->
+
+                            <div class="tooltip-container">
+                                <a href="13-ch.html"> <img id="NoChar" src="icon/rune.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Rune</div>
+                            </div>
+                            <!-- Ch-14 -->
+
+                            <div class="tooltip-container">
+                                <a href="14-ch.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Delosa</div>
+                            </div>
+
+                            <!-- Ch-15 -->
+
+                            <div class="tooltip-container">
+                                <a href="15-ch.html"> <img id="NoChar" src="icon/ViperPRT.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Viper</div>
+                            </div>
+                            <!-- Ch-16 -->
+
+                            <div class="tooltip-container">
+                                <a href="16-ch.html"> <img id="NoChar" src="icon/ShirangPRT.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Shirang</div>
+                            </div>
+                            <!-- Ch-17 -->
+
+                            <div class="tooltip-container">
+                                <a href="17-ch.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Seshuri</div>
+                            </div>
+                            <!-- Ch-18 -->
+
+                            <div class="tooltip-container">
+                                <a href="18-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Tech</div>
+                            </div>
+                            <!-- Ch-19-->
+
+                            <div class="tooltip-container">
+                                <a href="19-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Teppei</div>
+                            </div>
+                            <!-- Ch-20 -->
+
+                            <div class="tooltip-container">
+                                <a href="20-ch.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Phasapphia</div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        
+
+                        <div class="icons-container">
+                            <!-- 21 -->
+
+                            <div class="tooltip-container">
+                                <a href="21-ch.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                </a>
+                                <div class="tooltip-text">caramelo</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="22-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Nouri</div>
+                            </div>
+                            <!-- Ch-23 -->
+
+                            <div class="tooltip-container">
+                                <a href="23-ch.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Alcatraz</div>
+                            </div>
+                            <!-- Ch-24 -->
+
+                            <div class="tooltip-container">
+                                <a href="24-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Zal</div>
+                            </div>
+                            <!-- Ch-25 -->
+
+
+                            <div class="tooltip-container">
+                                <a href="25-ch.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Eendje</div>
+                            </div>
+                            <!-- Ch-26 -->
+
+                            <div class="tooltip-container">
+                                <a href="26-ch.html"> <img id="NoChar" src="icons/MuusjePRT.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Muuretje</div>
+                            </div>
+                            <!-- Ch-27 -->
+
+                            <div class="tooltip-container">
+                                <a href="27-ch.html"> <img id="NoChar" src="icon/francis.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Francisco</div>
+                            </div>
+                            <!-- Ch-28 -->
+
+                            <div class="tooltip-container">
+                                <a href="28-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">May</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="29-ch.html"> <img id="NoChar" src="icons/minetir.jpg" alt=""> </a>
+                                <div class="tooltip-text">Minetir</div>
+                            </div>
+                            
+                            <div class="tooltip-container">
+                                <a href="30-ch.html"> <img id="NoChar" src="icons/livee.png" alt=""> </a>
+                                <div class="tooltip-text">Livee</div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+                        <div class="icons-container">
+
+
+                            <div class="tooltip-container">
+                                <a href="31-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Vincent</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="32-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Ber</div>
+                            </div>
+
+
+                            <div class="tooltip-container">
+                                <a href="33-ch.html"> <img id="NoChar" src="icons/ararchnid.png" alt=""> </a>
+                                <div class="tooltip-text">Arachnid</div>
+                            </div>
+                            <!-- Ch-46 -->
+
+                            <div class="tooltip-container">
+                                <a href="34-ch.html"> <img id="NoChar" src="icons/DachiPRT.png" alt=""> </a>
+                                <div class="tooltip-text">Dachi</div>
+                            </div>
+                            <!-- Ch-47 -->
+
+                            <div class="tooltip-container">
+                                <a href="35-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Aurora</div>
+                            </div>
+                            <!-- Ch-48 -->
+
+                            <div class="tooltip-container">
+                                <a href="36-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Vinrad</div>
+                            </div>
+                            <!-- Ch-49 -->
+
+
+                            <div class="tooltip-container">
+                                <a href="37-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Ortevius Latavan</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="38-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Louis</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="39-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Mei</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="40-ch.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">Nenemo</div>
+                            </div>
+
+
+                        </div>
+                        <div class="icons-container">
+                            <!-- 21 -->
+
+                            <div class="tooltip-container">
+                                <a href="41-ch.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Lora</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">El Mimi</div>
+                            </div>
+                            <!-- Ch-23 -->
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Alcatraz</div>
+                            </div>
+                            <!-- Ch-24 -->
+
+                            <div class="tooltip-container">
+                                <a href="44-ch.html"> <img id="NoChar" src="icon/Chini.png" alt=""> </a>
+                                <div class="tooltip-text">Chini</div>
+                            </div>
+                            <!-- Ch-25 -->
+
+
+                            <div class="tooltip-container">
+                                <a href="45-ch.html"> <img id="NoChar" src="icon/spes.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Spes</div>
+                            </div>
+                            <!-- Ch-26 -->
+
+                            <div class="tooltip-container">
+                                <a href="46-ch.html"> <img id="NoChar" src="icon/honorus.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Honorus</div>
+                            </div>
+                            <!-- Ch-27 -->
+
+                            <div class="tooltip-container">
+                                <a href="47-ch.html"> <img id="NoChar" src="icon/Faust.png" alt="">
+                                </a>
+                                <div class="tooltip-text">Faust</div>
+                            </div>
+                            <!-- Ch-28 -->
+
+                            <div class="tooltip-container">
+                                <a href="48-ch.html"> <img id="NoChar" src="icons/Chiki.png" alt=""> </a>
+                                <div class="tooltip-text">Chiki</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="49-ch.html"> <img id="NoChar" src="icons/evildra.png" alt=""> </a>
+                                <div class="tooltip-text">Evildra</div>
+                            </div>
+                            
+                            <div class="tooltip-container">
+                                <a href="50-ch.html"> <img id="NoChar" src="icons/Pray.png" alt=""> </a>
+                                <div class="tooltip-text">PRAY</div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <!-- end -->
+                    <!-- page con start -->
+                   
+
+                   
+                    <div class="page">
+                        <span style=" position: relative; top: 5px; left: -10px; margin-bottom: 5px;">
+                            <br> SECTION 2
+                            <hr style="width: 200px;">                                                    <br> Characters Ilustrated: 0/50
+                            <br> <i class="fa-solid fa-genderless"></i> No defined gender = Non binary, agender or genderfluid
+                            <br> <i class="fa-solid fa-mars"></i> Male 
+                            <br> <i class="fa-solid fa-venus"></i> Female
+
+                        
+                        </span>
+
+
+                        <div class="icons-container">
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="52-ch.html"> <img id="NoChar" src="icons/aisha.png" alt=""> </a>
+                                <div class="tooltip-text">Aisha</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="icons-container">
+
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="icons-container">
+                         
+                         
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                        </div>
+                  
+                        <div class="icons-container">
+
+
+                         
+                           
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+
+                        </div>
+                        <div class="icons-container">
+                           
+                         
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+                            <div class="tooltip-container">
+                                <a href="Filenotfound.html"> <img id="NoChar" src="icons/xxx.png" alt=""> </a>
+                                <div class="tooltip-text">???</div>
+                            </div>
+
+
+                        </div>
+                       
+
+                    </div>
+                    <!-- end -->
+
+                    <!-- page con start -->
+                    <div class="page">
+
+                        <span
+                            style=" position: relative; top: 200px; left: 3px; margin-bottom: 10px; font-size: 20px;">
+                            <i class="fa-solid fa-star"></i>100 characters! This is the end. See you Next
+                            year <i class="fa-solid fa-star"></i></span>
+
+                        <div>
+                            
+
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <!-- end -->
+                    
+</div>
+
+
+
+
+
+
+
+
+                      </div>
+
+
+
+
+          
+
+
+
+
+
+      </div>
+
+
+        
+        
+ 
+
+
+<br>
+
+        
+    </div>
+
+  
+  </tr>
+
+  </table>
+
+  <div style="background: black;">
+    <div style="color: white;padding: 10px;"> <i class="fa-solid fa-skull"></i>  Copyright © 2024 Skullmare. All rights reserved. <i class="fa-solid fa-book-skull"></i> </div>
+  
+  </div>
+  <script src="character.js"></script>
+    <script>
+        let currentPage = 0;
+        const slideDistance = 882; // Adjust this value to control the slide distance
+
+        function nextSlide() {
+            currentPage++;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentPage--;
+            updateSlide();
+        }
+
+        function updateSlide() {
+            const slideWidth = document.querySelector('.Book4').offsetWidth;
+            const transformValue = -currentPage * slideDistance + 'px';
+            document.querySelector('.pages-container').style.transform = 'translateX(' + transformValue + ')';
+        }
+
+        // Adding click event listeners to the Book4 div
+        document.querySelector('.Book4 .next').addEventListener('click', nextSlide);
+        document.querySelector('.Book4 .prev').addEventListener('click', prevSlide);
+    </script>
+
+</body>
+
+</html>
