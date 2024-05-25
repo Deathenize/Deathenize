@@ -1,401 +1,600 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
+
+<title>DEATHENIZE</title>
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>SKULLMARE</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="icon" type="image/x-icon" href="faviconnie.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="icon" type="image/x-icon" href="faviconnie.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Coiny&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-style-type" content="text/css">
+ <meta http-equiv="content-script-type" content="text/javascript">
+  <link rel="icon" href="symbols/cakered.png" type="image/x-icon">  <link href="https://toyhou.se/css/site_bootstrap.css?cachebust=1702717457" rel="stylesheet">
+  <meta name="layout-dark" content="0" rel="stylesheet">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet">
 
-    <style>
-        .selectedLabel {
-            font-weight: bold;
-        }
+  <style>
+    body {
+      overflow-x: hidden;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    /* CSS for smaller screens (mobile devices) */
+    @media only screen and (max-width: 768px) {
+      .TTT {
+        width: 150%;
+        /* Make the table full width */
+        overflow-x: auto;
+        /* Enable horizontal scrolling for content that overflows */
+      }
+
+      .TTT table {
+        width: 120%;
+        /* Increase table width to allow content to overflow */
+      }
+
+      .TTT table td {
+        white-space: nowrap;
+        /* Prevent text from wrapping */
+      }
+    }
+
+    .custom-box {
+      width: 300px;
+      min-height: 120px;
+      border: 1px solid #3c4345;
+      border-radius: 10px;
+      overflow: hidden;
+      /* Hides overflow from child elements */
+    }
+
+    .top-part {
+      background-color: #568a97;
+      padding: 1px;
+      color: white;
+    }
+
+    .bottom-part {
+      background-color: white;
+      padding: 20px;
+      color: black;
+    }
+    .selectedLabel {
+font-weight: bold;
+}
 
 
 
-        .buttonize a {
-            border-radius: 10px;
+.buttonize a {
+border-radius: 10px;
 
-            padding: 20px;
-            background-color: rgb(0, 121, 121);
-            color: white;
-            text-decoration: none;
-            border: 1px white solid;
-            border-top: 3px white solid;
-        }
+padding: 20px;
+background-color: rgb(0, 0, 0);
+color: white;
+text-decoration: none;
+border: 1px white solid;
+border-top: 3px white solid;
+}
 
-        .buttonize a:hover {
-            background-color: rgb(159, 219, 216);
-            color: rgb(0, 0, 0);
+.buttonize a:hover {
+background-color: rgb(116, 119, 119);
+color: rgb(0, 0, 0);
 
-        }
+}
 
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.575);
-            justify-content: center;
-            align-items: center;
-        }
 
-        .modal-content {
-            background: #ffffff;
-            color: rgb(0, 0, 0);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 4px 4px rgba(0, 0, 0, 0.425);
-            max-width: 500px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .closebuttonandshit {
-            top: 10px;
-            cursor: pointer;
-            right: 10px;
+.bg-faded {
             background: white;
-            padding: 10px;
-            color: black;
-            border-radius: 20px;
-            border: 1px black solid;
-
-
         }
 
-        .modal-content button {
-            background-color: #b60000;
-            box-shadow: 2px 1px 1px black;
+        .nav-link.active {
+            background-color: black !important;
             color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            font-weight: bold;
+            border-radius: 20px !important;
         }
 
-        .modal-content button:hover {
-            background-color: #009b93;
-
-        }
-
-        th .comment {
-            display: none;
-        }
-
-        th:hover .thought {
-            display: none;
-        }
-
-        th:hover .comment {
-            display: inline;
-        }
-
-        .menu th {
-            padding: 10px
-        }
-
-        .carousel-container {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .carousel-slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .carousel-slide {
-            flex: 0 0 100%;
-        }
-
-        .iwillrot img:hover {
-            transform: rotate(-20deg);
-
+        .nav-link {
+            color: black;
+            font-weight: bold;
 
         }
 
-        .Socialpop img:hover {
-            transform: rotate(-20deg);
 
 
-        }
-
-        .Socialpop a img:hover {
-            animation: rotate-pulse 1s ease-in-out infinite;
-        }
-
-        @keyframes rotate-pulse {
-            0% {
-                transform: rotate(0deg) scale(1);
-                opacity: 1;
-            }
-
-            50% {
-                transform: rotate(180deg) scale(1.2);
-                opacity: 0.5;
-            }
-
-            100% {
-                transform: rotate(360deg) scale(1);
-                opacity: 1;
-            }
-        }
 
 
-        .carousel-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 50px;
-            height: 50px;
-            background-color: rgb(189, 211, 212);
-            border: none;
-            border-radius: 20px;
-            font-size: 24px;
-            color: #333;
-            cursor: pointer;
-        }
+.menu th {
+padding: 10px
+}
 
-        .carousel-button-prev {
-            left: 50px;
-        }
+.carousel-container {
+position: relative;
+overflow: hidden;
+}
 
-        .carousel-button-next {
-            right: 50px;
-        }
+.carousel-slides {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
 
-        .carousel-slide img {
-            height: 400px;
-            margin-top: 10px;
-            border-radius: 20px;
-            border: 2px solid white;
+.carousel-slide {
+flex: 0 0 100%;
+}
 
-        }
+.iwillrot img:hover {
+transform: rotate(-20deg);
 
-        .flag img {
-            height: 20px;
-        }
-    </style>
 
+}
+
+.Socialpop img:hover {
+transform: rotate(-20deg);
+
+
+}
+
+.Socialpop a img:hover {
+animation: rotate-pulse 1s ease-in-out infinite;
+}
+
+@keyframes rotate-pulse {
+0% {
+transform: rotate(0deg) scale(1);
+opacity: 1;
+}
+
+50% {
+transform: rotate(180deg) scale(1.2);
+opacity: 0.5;
+}
+
+100% {
+transform: rotate(360deg) scale(1);
+opacity: 1;
+}
+}
+
+
+.carousel-button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 50px;
+height: 50px;
+background-color: rgb(189, 211, 212);
+border:none;
+border-radius: 20px;
+font-size: 24px;
+color: #333;
+cursor: pointer;
+}
+
+.carousel-button-prev {
+left: 50px;
+}
+
+.carousel-button-next {
+right: 50px;
+}
+
+.carousel-slide img {
+height: 400px;
+margin-top: 10px;
+border-radius: 20px;
+border: 2px solid white;
+
+}
+.flag img{
+height: 20px;
+}
+  </style>
 </head>
 
-<body class="HomeBG">
+<body style="background: url(Subs/background2.png); background-size: 150px; background-attachment: fixed; margin: 0">
+  
+  <table width="100%" height="155" cellspacing="0" cellpadding="0" border="0" background="Subs/checking.png"
+    align="center">
+    <tbody>
+      <tr>
+        <td style="text-align: center;">
+          <table width="1060" height="125" cellspacing="0" cellpadding="0" border="0" align="center">
+            <tbody>
+              <tr>
+                  <tr>
+                 <td>
+                  <a href="index.html">
+                  <img hspace="" style="" src="Subs/titleskull.png" height="140px" onmouseover="this.src='Subs/Titlehover.png' "
+                    onmouseout="this.src='Subs/titleskull.png'" alt="" />
+                </a>
+              </td>
+              <td>
+               <img style="border-radius: 50px;" height="100px" src="foruse/bannerli.png" alt="">
+               <img src="foruse/starfly.png"  height="40" />
+               <img src="foruse/starfly.png"  height="40" />
+               <img src="foruse/starfly.png"  height="40" />
 
-    <div id="Modalius" class="modal">
-        <div class="modal-content">
-            <div style="padding-bottom: 10px;"> close <br>
-                <i class="fa-solid fa-down-long"></i>
-            </div>
+              </td>
+              <!-- title -->
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
 
-            <span class="closebuttonandshit" onclick="closeModal()">&times;</span>
-            <!-- write biography here -->
-            <h3>Biography <img src="pixels/skullbook.png" alt=""></h3>
-            <p>
-                <br>
-                <img src="pixels/star.png" alt="">
-            </p>
+  </table>
 
-            <li>Species: Mythical</li>
-            <li>Location: The Land</li>
-            <pre>
-Relationships
-
-<span style="display: flex; justify-content: center; justify-content: space-evenly;">
-<a href="13-ch.html"><img style="height: 50px; border: 1px black solid;" src="icons/pucho.png" alt=""></a>
-
-</span>
-</pre>
-
-
-            <div style="margin-top: 20px;">
-
-            </div>
-
-
-            <br>
-        </div>
-
-    </div>
-    <div style="margin-top: 20px;">
+  <div style="text-align: center;">
+                  <!-- title -->
 
     </div>
+    <table align="center" cellspacing="5">
+      <tr>
+        <th style="background-color: white; border: 5px #002e79 solid; border-radius: 10px;" min-height="1000px"
+          width="900px">
+          <div>
+            <!--  -->
+
+          </div>
+  </div>
+
+  <!-- menu -->
+
+  <!-- banner -->
 
 
-    <br>
+  <!-- content -->
+
+  <center>
+   
+
+    <div>
+      <br>
+
+
+
+      <div style="text-align: right; position: relative; left: -10px;">
+        <img src="pixels/moonright.png" alt="">
+        <img src="pixels/moonleft.png" alt="">
+        <img src="pixels/moonleft2.png" alt="">
+        <img src="pixels/moonrighthalf.png" alt="">
+        <img src="pixels/moonright.png" alt="">
+        <img src="pixels/cloudmoon.png" alt="">
+
+      </div>
+      <img src="foruse/bar.png" alt="">
+
     </div>
-    </div>
-    <center>
-
-
-        <div
-            style="background: rgb(0, 97, 104); border-to-left-radius; padding: 10px; border-radius: 50px; width: 800px;padding-top: 70px;margin-top: -70px;">
-            <a href="TheDeathfeed.html">
-                <div id="top" class="Header"></div>
-            </a>
-        </div>
-        <div
-            style="background: white; width: 800px; margin-top: 40px; border: 5px solid rgb(0, 48, 63);border-radius: 20px; ">
-
-            <div style=" margin-top: 40px;margin-bottom: 20px; margin-top: -10px;" class="buttonize">
-                <a href="About.html">About DTNE</a>
-                <a href="Personages.html">Character Listing</a>
-                <a href="Storylog.html">StoryLlog</a>
-                <a href="Portfolio.html">ArtPortfolio</a>
-                <a href="Bookmarkies.html">Bookmarkies</a>
-            </div>
-
-            <br>
-            <pre>
-<a style="text-decoration: none;" href="Filenotfound.html"> <img src="pixels/arrowgoldleft.png" alt=""></a> <a style="text-decoration: none;" href="filenotfound.html"> <img src="pixels/arrowgoldright.png" alt=""></a>
-</pre>
-            <p style="color: rgb(0, 70, 102); font-weight: bold;"><img src="pixels/diamondblue.png" alt="">Numeral code:
-                0071</p>
-
-
-            <hr style="width: 300px;">
-            <!-- portrait -->
-            <div style=" display:flex; justify-content: center;">
-                <div> <img style="height: 590px; margin-left:20px;" src="ports/veterenilumberjack.png" alt="">
-                </div>
-
-                <div class="informationBox">
-                    <h4 style="color: white;">
-
-                        <a href="#" onclick="TOS()"> <img src="pixels/3dskul.png" alt=""></a>
-
-                        <br> Click the skull!
-                    </h4>
-                    <hr>
-                    <p style="background: white; width: 300px; border-radius: 20px;">
-                        <span style="font-weight: bolder;">
-                            <img src="pixels/skullstraightside.png" alt=""> Naam: </span> Vetereni/ veterenilumberjack
-                    </p>
-
-
-                    <p style="background: white; width: 300px; border-radius: 20px;">
-                        <span style="font-weight: bolder;">
-                            <img src="pixels/skullstraightside.png" alt=""> Realm: </span> <img
-                            src="pixels/realmmythical.png" alt="">
-                    </p>
-                    <p style="background: white; width: 300px; border-radius: 20px;">
-                        <span style="font-weight: bolder;">
-                            <img src="pixels/skullstraightside.png" alt=""> Geslacht: X</span>
-                    </p>
-
-                    <p style="background: white; width: 300px; border-radius: 20px;">
-                        <span style="font-weight: bolder;">
-                            <img src="pixels/skullstraightside.png" alt=""> sexualiteit: </span>
-                        <img src="pixels/pansexual.png" alt="">
-                    </p>
-                    <p style="background: white; width: 300px; border-radius: 20px;"><span style="font-weight: bolder;">
-                </div>
-            </div>
-
-
-            <table id="tophere" style=" border-spacing:20px; ">
-                <tr>
-                    <th style=";border-radius: 10px; background: white; height: 100%; width: 650px">
+    
+    <div class="sircle" style="display: flex; justify-content:space-evenly;">
+      <a href="About.html"><img src="menu/about.png" alt="">
+        <br> ABOUT  </a>
+        
+      <a href="Minilore.html"><img src="menu/Minilore.png" alt="">
+        <br> MINILORE  </a>
+        
+      <a href="personages.html"><img src="menu/personages.png" alt="">
+        <br> PERSONAGES  </a>
+        
+      <a href="Portfolio.html"><img src="menu/portfolio.png" alt="">
+        <br> PORTFOLIO  </a>
+        
+        
+      <a href="Filenotfound.html"><img src="menu/officials.png" alt="">
+        <br> OFFICIALS  </a>
+        
+      <a href="Bookmarkies.html"><img src="menu/markies.png" alt="">
+        <br> LINKS  </a>
+        
+     </div>
+  
+    <div style="background: white; width: 800px; margin-top: 40px; border: 5px solid rgb(0, 0, 0);border-radius: 20px; ">
 
 
 
+        <h3
+                                  style="text-align: left;margin: 0 40px; background: #acc9d0; border-radius:20px 20px; color: rgb(18, 5, 91); margin-top: 10px;">
+                                  <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> Nummeral: 0071
+                                </h3>
+      
+      
+      
+      <div style=" border: 2px solid black; width: 700px; border-radius: 5px; margin-top: 50px;" class="">
+      
+          <div  style="max-width:750px;" align="center">
+      
+              <div  style="max-width:650px;border-radius:0px;">
+                      <ul class="nav nav-pills nav-justified" id="twittertablist">
+                          <li class="nav-item"><a class="nav-link active" data-toggle="pill" style="border-radius:0px;"
+                                  href="#tweets-tab">Profile <img src="pixels/cloud.png" alt=""> </a></li>
+      
+                          <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px;"
+                                  href="#replies-tab">Biography <img src="pixels/moonhalf.png" alt=""></a></li>
+      
+                         
+      
+                      </ul>
+                  </div>
+                  <div style="border: 1px solid black;"></div>
+               
+                  <div class="tab-content bg-faded" style="overflow:auto;height:800px;" align="left">
+                      <!-- Portrait section -->
+      
+                      <br>
+                      <div class="tab-pane fade show active" id="tweets-tab">
+                          <center>
+                              <h5
+                                  style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration-line:underline;">
+                              </h5>
+      
+                          </center>
+                          <center>
+                              <img style="height: 750px;" src="Characterportraits/Illustration.png" alt="">
+      
+                          </center>
+      
+      
+                      </div>
+                      <!-- End of portrait section -->
+      
+                      <!-- biography section -->
+                      <div class="tab-pane fade" id="replies-tab" style="overflow-x: hidden;">
+                          <h4><i class="fa-solid fa-star"></i> Biography</h4>
+                          <img src="Subs/dotterin.png" alt="">
+                          <center>
+                              <div>
+                                  <i class="fa-solid fa-crow"></i>
+                                  <h5 style="background: black; color: white; border-radius: 10px; width: 400px;">Information</h5>
+                                  <br>
+                                <div>
+                                    An always naive, clueless, aloof, and wondrous princess lives near the Seven Kingdoms. She is, after all, the youngest. She's not sure what the outside world is like, but she has a lingering urge to know.
+                                </div>
+                              </div>
+                              <br>
+                              <img src="pixels/diamondyellow.png" alt="">
+                              <br>
+                              <br>
+                              <i class="fa-solid fa-table"></i>
+      <h5 style="background: black; color: white; border-radius: 10px; width: 400px; padding: 3px;">
+      <div> General physical Information</div></h5>
+      
+                              <div
+                                  style=" height: 300px; width: 300px; margin-top: 10px; border-radius: 20px; border: 1px solid black;">
+                                  <div class="infopil" style="width: 200px;">
+                                      <br>
+                                      
+      
+                                      <p style="color: black; background: white; font-weight: bolder;"> <i
+                                              class="fa-solid fa-star"></i>Naam: Nana</p>
+      
+                                      <p style="color: black;   background: white; font-weight: bolder;">
+                                          <i class="fa-solid fa-font-awesome"></i> Gender: <i
+                                              class="fa-solid fa-venus"></i>
+                                      </p>
+      
+                                      <p style="color: black;   background: white; font-weight: bolder;">
+                                          <i class="fa-solid fa-font-awesome"></i> sexualiteit: 
+                                          <img
+                                              style="height: 15px; border-radius: 20px;" src="Flags/Bisexual.png"
+                                              alt="">
+                                       
+                                      </p>
+      
+                                      <p style="color: black; font-weight: bolder;  background: white;"><i
+                                              class="fa-regular fa-star"></i> VoornaamW: She/He</p>
+      
+                                      <p style="color: black; background: white; font-weight: bolder;"><i
+                                              class="fa-solid fa-earth-asia"></i> Species Type: Cryptid</p>
+      
+                                      <p style="color: black; background: white; font-weight: bolder;"><i
+                                              class="fa-solid fa-earth-asia"></i> Realm: <img
+                                              src="pixels/realmmycryptid.png" alt=""></p>
+      
+                                      <p style="color: black;  background: white;font-weight: bolder;">
+                                          <i class="fa-regular fa-calendar"></i> Birthdate: Eclipse Times
+                                      </p>
+      
+                                  </div>
+      
+                              </div>
+                              <br>
+                              <br>
+                              <i class="fa-solid fa-link"></i>
+                              <h5 style="background: black; color: white; border-radius: 10px; width: 400px; padding: 3px;">Relationships</h5>
+                              <a href="2-ch.html"><img style="height: 50px; border: 1px black solid;" src="icons/xxx.png" alt=""></a>
+                              <a href="2-ch.html"><img style="height: 50px; border: 1px black solid;" src="icons/xxx.png" alt=""></a>
+      
+      
+                          </center>
+      
+                      </div>
+                      
+      
+                      <!-- End of biography section -->
+      
+                      <!-- Extra beta section -->
+                    
+                   
+                   
+                  </div>
+              </div>
+          </div>
+          <img src="pixels/date.png" alt="">
+      <div style="  color: rgba(124, 128, 128, 0.589); border-radius: 100px;">
+      
+      <i class="fa-solid fa-skull"></i>
+      Copyright © 2024 Skullmare. All rights reserved.
+      
+      </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </div>
+                           
 
+<br>
+<br>
 
+  </center>
 
+ 
+  </th>
+ 
+  </tr>
 
+  </table>
 
+ 
 
-                    </th>
-
-
-            </table>
-
-            <img src="pixels/date.png" alt="">
-            <div style="  color: rgba(0, 71, 77, 0.589); border-radius: 100px;">
-
-                <i class="fa-solid fa-skull"></i>
-                Copyright © 2024 Skullmare. All rights reserved.
-
-            </div>
-
-        </div>
-    </center>
-    <script>
-        var modal = document.getElementById('Modalius');
-
-        function TOS() {
-            showModal();
-        }
-
-        function showModal() {
-            modal.style.display = 'flex';
-        }
-
-        function closeModal() {
-            modal.style.display = 'none';
-        }
-
-        function accept() {
-            window.location.href = 'blog2.html';
-        }
+  
+<script>
+    var modal = document.getElementById('Modalius');
+    
+    function TOS() {
+    showModal();
+    }
+    
+    function showModal() {
+    modal.style.display = 'flex';
+    }
+    
+    function closeModal() {
+    modal.style.display = 'none';
+    }
+    
+    function accept() {
+    window.location.href = 'blog2.html';
+    }
     </script>
-
+    
     <script>
-
-
-
-
-
-
-
-
-
-        const slides = document.querySelector(".carousel-slides");
-        const slideWidth = slides.children[0].getBoundingClientRect().width;
-        let currentIndex = 0;
-
-        function slideTo(index) {
-            slides.style.transform = `translateX(-${index * slideWidth}px)`;
-            currentIndex = index;
-        }
-
-        function slidePrev() {
-            if (currentIndex > 0) {
-                slideTo(currentIndex - 1);
-            } else {
-                slideTo(slides.children.length - 1);
-            }
-        }
-
-        function slideNext() {
-            if (currentIndex < slides.children.length - 1) {
-                slideTo(currentIndex + 1);
-            } else {
-                slideTo(0);
-            }
-        }
-        const prevButton = document.querySelector(".carousel-button-prev");
-        const nextButton = document.querySelector(".carousel-button-next");
-        prevButton.addEventListener("click", slidePrev);
-        nextButton.addEventListener("click", slideNext);
-        slideTo(0);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    const slides = document.querySelector(".carousel-slides");
+    const slideWidth = slides.children[0].getBoundingClientRect().width;
+    let currentIndex = 0;
+    
+    function slideTo(index) {
+    slides.style.transform = `translateX(-${index * slideWidth}px)`;
+    currentIndex = index;
+    }
+    
+    function slidePrev() {
+    if (currentIndex > 0) {
+    slideTo(currentIndex - 1);
+    } else {
+    slideTo(slides.children.length - 1);
+    }
+    }
+    
+    function slideNext() {
+    if (currentIndex < slides.children.length - 1) {
+    slideTo(currentIndex + 1);
+    } else {
+    slideTo(0);
+    }
+    }
+    const prevButton = document.querySelector(".carousel-button-prev");
+    const nextButton = document.querySelector(".carousel-button-next");
+    prevButton.addEventListener("click", slidePrev);
+    nextButton.addEventListener("click", slideNext);
+    slideTo(0);
     </script>
-
+    <script>
+        // Get all tab links
+        var tabLinks = document.querySelectorAll('.nav-link');
+    
+        // Add click event listener to each tab link
+        tabLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                // Prevent default link behavior
+                event.preventDefault();
+    
+                // Remove 'active' class from all tab links
+                tabLinks.forEach(function (link) {
+                    link.classList.remove('active');
+                });
+    
+                // Add 'active' class to the clicked tab link
+                this.classList.add('active');
+    
+                // Get the ID of the corresponding tab pane
+                var target = this.getAttribute('href');
+    
+                // Hide all tab panes
+                document.querySelectorAll('.tab-pane').forEach(function (pane) {
+                    pane.classList.remove('show', 'active');
+                });
+    
+                // Show the corresponding tab pane
+                document.querySelector(target).classList.add('show', 'active');
+            });
+        });
+    </script>
+    
+    <script>
+        var modalCount = 0;
+        $('.modal').on('show.bs.modal', function (e) {
+            modalCount++;
+        });
+        $('.modal').on('hidden.bs.modal', function (e) {
+            modalCount--;
+            if (modalCount > 0) {
+                e.stopPropagation();
+                $('body').addClass('modal-open');
+            }
+        });
+    </script>
+    <script>
+        stickyFooter.init();
+    </script>
 </body>
-<!-- font-family: 'Holtwood One SC', serif;
-font-family: 'Nanum Brush Script', cursive;
-font-family: 'Playfair Display SC', serif;-->
 
 </html>
