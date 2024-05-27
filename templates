@@ -54,3 +54,12 @@ comic
   <br>
   <br>
   <!-- end -->
+  character
+<!-- headerend -->
+<div>
+  <p style="text-align: center;">
+    <a href="1-ch.html"> <img src="Characterportraits/Pechi.png" alt="" hspace="5" height="252" /></a>
+    
+    <h4 style="opacity: 50%;"> Portaits: Pechi,vincent, Mei <img height="30" src="foruse/stars.png" alt=""></h4>
+</div>
+<!-- end -->
