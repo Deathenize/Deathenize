@@ -1,281 +1,229 @@
 <!DOCTYPE html>
-
-
-
-<title>DEATHENIZE</title>
-
 <html>
-
 <head>
-  <link rel="stylesheet" href="Style.css">
-  <link rel="icon" type="image/x-icon" href="faviconnie.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
-    rel="stylesheet">
   <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Coiny&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&display=swap"
-    rel="stylesheet">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="content-style-type" content="text/css">
- <meta http-equiv="content-script-type" content="text/javascript">
-  <link rel="icon" href="symbols/cakered.png" type="image/x-icon">
+ 
+  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="imagetoolbar" content="no">
+  <!-- <link rel="SHORTCUT ICON" href="/web/20151029041150im_/http://funamusea.com/favicon.ico"> vavicon -->
+  
+  <title>DEATHENIZE</title>
+  
+    
+
   <style>
     body {
       overflow-x: hidden;
-
     }
-
-    /* CSS for smaller screens (mobile devices) */
-    @media only screen and (max-width: 768px) {
-      .TTT {
-        width: 150%;
-        /* Make the table full width */
-        overflow-x: auto;
-        /* Enable horizontal scrolling for content that overflows */
-      }
-
-      .TTT table {
-        width: 120%;
-        /* Increase table width to allow content to overflow */
-      }
-
-      .TTT table td {
-        white-space: nowrap;
-        /* Prevent text from wrapping */
-      }
-    }
-
-    .custom-box {
-      width: 300px;
-      min-height: 120px;
-      border: 1px solid #3c4345;
-      border-radius: 10px;
-      overflow: hidden;
-      /* Hides overflow from child elements */
-    }
-
-    .top-part {
-      background-color: #568a97;
-      padding: 1px;
-      color: white;
-    }
-
-    .bottom-part {
-      background-color: white;
-      padding: 20px;
-      color: black;
-    }
-    .sircle a{
-      text-decoration: none;
-      color: #568a97;
-    }
-    .sircle a img:hover{
-      filter: sepia(100%);
-      border-radius: 20px;
-    }
-  </style>
-</head>
-
-<body style="background: url(Subs/background2.png); background-size: 150px; background-attachment: fixed; margin: 0">
+    .mainC{
+    border-radius: 10px;
+    width: 700px;
+    margin-bottom: 10px;
+}
   
-  <table width="100%" height="155" cellspacing="0" cellpadding="0" border="0" background="Subs/checking.png"
-    align="center">
-    <tbody>
-      <tr>
-        <td style="text-align: center;">
-          <table width="1060" height="125" cellspacing="0" cellpadding="0" border="0" align="center">
-            <tbody>
-              <tr>
-               <tr>
-                 <td>
-                  <a href="index.html">
-                  <img hspace="" style="" src="Subs/titleskull.png" height="140px" onmouseover="this.src='Subs/Titlehover.png' "
-                    onmouseout="this.src='Subs/titleskull.png'" alt="" />
-                </a>
-              </td>
-              <td>
-               <img style="border-radius: 50px;" height="100px" src="foruse/bannerli.png" alt="">
-               <img src="foruse/starfly.png"  height="40" />
-               <img src="foruse/starfly.png"  height="40" />
-               <img src="foruse/starfly.png"  height="40" />
+    
+.custom-box {
+    width: 300px;
+    min-height: 100px;
+    border: 1px solid #3c4345;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Hides overflow from child elements */
+  }
+    .top-part {
+    background-color: #568a97;
+    padding: 1px;
+    color: white;
+  }
 
-              </td>
-              <!-- title -->
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </tbody>
+  .bottom-part {
+    background-color: white;
+    padding: 20px;
+    color: black;
+  }
+  .rhover{
+    color: red;
+  }
+  .rhover:hover{
+   background: yellow;
+  }
 
-  </table>
-            <!--  -->
+    .fixed-size-div {
+      width: 900px;
+      height: auto; /* Adjust as needed */
+      background-color: white;
+      border: 5px #002e79 solid;
+      margin: auto;
+      border-radius: 10px;
+    }
 
-    <table align="center" cellspacing="5">
-      <tr>
-        <th style="background-color: white; border: 5px #002e79 solid; border-radius: 10px;" min-height="1000px"
-          width="900px">
-          <div>
-            <!--  -->
+        
+header{
+background:url(foruse/Headertitles/headerbackgrounds/back01.png) repeat-x 50% 0;
+border-radius:
+}
+#header-inner{
+color:#fff;
+padding:10px 20px;
+min-height:70
+}
+    </style>
+</head>
+<!-- header image link  -->
+<body style="background: url(foruse/backgrounds/background2.png); background-size: 300px; background-attachment: fixed; margin: 0">
+   <div style="background: white; min-height: 500px; width: 920px; border: rgb(0, 1, 74) solid 5px; margin: auto;">
+<div>
+    <header>
+      <center>
+        <div style="margin: auto; " id="header-inner">
+            <!-- サイト名 -->
+           <h1 style="visibility: hidden;">DEATNEIZE</h1>
+                  
+                </div>
 
-          </div>
-  </div>
 
-  <!-- menu -->
-
-  <!-- banner -->
-
-
-  <!-- content -->
-
-  <center>
    
-
-    <div>
-      <br>
-
-  <!-- menu -->
-  <div class="sircle" style="display: flex; justify-content:space-evenly;">
-    <a href="About.html"><img src="menu/about.png" alt="">
-      <br> ABOUT  </a>
-      
-    <a href="Minilore.html"><img src="menu/Minilore.png" alt="">
-      <br> MINILORE  </a>
-      
-    <a href="personages.html"><img src="menu/personages.png" alt="">
-      <br> PERSONAGES  </a>
-      
-    <a href="Portfolio.html"><img src="menu/portfolio.png" alt="">
-      <br> PORTFOLIO  </a>
-      
-      
-    <a href="Filenotfound.html"><img src="menu/officials.png" alt="">
-      <br> OFFICIALS  </a>
-      
-    <a href="Bookmarkies.html"><img src="menu/markies.png" alt="">
-      <br> LINKS  </a>
-      
+      </center>
+            </header><!-- ▲ヘッダ▲ -->
+   <div style="display: flex; justify-content: center;">
+    <a sty href="index.html">  <img style="margin-right: 20px;" src="foruse/Headertitles/header.png" height="90px" onmouseover="this.src='foruse/Headertitles/header2.png' "
+      onmouseout="this.src='foruse/Headertitles/header.png'" alt="" /></a>         
+            
    </div>
-  <hr>
-      <h1 style="color: #605555;">About <i class="fa-solid fa-star"></i></h1>
+
+</div>
+
+<div style="display: flex; justify-content: center; margin-top: 10px;">
+
+   
+<a href="About.html"> <img style="margin-left: px;" src="foruse/menu/about.png" height="50" onmouseover="this.src='foruse/menu/about2.png' "
+onmouseout="this.src='foruse/menu/about.png'" alt="" /></a>
+   
+<a href="Characters.html"> <img style="margin-left: px;" src="foruse/menu/characters.png" height="50" onmouseover="this.src='foruse/menu/characters2.png' "
+onmouseout="this.src='foruse/menu/characters.png'" alt="" /></a>
 
 
-      <div style="text-align: right; position: relative; left: -10px;">
-        <img src="pixels/moonright.png" alt="">
-        <img src="pixels/moonleft.png" alt="">
-        <img src="pixels/moonleft2.png" alt="">
-        <img src="pixels/moonrighthalf.png" alt="">
-        <img src="pixels/moonright.png" alt="">
-        <img src="pixels/cloudmoon.png" alt="">
+<a href="Minilore.html"><img style="margin-left:;" src="foruse/menu/lore.png" height="50" onmouseover="this.src='foruse/menu/lore2.png' "
+  onmouseout="this.src='foruse/menu/lore.png'" alt="" /></a>
 
-      </div>
-      <img src="foruse/bar.png" alt="">
+<a href="Bookmarkies.html">  <img  style="margin-left: " src="foruse/menu/links.png" height="50" onmouseover="this.src='foruse/menu/links2.png' "
+onmouseout="this.src='foruse/menu/links.png'" alt="" /></a>
+</div>
+<br>
+<br>
 
-    </div>
+<h3 style="text-align: left;margin: 0 40px; background: #397e8f; border-radius:20px; color: rgb(255, 255, 255);">
+  <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> <img height="30px"
+    src="foruse/decoration/smalldecos/starfly.png" alt=""> About Me<img src="pixels/cloudmoon.png" alt="">
+</h3> 
+
+<div style="display: flex; justify-content: center;">
+
+  <div class="mainC">
+    
+    <center>
+      <br>
+     
+      <!--  -->
+      <div style="display: flex;">
+       <img height="300" src="foruse/smallpictures/star.png" alt=""> 
 
 
-    <h3
-      style="text-align: left;margin: 0 40px; background: #acc9d0; border-radius:0px 20px; color: rgb(18, 5, 91);">
-      <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> Information
-    </h3>
-    <div style="display: flex; justify-content: space-evenly">
-      <div>
-        <div style="float: left; margin-top: 30px; border: 3px solid #acc9d0;" class="custom-box">
+       <div >
+        <div style="float: left; margin-top: 30px; border: 3px solid #acc9d0; margin: ;" class="custom-box">
           <div class="top-part">
-            <p>About This Website <img src="pixels/smoothieblue.png" alt=""></p>
+            <strong>      <p>About This Website <img src="pixels/smoothieblue.png" alt=""></p></strong>
+      
           </div>
           <div class="bottom-part">
             <span style=" font-size: 14px; color: #346774;"><i class="fa-solid fa-star"></i>
-              Alias</span> :
+             <strong> Alias</strong></span> :
             <span style=" font-size: 14px; color: #928080;"> <em>Mal Hier/ GhosticFace</em></span>
             <br>
-            <span style=" font-size: 14px; color: #346774;"><i class="fa-solid fa-star"></i> Media
-              Label</span> :
+            <span style=" font-size: 14px; color: #346774;"><i class="fa-solid fa-star"></i> 
+              <strong>
+              Host media
+            </strong>
+          </span> :
             <span style=" font-size: 14px; color: #928080;"> <em>DEATHENIZE!</em></span>
             <br>
             <span style=" font-size: 14px; color: #346774;"><i class="fa-solid fa-star"></i>
-              Founded</span> :
+             <strong> Founded</strong></span> :
             <span style=" font-size: 14px; color: #928080;"> 1st Of January 2024</span>
             <hr>
             <span style=" font-size: 14px; color: #928080;"><i class="fa-solid fa-heart"></i> INTP/
-            <img src="pixels/enby.png" alt="">    <img src="pixels/pansexual.png" alt="">/ 19th Of June </span>
-
+            <img src="pixels/enby.png" alt="">    <img src="pixels/pansexual.png" alt=""> <img src="pixels/aego.png" alt="">/ 19th Of June </span>
+      
             <span style=" font-size: 14px; color: #928080;"><i class="fa-solid fa-heart"></i> Languages/Ethnicity:
             <img src="pixels/sierreleonian.png" alt="">    <img src="pixels/netherlands.png" alt=""> </span>
           </div>
+          
         </div>
-
+        
       </div>
-      <div><img style="height: 250px;" src="foruse/star.png" alt=""> </div>
+      
+      </div>
+    
+    </center>
+    <img style="margin-left: -80px;"  src="foruse/decoration/Barlines/Dotted.png" alt="">
 
+    <p style="text-align: center;">
+      Hiya, the name's Mallie, this website is a personal storage for my stories, art and original characters.
+      Things that i like to draw are skulls, monsters and things related to the macabre, but im also big fan of fancy stuff like angels and jewelry
+   <br>
+   <img src="pixels/loveletterred.png" alt="">
 
-    </div>
-    <h3
-    style="text-align: left;margin: 0 40px; background: #acc9d0; border-radius:0px 20px; color: rgb(18, 5, 91); margin-top: 15px;">
-    <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> About Me
-  </h3>
+   <br>
+   <br>
+   <strong style="color: #346774;">
+   🌟 Contact info => Deathenize@Gmail.com
+  </strong>
   <br>
+    </p>
+    <em>
+      <strong>
+        <p>Prohibited</p>
+      </strong>
 
-    <span style=" font-size: 20px; color: #928080;"> Hi!</span>
-    <br>
-  
-    <span style=" font-size: 17px; color: #928080; width: 400px;"> My name is mallie. Im an artist that loves anything <br> creative relating to the horror and the macabre. But i also love pastels and cute things
-    <br> i use this website to host my art, comics and games. A mutlimedia project to say!</span>
-    <br>
-    <br>
+     
+      Due to incidents with reproduction of AI reposting of artwork is prohibited, allowance of profilepictures and banners are allowe
+    
+      <p style="color: red; text-align: center;">
+        <strong>WARNING:</strong> Website content is intended for user that are 16+ CW/TW(Netherlands rating: <strong> <a class="rhover" href="https://www.kijkwijzer.nl/">KIJKWIJZER</a></strong>): Subjects like mental illness, drug use, violence swearwords and sugestive expressions are made!
+        be Warned!! please read more about the websites guidelines here => <strong> <a class="rhover" href="DTNERules.html">DTNE RULESET</a></strong>
+   
+       </p>
+    </em>
 
-    <span style=" font-size: 10px; color: #b80000; width: 400px; margin-top: ;"> Deathenize is 15+ containing content such as violence, sucidal ideation horror imagery and depictions of abuse <br> content will be handled properly, viewers discretion adviced</span>
-    <span  style=" font-size: 13px; color: #b80000; width: 400px; margin-top: ;"> Please read the website guidelines  <a href="Ruleset.html"> here</a></span>
-
-  <br> <br>  <img src="pixels/arrowgolddown.png" alt="">
-    <div style="padding-top: 10px;">
-      <span style=" font-size: 17px; color: #346774"> <i class="fa-regular fa-star"></i> Tools that i use</span>
+    <p style="text-align: center;">
+      <strong > Tools Used </strong>
+      <hr>
       <br>
-      <span style=" font-size: 17px; color: #928080;">- Ibis paint X</span>
+    
+    </p>
+    <p style="text-align: center;">
+      <strong>• PaintToolSai 2</strong>
       <br>
-      <span style=" font-size: 17px; color: #928080;">- Visual Studio code</span>
+      <strong>• Ibispaint X </strong>
       <br>
-      <span style=" font-size: 17px; color: #928080;">- RPG MAKER MV</span>
-      <br>
-      <span style=" font-size: 17px; color: #928080;">- Sai 2</span>
-      <br>
-      <span style=" font-size: 17px; color: #928080;">- Huion tablet RTE(100)</span>
+      • VS code and Mv RPG maker
 
+    </p>
+<center>
+  <img height="200" src="foruse/smallpictures/Wish.png" alt="">
 
-
-
-    </div>
-
-    <div>
-
-
-    </div>
-    <img height="400px" src="foruse/yaya.png" alt="">
-    <br>
-
-  </center>
-
- 
-  </th>
-  <td valign="top">
-    <iframe scrolling="no" style="min-height: 1200px; width: 179px;" src="dated.html" frameborder="0"></iframe>
-  </td>
-  </tr>
-
-  </table>
-  
-<div style="background: rgb(15, 51, 105);">
-    <div style="color: white;padding: 10px; text-align: center;"> <i class="fa-solid fa-skull"></i>  Copyright © 2024 Skullmare. All rights reserved. <i class="fa-solid fa-book-skull"></i> </div>
-  
+</center>
+<p style="text-align: center; background-color: #002e79; color: white; border-radius: 10px; padding: 10px;"> 
+  © 2023-2024 DEATHENIZE. All rights reserved. <img height="30" src="foruse/decoration/smalldecos/starfly.png" alt=""> </p>
   </div>
 
-</body>
 
+ </div>
+
+   </div> 
+
+
+</body>
 </html>

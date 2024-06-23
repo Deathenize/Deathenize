@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-
-
-
-<title>DEATHENIZE</title>
-
 <html>
 
 <head>
+  <title>DEATHENIZE</title>
   <link rel="stylesheet" href="Style.css">
   <link rel="icon" type="image/x-icon" href="faviconnie.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,545 +21,455 @@
     rel="stylesheet">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="content-style-type" content="text/css">
- <meta http-equiv="content-script-type" content="text/javascript">
-  <link rel="icon" href="symbols/cakered.png" type="image/x-icon">  <link href="https://toyhou.se/css/site_bootstrap.css?cachebust=1702717457" rel="stylesheet">
+  <meta http-equiv="content-script-type" content="text/javascript">
+  <link rel="icon" href="symbols/cakered.png" type="image/x-icon">
+  <link href="https://toyhou.se/css/site_bootstrap.css?cachebust=1702717457" rel="stylesheet">
   <meta name="layout-dark" content="0" rel="stylesheet">
   <link
-      href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
-      rel="stylesheet">
-
-  <style>
-    body {
-      overflow-x: hidden;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet">
 
 
-    }
+  <head>
 
-    /* CSS for smaller screens (mobile devices) */
-    @media only screen and (max-width: 768px) {
-      .TTT {
-        width: 150%;
-        /* Make the table full width */
-        overflow-x: auto;
-        /* Enable horizontal scrolling for content that overflows */
+    <style>
+      body {
+        overflow-x: hidden;
       }
 
-      .TTT table {
-        width: 120%;
-        /* Increase table width to allow content to overflow */
+      .mainC {
+        border-radius: 10px;
+        width: 700px;
+        margin-bottom: 10px;
       }
 
-      .TTT table td {
-        white-space: nowrap;
-        /* Prevent text from wrapping */
+
+      .custom-box {
+        width: 300px;
+        min-height: 100px;
+        border: 1px solid #3c4345;
+        border-radius: 10px;
+        overflow: hidden;
+        /* Hides overflow from child elements */
       }
-    }
 
-    .custom-box {
-      width: 300px;
-      min-height: 120px;
-      border: 1px solid #3c4345;
-      border-radius: 10px;
-      overflow: hidden;
-      /* Hides overflow from child elements */
-    }
+      .top-part {
+        background-color: #568a97;
+        padding: 1px;
+        color: white;
+      }
 
-    .top-part {
-      background-color: #568a97;
-      padding: 1px;
-      color: white;
-    }
+      .bottom-part {
+        background-color: white;
+        padding: 20px;
+        color: black;
+      }
 
-    .bottom-part {
-      background-color: white;
-      padding: 20px;
-      color: black;
-    }
-    .selectedLabel {
-font-weight: bold;
-}
+      .rhover {
+        color: red;
+      }
+
+      .rhover:hover {
+        background: yellow;
+      }
 
 
+      .bg-faded {
+        background: white;
+      }
 
-.buttonize a {
-border-radius: 10px;
+      .nav-link.active {
+        background-color: #002e79 !important;
+        color: white;
+        font-weight: bold;
+        border-radius: 20px !important;
+      }
 
-padding: 20px;
-background-color: rgb(0, 0, 0);
-color: white;
-text-decoration: none;
-border: 1px white solid;
-border-top: 3px white solid;
-}
+      .nav-link {
+        color: #002e79;
+        font-weight: bold;
 
-.buttonize a:hover {
-background-color: rgb(116, 119, 119);
-color: rgb(0, 0, 0);
+      }
 
-}
-
-
-.bg-faded {
-            background: white;
-        }
-
-        .nav-link.active {
-            background-color: black !important;
-            color: white;
-            font-weight: bold;
-            border-radius: 20px !important;
-        }
-
-        .nav-link {
-            color: black;
-            font-weight: bold;
-
-        }
+      .fixed-size-div {
+        width: 900px;
+        height: auto;
+        /* Adjust as needed */
+        background-color: white;
+        border: 5px #002e79 solid;
+        margin: auto;
+        border-radius: 10px;
+      }
 
 
 
+      header {
+        background: url(foruse/Headertitles/headerbackgrounds/back01.png) repeat-x 50% 0;
+        border-radius:
+      }
 
+      #header-inner {
+        color: #fff;
+        padding: 10px 20px;
+        min-height: 70
+      }
+    </style>
+  </head>
+  <!-- header image link  -->
 
-.menu th {
-padding: 10px
-}
-
-.carousel-container {
-position: relative;
-overflow: hidden;
-}
-
-.carousel-slides {
-display: flex;
-transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide {
-flex: 0 0 100%;
-}
-
-.iwillrot img:hover {
-transform: rotate(-20deg);
-
-
-}
-
-.Socialpop img:hover {
-transform: rotate(-20deg);
-
-
-}
-
-.Socialpop a img:hover {
-animation: rotate-pulse 1s ease-in-out infinite;
-}
-
-@keyframes rotate-pulse {
-0% {
-transform: rotate(0deg) scale(1);
-opacity: 1;
-}
-
-50% {
-transform: rotate(180deg) scale(1.2);
-opacity: 0.5;
-}
-
-100% {
-transform: rotate(360deg) scale(1);
-opacity: 1;
-}
-}
-
-
-.carousel-button {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-width: 50px;
-height: 50px;
-background-color: rgb(189, 211, 212);
-border:none;
-border-radius: 20px;
-font-size: 24px;
-color: #333;
-cursor: pointer;
-}
-
-.carousel-button-prev {
-left: 50px;
-}
-
-.carousel-button-next {
-right: 50px;
-}
-
-.carousel-slide img {
-height: 400px;
-margin-top: 10px;
-border-radius: 20px;
-border: 2px solid white;
-
-}
-.flag img{
-height: 20px;
-}
-  </style>
-</head>
-
-<body style="background: url(Subs/background2.png); background-size: 150px; background-attachment: fixed; margin: 0">
-  
-  <table width="100%" height="155" cellspacing="0" cellpadding="0" border="0" background="Subs/checking.png"
-    align="center">
-    <tbody>
-      <tr>
-        <td style="text-align: center;">
-          <table width="1060" height="125" cellspacing="0" cellpadding="0" border="0" align="center">
-            <tbody>
-              <tr>
-                  <tr>
-                 <td>
-                  <a href="index.html">
-                  <img hspace="" style="" src="Subs/titleskull.png" height="140px" onmouseover="this.src='Subs/Titlehover.png' "
-                    onmouseout="this.src='Subs/titleskull.png'" alt="" />
-                </a>
-              </td>
-              <td>
-               <img style="border-radius: 50px;" height="100px" src="foruse/bannerli.png" alt="">
-               <img src="foruse/starfly.png"  height="40" />
-               <img src="foruse/starfly.png"  height="40" />
-               <img src="foruse/starfly.png"  height="40" />
-
-              </td>
-              <!-- title -->
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-
-  </table>
-
-  <div style="text-align: center;">
-                  <!-- title -->
-
-    </div>
-    <table align="center" cellspacing="5">
-      <tr>
-        <th style="background-color: white; border: 5px #002e79 solid; border-radius: 10px;" min-height="1000px"
-          width="900px">
-          <div>
-            <!--  -->
+<body
+  style="background: url(foruse/backgrounds/background2.png); background-size: 300px; background-attachment: fixed; margin: 0">
+  <div style="background: white; min-height: 500px; width: 920px; border: rgb(0, 1, 74) solid 5px; margin: auto;">
+    <div>
+      <header>
+        <center>
+          <div style="margin: auto; " id="header-inner">
+            <!-- サイト名 -->
+            <h1 style="visibility: hidden;">DEATNEIZE</h1>
+            <h1 style="visibility: hidden;">DEATNEIZE</h1>
 
           </div>
-  </div>
-
-  <!-- menu -->
-
-  <!-- banner -->
-
-
-  <!-- content -->
-
-  <center>
-   
-
-    <div>
-      <br>
 
 
 
-      <div style="text-align: right; position: relative; left: -10px;">
-        <img src="pixels/moonright.png" alt="">
-        <img src="pixels/moonleft.png" alt="">
-        <img src="pixels/moonleft2.png" alt="">
-        <img src="pixels/moonrighthalf.png" alt="">
-        <img src="pixels/moonright.png" alt="">
-        <img src="pixels/cloudmoon.png" alt="">
+        </center>
+      </header><!-- ▲ヘッダ▲ -->
+      <div style="display: flex; justify-content: center;">
+        <a sty href="index.html"> <img style="margin-right: 20px;" src="foruse/Headertitles/header.png" height="90px"
+            onmouseover="this.src='foruse/Headertitles/header2.png' "
+            onmouseout="this.src='foruse/Headertitles/header.png'" alt="" /></a>
 
       </div>
-      <img src="foruse/bar.png" alt="">
 
     </div>
-    
 
-    <div
-                style="background: white; width: 800px; margin-top: 40px; border: 5px solid rgb(0, 0, 0);border-radius: 20px; ">
-
-                <h3
-                    style="text-align: left;margin: 0 40px; background: #acc9d0; border-radius:20px 20px; color: rgb(18, 5, 91); margin-top: 10px;">
-                    <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> Nummeral: 0008
-                </h3>
+    <div style="display: flex; justify-content: center; margin-top: 10px;">
 
 
+      <a href="About.html"> <img style="margin-left: px;" src="foruse/menu/about.png" height="50"
+          onmouseover="this.src='foruse/menu/about2.png' " onmouseout="this.src='foruse/menu/about.png'" alt="" /></a>
 
-                <div style=" border: 2px solid black; width: 700px; border-radius: 5px; margin-top: 50px;" class="">
-
-                    <div style="max-width:750px;" align="center">
-
-                        <div style="max-width:650px;border-radius:0px;">
-                            <ul class="nav nav-pills nav-justified" id="twittertablist">
-                                <li class="nav-item"><a class="nav-link active" data-toggle="pill"
-                                        style="border-radius:0px;" href="#tweets-tab">Profile <img
-                                            src="pixels/cloud.png" alt=""> </a></li>
-
-                                <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px;"
-                                        href="#replies-tab">Biography <img src="pixels/moonhalf.png" alt=""></a></li>
+      <a href="Characters.html"> <img style="margin-left: px;" src="foruse/menu/characters.png" height="50"
+          onmouseover="this.src='foruse/menu/characters2.png' " onmouseout="this.src='foruse/menu/characters.png'"
+          alt="" /></a>
 
 
+      <a href="Minilore.html"><img style="margin-left:;" src="foruse/menu/lore.png" height="50"
+          onmouseover="this.src='foruse/menu/lore2.png' " onmouseout="this.src='foruse/menu/lore.png'" alt="" /></a>
 
-                            </ul>
-                        </div>
-                        <div style="border: 1px solid black;"></div>
+      <a href="Bookmarkies.html"> <img style="margin-left: " src="foruse/menu/links.png" height="50"
+          onmouseover="this.src='foruse/menu/links2.png' " onmouseout="this.src='foruse/menu/links.png'" alt="" /></a>
+    </div>
+    <br>
+    <br>
+    <!-- nummeral -->
+    <h3 style="text-align: left;margin: 0 40px; background: #002e79; border-radius:20px; color: rgb(255, 255, 255);">
+      <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> <img height="30px"
+        src="foruse/decoration/smalldecos/starfly.png" alt=""> Nummeral: 0008 <img src="pixels/cloudmoon.png" alt="">
+    </h3>
 
-                        <div class="tab-content bg-faded" style="overflow:auto;height:800px;" align="left">
-                            <!-- Portrait section -->
-
-                            <br>
-                            <div class="tab-pane fade show active" id="tweets-tab">
-                                <center>
-                                    <h5
-                                        style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration-line:underline;">
-                                    </h5>
-
-                                </center>
-                                <center>
-                                    <img style="height: 750px;" src="Characterportraits/Muertoz.png" alt="">
-
-                                </center>
-
-
-                            </div>
-                            <!-- End of portrait section -->
-
-                            <!-- biography section -->
-                            <div class="tab-pane fade" id="replies-tab" style="overflow-x: hidden;">
-                                <h4><i class="fa-solid fa-star"></i> Biography</h4>
-                                <img src="Subs/dotterin.png" alt="">
-                                <center>
-                                    <div>
-                                        <i class="fa-solid fa-crow"></i>
-                                        <h5 style="background: black; color: white; border-radius: 10px; width: 400px;">
-                                            Information</h5>
-                                        <br>
-                                        <div>
-                                            A cold, evil horse rider from the south, one of the best guard reapers even
-                                            though he found himself in the lowest rank of conventions. Why he was placed
-                                            there is still up for question. He is often annoyed by his fellow colleagues, as
-                                            they can be often very unserious; they refer to him, of course, as a huge party
-                                            stink pooper. Other than that, he's a very protective, father-like figure and
-                                            seems to enjoy the company.
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <img src="pixels/diamondyellow.png" alt="">
-                                    <br>
-                                    <br>
-                                    <i class="fa-solid fa-table"></i>
-                                    <h5
-                                        style="background: black; color: white; border-radius: 10px; width: 400px; padding: 3px;">
-                                        <div> General physical Information</div>
-                                    </h5>
-    
-                                    <div
-                                        style=" height: 300px; width: 300px; margin-top: 10px; border-radius: 20px; border: 1px solid black;">
-                                        <div class="infopil" style="width: 200px;">
-                                            <br>
-    
-    
-                                            <p style="color: black; background: white; font-weight: bolder;"> <i
-                                                    class="fa-solid fa-star"></i>Naam: Muertoz</p>
-    
-                                            <p style="color: black;   background: white; font-weight: bolder;">
-                                                <i class="fa-solid fa-font-awesome"></i> Gender: <i
-                                                    class="fa-solid fa-mars"></i>
-                                            </p>
-    
-                                            <p style="color: black;   background: white; font-weight: bolder;">
-                                                <i class="fa-solid fa-font-awesome"></i> sexualiteit:
-                                                 <img
-                                                    style="height: 15px; border-radius: 20px;" src="Flags/Bisexual.png"
-                                                    alt="">
-                                                 <img
-                                                    style="height: 15px; border-radius: 20px;" src="Flags/demiB.png"
-                                                    alt="">
-                                            </p>
-    
-                                            <p style="color: black; font-weight: bolder;  background: white;"><i
-                                                    class="fa-regular fa-star"></i> VoornaamW: He/Him</p>
-    
-                                            <p style="color: black; background: white; font-weight: bolder;"><i
-                                                    class="fa-solid fa-earth-asia"></i> Species Type: Elderitch </p>
-    
-                                            <p style="color: black; background: white; font-weight: bolder;"><i
-                                                    class="fa-solid fa-earth-asia"></i> Realm: <img
-                                                    src="pixels/realmelderitch.png" alt=""></p>
-    
-                                            <p style="color: black;  background: white;font-weight: bolder;">
-                                                <i class="fa-regular fa-calendar"></i> Birthdate: 1 November
-                                            </p>
-    
-                                        </div>
-    
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <i class="fa-solid fa-link"></i>
-                                    <h5
-                                        style="background: black; color: white; border-radius: 10px; width: 400px; padding: 3px;">
-                                        Relationships</h5>
-                                    <a href="9-ch.html"><img style="height: 50px; border: 1px black solid;"
-                                            src="icon/Diaz.png" alt=""></a>
-                                 
-
-                                </center>
-
-                            </div>
+    <center>
+      <div class="nexts"
+        style="display: flex; background: #002e79; width: 400px; justify-content:space-between; padding: 10px; border-radius: 10px;margin-top: 15px;">
+        <a style=" color: #fff;" href="7-ch.html"> ← Previous</a>
+        <a style=" color: #fff;" href="Characters.html">Character List <i class="fa-solid fa-star"></i></a>
+        <a style=" color: #fff;" href="9-ch.html">Next →</a>
+      </div>
+    </center>
+    <center>
+      <div style="background: white; width: 800px; margin-top: 40px; ;border-radius: 20px; ">
 
 
-                            <!-- End of biography section -->
+        <!--  -->
 
-                            <!-- Extra beta section -->
+        <div style=" border: 4px solid #002e79; width: 700px; border-radius: 5px; margin-top: 50px;" class="">
+
+          <div style="max-width:750px;" align="center">
+
+            <div style="max-width:650px;border-radius:0px;">
+              <ul class="nav nav-pills nav-justified" id="twittertablist">
+                <li class="nav-item"><a class="nav-link active" data-toggle="pill" style="border-radius:0px;"
+                    href="#tweets-tab">Profile <img src="pixels/cloud.png" alt=""> </a></li>
+
+                <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px;"
+                    href="#replies-tab">Biography <img src="pixels/moonhalf.png" alt=""></a></li>
 
 
 
-                        </div>
+              </ul>
+            </div>
+            <div style="border: 1px dashed #002e79;"></div>
+
+            <div class="tab-content bg-faded" style="overflow:auto;height:970px;" align="left">
+              <!-- Portrait section -->
+
+              <br>
+              <div class="tab-pane fade show active" id="tweets-tab">
+                <center>
+                  <h5
+                    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration-line:underline;">
+                  </h5>
+
+                </center>
+                <center>
+                  <img style="height: 850px;" src="Characterportraits/Yuusei.png" alt="">
+
+                </center>
+
+
+              </div>
+              <!-- End of portrait section -->
+
+              <!-- biography section -->
+              <div class="tab-pane fade" id="replies-tab" style="overflow-x: hidden;">
+                <strong>
+                  <h4 style="margin-left: 20px; color: #002e79;"><i class="fa-solid fa-star"></i>
+                    Biography</h4>
+                </strong>
+                <img src="Subs/dotterin.png" alt="">
+                <center>
+                  <div>
+                    <i style="color: #002e79;" class="fa-solid fa-crow"></i>
+                    <h5 style="background: #002e79; color: white; border-radius: 10px; width: 400px;">
+                      Information</h5>
+                    <br>
+                    <div style="width: 550px; border-radius: 10px; border: darkblue 5px double; padding: 10px;">
+                      <p style="line-height: 25px; color: #002e79;">
+                        A very friendly, polite, and carefree girl serves an important role as one of the royal guards
+                        in the Lunarian Kingdom, ranked as the 3rd. She has a love for cute things, such as bunnies and
+                        plushies. Yuusei is not very fond of wearing her armor. Though she is friendly, there are rumors
+                        circulating that she can be scary or frightening. Additionally, she has a one-sided crush on
+                        Bibi, who is currently unaware of her feelings for them.
+
+
+                      </p>
+
                     </div>
-                </div>
-                <img src="pixels/date.png" alt="">
-                <div style="  color: rgba(124, 128, 128, 0.589); border-radius: 100px;">
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <i style="color: #002e79;" class="fa-solid fa-table"></i>
+                  <h5 style="background: #002e79; color: white; border-radius: 10px; width: 400px; padding: 3px;">
+                    <div> General physical Information</div>
+                  </h5>
 
-                    <i class="fa-solid fa-skull"></i>
-                    Copyright © 2024 Skullmare. All rights reserved.
+                  <div
+                    style=" height: 350px; width: 300px; margin-top: 10px; border-radius: 20px; border: 3px solid #002e79;">
+                    <div class="infopil" style="width: 200px;">
+                      <br>
 
-                </div>
-                </div>
-                          
 
-<br>
-<br>
+                      <p style="color: #002e79; background: white; font-weight: bolder;"> <i
+                          class="fa-solid fa-star"></i>Naam: Yuusei</p>
 
-  </center>
+                      <p style="color: #002e79;   background: white; font-weight: bolder;">
+                        <i class="fa-regular fa-user"></i> Gender: <i class="fa-solid fa-venus"></i>
+                      </p>
 
- 
-  </th>
- 
-  </tr>
+                      <p style="color: #002e79;   background: white; font-weight: bolder;">
+                        <i class="fa-solid fa-font-awesome"></i> sexualiteit:
+                        <img style="height: 15px; border-radius: 20px;" src="Flags/Transexual.png" alt="">
+                        <img style="height: 15px; border-radius: 20px;" src="Flags/lesbian.png" alt="">
+                      </p>
 
-  </table>
+                      <p style="color:#002e79; font-weight: bolder;  background: white;"><i
+                          class="fa-regular fa-star"></i> VoornaamW: She/Her</p>
 
- 
+                      <p style="color: #002e79; background: white; font-weight: bolder;">
+                        <i class="fa-solid fa-hand-sparkles"></i> Species Type: Lunarian
+                      </p>
 
-  
-<script>
+                      <p style="color: #002e79; background: white; font-weight: bolder; "><i
+                          class="fa-solid fa-earth-asia"></i> Realm:
+                        <img style="margin-bottom: 2px; margin-top: 2px;" src="pixels/worlds/Lunaria.png" alt="">
+
+                      </p>
+                      <p style="color: #002e79; background: white; font-weight: bolder; ">
+                        <i class="fa-solid fa-hand-holding-heart"></i> Symbolic Power: <br>
+                        <img src="pixels/symbolpower/blood.png" alt="">
+                        <img src="pixels/symbolpower/love.png" alt="">
+                        <img src="pixels/symbolpower/Dark.png" alt="">
+
+
+                      </p>
+
+                      <p style="color: #002e79;  background: white;font-weight: bolder;">
+                        <i class="fa-regular fa-calendar"></i> Birthdate: 19th January
+                      </p>
+
+                    </div>
+
+                  </div>
+                  <br>
+                  <br>
+                  <i style="color: #002e79;" class="fa-solid fa-link"></i>
+                  <h5 style="background: #002e79; color: white; border-radius: 10px; width: 400px; padding: 3px;">
+                    Relationships <img height="20" src="foruse/decoration/smalldecos/starfly.png" alt=""></h5>
+                  <div style="margin-bottom: 10px;">
+                    <a href="Filenotfound.html"><img
+                        style="height: 50px; border: 2px #002e79 solid; border-radius: 7px;box-shadow: #568a97 3px 3px; "
+                        src="icons/xxx.png" alt=""></a>
+
+
+
+                  </div>
+
+                </center>
+
+              </div>
+
+
+              <!-- End of biography section -->
+
+              <!-- Extra beta section -->
+
+
+
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <img src="pixels/date.png" alt="">
+        <div style="  color: rgba(124, 128, 128, 0.589); border-radius: 100px;">
+
+
+        </div>
+      </div>
+    </center>
+
+    <div style="display: flex; justify-content: center;">
+
+      <div class="mainC">
+
+
+      </div>
+    </div>
+
+    <center>
+
+    </center>
+    <p
+      style="text-align: center; background-color: #002e79; color: white; border-radius: 10px; padding: 10px; width: 700px; margin: auto; margin-bottom: 10px;">
+      © 2023-2024 DEATHENIZE. All rights reserved. <img height="30" src="foruse/decoration/smalldecos/starfly.png"
+        alt=""> </p>
+  </div>
+
+
+  </div>
+
+  </div>
+
+
+
+  <script>
     var modal = document.getElementById('Modalius');
-    
+
     function TOS() {
-    showModal();
+      showModal();
     }
-    
+
     function showModal() {
-    modal.style.display = 'flex';
+      modal.style.display = 'flex';
     }
-    
+
     function closeModal() {
-    modal.style.display = 'none';
+      modal.style.display = 'none';
     }
-    
+
     function accept() {
-    window.location.href = 'blog2.html';
+      window.location.href = 'blog2.html';
     }
-    </script>
-    
-    <script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  </script>
+
+  <script>
+
+
+
+
+
+
+
+
+
     const slides = document.querySelector(".carousel-slides");
     const slideWidth = slides.children[0].getBoundingClientRect().width;
     let currentIndex = 0;
-    
+
     function slideTo(index) {
-    slides.style.transform = `translateX(-${index * slideWidth}px)`;
-    currentIndex = index;
+      slides.style.transform = `translateX(-${index * slideWidth}px)`;
+      currentIndex = index;
     }
-    
+
     function slidePrev() {
-    if (currentIndex > 0) {
-    slideTo(currentIndex - 1);
-    } else {
-    slideTo(slides.children.length - 1);
+      if (currentIndex > 0) {
+        slideTo(currentIndex - 1);
+      } else {
+        slideTo(slides.children.length - 1);
+      }
     }
-    }
-    
+
     function slideNext() {
-    if (currentIndex < slides.children.length - 1) {
-    slideTo(currentIndex + 1);
-    } else {
-    slideTo(0);
-    }
+      if (currentIndex < slides.children.length - 1) {
+        slideTo(currentIndex + 1);
+      } else {
+        slideTo(0);
+      }
     }
     const prevButton = document.querySelector(".carousel-button-prev");
     const nextButton = document.querySelector(".carousel-button-next");
     prevButton.addEventListener("click", slidePrev);
     nextButton.addEventListener("click", slideNext);
     slideTo(0);
-    </script>
-    <script>
-        // Get all tab links
-        var tabLinks = document.querySelectorAll('.nav-link');
-    
-        // Add click event listener to each tab link
+  </script>
+  <script>
+    // Get all tab links
+    var tabLinks = document.querySelectorAll('.nav-link');
+
+    // Add click event listener to each tab link
+    tabLinks.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // Remove 'active' class from all tab links
         tabLinks.forEach(function (link) {
-            link.addEventListener('click', function (event) {
-                // Prevent default link behavior
-                event.preventDefault();
-    
-                // Remove 'active' class from all tab links
-                tabLinks.forEach(function (link) {
-                    link.classList.remove('active');
-                });
-    
-                // Add 'active' class to the clicked tab link
-                this.classList.add('active');
-    
-                // Get the ID of the corresponding tab pane
-                var target = this.getAttribute('href');
-    
-                // Hide all tab panes
-                document.querySelectorAll('.tab-pane').forEach(function (pane) {
-                    pane.classList.remove('show', 'active');
-                });
-    
-                // Show the corresponding tab pane
-                document.querySelector(target).classList.add('show', 'active');
-            });
+          link.classList.remove('active');
         });
-    </script>
-    
-    <script>
-        var modalCount = 0;
-        $('.modal').on('show.bs.modal', function (e) {
-            modalCount++;
+
+        // Add 'active' class to the clicked tab link
+        this.classList.add('active');
+
+        // Get the ID of the corresponding tab pane
+        var target = this.getAttribute('href');
+
+        // Hide all tab panes
+        document.querySelectorAll('.tab-pane').forEach(function (pane) {
+          pane.classList.remove('show', 'active');
         });
-        $('.modal').on('hidden.bs.modal', function (e) {
-            modalCount--;
-            if (modalCount > 0) {
-                e.stopPropagation();
-                $('body').addClass('modal-open');
-            }
-        });
-    </script>
-    <script>
-        stickyFooter.init();
-    </script>
+
+        // Show the corresponding tab pane
+        document.querySelector(target).classList.add('show', 'active');
+      });
+    });
+  </script>
+
+  <script>
+    var modalCount = 0;
+    $('.modal').on('show.bs.modal', function (e) {
+      modalCount++;
+    });
+    $('.modal').on('hidden.bs.modal', function (e) {
+      modalCount--;
+      if (modalCount > 0) {
+        e.stopPropagation();
+        $('body').addClass('modal-open');
+      }
+    });
+  </script>
+  <script>
+    stickyFooter.init();
+  </script>
 </body>
 
 </html>

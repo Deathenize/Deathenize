@@ -1,280 +1,175 @@
 <!DOCTYPE html>
-
-
-
-<title>DEATHENIZE</title>
-
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEATHENIZE</title>
   <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
-
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="content-style-type" content="text/css">
- <meta http-equiv="content-script-type" content="text/javascript">
-  <link rel="icon" href="symbols/cakered.png" type="image/x-icon">
+  
   <style>
-    .storage a{
-        text-decoration: none;
-        color: #568a97;
-
+    /* Ensuring the box-sizing is set to border-box */
+    * {
+      box-sizing: border-box;
     }
-    .tooltip-container {
-            position: relative;
-            display: inline-block;
-        }
-
-        .tooltip-container:hover .tooltip-text {
-            visibility: visible;
-            opacity: 1;
-        }
-
-        .tooltip-text {
-            visibility: hidden;
-            width: 200px;
-            background-color:#568a97;
-            color: #ffffff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 10px ;
-
-            /* Position the tooltip */
-            position: absolute;
-            z-index: 1;
-            bottom: 110%;
-            left: 50%;
-            margin-left: -60px;
-        }
+    
     body {
-      overflow-x: hidden;
-
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+      margin: 0;
+      padding: 20px; /* Adjust padding as needed */
+      background: url(foruse/backgrounds/background2.png);
+      background-size: 300px;
+      background-attachment: fixed;
     }
-
-    /* CSS for smaller screens (mobile devices) */
-    @media only screen and (max-width: 768px) {
-      .TTT {
-        width: 150%;
-        /* Make the table full width */
-        overflow-x: auto;
-        /* Enable horizontal scrolling for content that overflows */
-      }
-
-      .TTT table {
-        width: 120%;
-        /* Increase table width to allow content to overflow */
-      }
-
-      .TTT table td {
-        white-space: nowrap;
-        /* Prevent text from wrapping */
-      }
-    }
-
-    .custom-box {
-      width: 700px;
-      min-height: 120px;
-      border: 1px solid #3c4345;
+    
+    .mainC {
       border-radius: 10px;
-      overflow: hidden;
-      /* Hides overflow from child elements */
+      width: 700px;
+      margin-bottom: 10px;
     }
-
-    .top-part {
-      background-color: #568a97;
-      padding: 1px;
-      color: white;
-    }
-
-    .bottom-part {
+    
+    .fixed-size-div {
+      width: 900px;
+      height: auto; /* Adjust as needed */
       background-color: white;
-      padding: 20px;
-      color: black;
+      border: 5px #002e79 solid;
+      margin: auto;
+      border-radius: 10px;
     }
-    .sircle a{
-      text-decoration: none;
-      color: #568a97;
+
+    header {
+      background: url(foruse/Headertitles/headerbackgrounds/back01.png) repeat-x 50% 0;
+      border-radius: 10px;
     }
-    .sircle a img:hover{
-      filter: sepia(100%);
-      border-radius: 20px;
+
+    #header-inner {
+      color: #fff;
+      padding: 10px 20px;
+      min-height: 70px;
+    }
+
+    .rhover {
+      color: red;
+    }
+    
+    .rhover:hover {
+      background: yellow;
+    }
+
+    .koiar a {
+      color: #207b92;
+      padding-left: 10px;
+    }
+
+    .koiar a:hover {
+      color: #d7c520;
     }
   </style>
 </head>
-
-<body style="background: url(Subs/background2.png); background-size: 150px; background-attachment: fixed; margin: 0">
-  <table width="100%" height="155" cellspacing="0" cellpadding="0" border="0" background="Subs/checking.png"
-  align="center">
-  <tbody>
-    <tr>
-      <td style="text-align: center;">
-        <table width="1060" height="125" cellspacing="0" cellpadding="0" border="0" align="center">
-          <tbody>
-  <tr>
-                 <td>
-                  <a href="index.html">
-                  <img hspace="" style="" src="Subs/titleskull.png" height="140px" onmouseover="this.src='Subs/Titlehover.png' "
-                    onmouseout="this.src='Subs/titleskull.png'" alt="" />
-                </a>
-              </td>
-              <td>
-               <img style="border-radius: 50px;" height="100px" src="foruse/bannerli.png" alt="">
-               <img src="foruse/starfly.png"  height="40" />
-               <img src="foruse/starfly.png"  height="40" />
-               <img src="foruse/starfly.png"  height="40" />
-
-              </td>
-              <!-- title -->
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody>
-
-</table>            <!--  -->
-
-    <table align="center" cellspacing="5">
-      <tr>
-        <th style="background-color: white; border: 5px #002e79 solid; border-radius: 10px;" min-height="1000px"
-          width="900px">
-          <div>
-            <!--  -->
-
+<body>
+  <div style="background: white; min-height: 500px; width: 920px; border: rgb(0, 1, 74) solid 5px; margin: auto;">
+    <div>
+      <header>
+        <center>
+          <div style="margin: auto;" id="header-inner">
+            <h1 style="visibility: hidden;">DEATHENIZE</h1>
           </div>
+        </center>
+      </header>
+      <div style="display: flex; justify-content: center;">
+        <a href="index.html">
+          <img style="margin-right: 20px;" src="foruse/Headertitles/header.png" height="90px" onmouseover="this.src='foruse/Headertitles/header2.png'" onmouseout="this.src='foruse/Headertitles/header.png'" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 10px;">
+      <a href="About.html">
+        <img src="foruse/menu/about.png" height="50" onmouseover="this.src='foruse/menu/about2.png'" onmouseout="this.src='foruse/menu/about.png'" alt="" />
+      </a>
+      <a href="Characters.html">
+        <img src="foruse/menu/characters.png" height="50" onmouseover="this.src='foruse/menu/characters2.png'" onmouseout="this.src='foruse/menu/characters.png'" alt="" />
+      </a>
+      <a href="Minilore.html">
+        <img src="foruse/menu/lore.png" height="50" onmouseover="this.src='foruse/menu/lore2.png'" onmouseout="this.src='foruse/menu/lore.png'" alt="" />
+      </a>
+      <a href="Bookmarkies.html">
+        <img src="foruse/menu/links.png" height="50" onmouseover="this.src='foruse/menu/links2.png'" onmouseout="this.src='foruse/menu/links.png'" alt="" />
+      </a>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+      <div class="mainC">
+        <strong>
+          <p>→ Some notes about Dtne story contents</p>
+        </strong>
+        <p style="background: #a6c6ce; font-size: 10px; padding: 5px; border-radius: 5px;">
+          - Some contents are written in Dutch due to the lack of fluency in English
+          <br>
+          - Some contents have a <span style="color: red;">Red border</span> that means they're labeled <span style="color: red;">R:16</span>: content that contains a CW. Read more about that in <a class="rhover" href="DTNERules.html">DTNE RULESET</a>
+          <br>
+          - Use the arrows to go through the various content
+        </p>
+
+        <sub style="color: #207b92;">
+          <blockquote>
+            <p>TABLE OF CONTENTS</p>
+          </blockquote>
+        </sub>
+        <em>
+          <p class="koiar" style="font-size: 12px; border: double #207b92 5px; padding: 5px; border-radius: 10px 0 10px 0;">
+            <a href="Minilore.html">Page 1: A4 comics</a>
+            <br>
+            <a href="Minilore2.html">Page 2: Grafkist Comics</a>
+            <br>
+            <a href="Minilore3.html">Page 3: Doodlekist, characterlist, The deathphone, Interiorclicks</a>
+            <br>
+            <a href="Minilore4.html">Page 4: The World Manual</a>
+          </p>
+        </em>
+
+        <center>
+          <br>
+          <a href="Minilore2.html"><i style="font-size: 40px; color: #a6c6ce;" class="fa-solid fa-circle-right"></i></a>
+        </center>
+        <br>
+
+        <div style="display: flex;">
+          <div>
+            <img style="height: 100px;" src="foruse/clickables/comica4.png" alt="">
+            <p style="font-size: 10px; background: #a6c6ce; width: 500px; padding: 5px; border-radius: 5px; color: white;">
+              <strong><img height="20px" src="foruse/decoration/smalldecos/sta" alt=""> Desc:</strong> comics that are alike in A4 format
+            </p>
+            <div style="font-size: 10px;">
+              <p><strong><img height="20px" src="foruse/decoration/smalldecos/stardark.png" alt=""> HOLLOW WORLD</strong></p> ← Most recent
+              <br>
+              <a href=""><img style="border-radius: 10px; height: 30px;" src="stories/Minicomics/Squarethumbnails/2waysforlove.png" alt=""></a>
+              <a href=""><img style="border-radius: 10px; height: 30px;" src="stories/Minicomics/Squarethumbnails/alienvampiresdoexist.png" alt=""></a>
+              <a href=""><img style="border-radius: 10px; height: 30px;" src="stories/Minicomics/Squarethumbnails/hollowworld1.png" alt=""></a>
+            </div>
+            <div style="font-size: 10px;">
+              <p><img height="20px" src="foruse/decoration/smalldecos/stardark.png" alt=""><strong>THE REAPERS FUNERAL</strong></p> ← Most recent
+              <br>
+              <a href=""><img style="border-radius: 10px; height: 30px;" src="stories/Minicomics/Squarethumbnails/murella.png" alt=""></a>
+            </div>
+            <div style="font-size: 10px;">
+              <p><img height="20px" src="foruse/decoration/smalldecos/stardark.png" alt=""><strong>THE REAPERS GUILLOTINE</strong></p> ← Most recent
+              <br>
+              <a href=""><img style="border-radius: 10px; height: 30px;" src="stories/Minicomics/Squarethumbnails/Waiting.png" alt=""></a>
+            </div>
+            <div style="font-size: 10px;">
+              <p><img height="20px" src="foruse/decoration/smalldecos/stardark.png" alt=""><strong>WHY WON'T YOU OBEY ME</strong></p> ← Most recent
+              <br>
+              <a href=""><img style="border-radius: 10px; height: 30px;" src="stories/Minicomics/Squarethumbnails/Harpsongs.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="width: 700px; margin: auto;">
+      <p style="text-align: center; background-color: #002e79; color: white; border-radius: 10px; padding: 10px;">
+        © 2023-2024 DEATHENIZE. All rights reserved. <img height="30" src="foruse/decoration/smalldecos/starfly.png" alt="">
+      </p>
+    </div>
   </div>
-
-  <!-- menu -->
-
-
-
-  <!-- content -->
-
-  <center>
-      <div style="margin: auto; margin-top: -15%;">
-        <div class="sircle" style="display: flex; justify-content:space-evenly;">
-          <a href="About.html"><img src="menu/about.png" alt="">
-            <br> ABOUT  </a>
-            
-          <a href="Minilore.html"><img src="menu/Minilore.png" alt="">
-            <br> MINILORE  </a>
-            
-          <a href="personages.html"><img src="menu/personages.png" alt="">
-            <br> PERSONAGES  </a>
-            
-          <a href="Portfolio.html"><img src="menu/portfolio.png" alt="">
-            <br> PORTFOLIO  </a>
-            
-            
-          <a href="Filenotfound.html"><img src="menu/officials.png" alt="">
-            <br> OFFICIALS  </a>
-            
-          <a href="Bookmarkies.html"><img src="menu/markies.png" alt="">
-            <br> LINKS  </a>
-            
-         </div>
-        <hr>
-      <h1   style="color: #605555;">Stories and Lore<i class="fa-solid fa-star"></i></h1>
-      <p>Little stories that resides in the Dtne Universe</p>
-      
-   
-
-    </div>
-    <div style="text-align: right; position: relative; left: -10px;">
-      <img src="pixels/moonright.png" alt="">
-      <img src="pixels/moonleft.png" alt="">
-      <img src="pixels/moonleft2.png" alt="">
-      <img src="pixels/moonrighthalf.png" alt="">
-      <img src="pixels/moonright.png" alt="">
-      <img src="pixels/cloudmoon.png" alt="">
-
-    </div>
-    <img src="foruse/bar.png" alt="">
-
-
-    <h3
-    style="text-align: left;margin: 0 40px; background: #acc9d0; border-radius:0px 20px; color: rgb(18, 5, 91);">
-    <i style="font-size: 10px;margin-left: 10px; " class="fa-solid fa-star"></i> Read!
-  </h3>
-
-    <div class="storage" style="display: flex; justify-content: space-evenly; margin-bottom: 100px;  margin-top: 10px;  margin-top: 50px;    ">
-        <div class="tooltip-container">
-            <a href="Minicomicsection.html"> <img style="height: 100px;"  src="foruse/minicomics.png" alt="">
-            <br>Minicomics </a>
-            <div class="tooltip-text">
-                <h4>MINI COMICS</h4>
-                <hr>
-                <br>Comics about the everyday life of habitants and different species residing in DTNE</div>
-        </div>
-        <div class="tooltip-container">
-            <a href="Thedeathlog.html"> <img style="height: 100px;"  src="foruse/Logfacts.png" alt="">
-            <br>Character Log </a>
-            <div class="tooltip-text">
-                <h4>LOG</h4>
-                <hr>
-                <br> Random facts about the Personages in DTNE</div>
-        </div>
-        <div class="tooltip-container">
-            <a href="Filenotfound.html"> <img style="height: 100px;"  src="foruse/chat.png" alt="">
-            <br> <span style="color: red;">Hello Deathphone </span></a>
-            <div class="tooltip-text">
-                <h4>HELLO DEATHPHONE</h4>
-                <hr>
-                <br>Not currently available</div>
-        </div>
-    </div>
-    <h3
-    style="text-align: left;margin: 0 40px; background: #acc9d0; border-radius:0px 20px; color: rgb(18, 5, 91);">
-    <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> Grafkist
-  </h3>
-    <div class="storage" style="display: flex; justify-content: space-evenly;  margin-bottom: 100px;  margin-top: 50px;  ">
-        <div class="tooltip-container">
-            <a href="Grafkist.html"> <img style=""  src="pixels/plant.png" alt="">
-            <br>In mijn grafkist </a>
-            <div class="tooltip-text">
-                <h4>IN MIJN GRAFKIST</h4>
-                <hr>
-                <br>Doodle comics and short little silly stories</div>
-        </div>
-
-
-      
-      
-    </div>
-    <h3
-    style="text-align: left;margin: 0 40px; background: #acc9d0; border-radius:0px 20px; color: rgb(18, 5, 91);">
-    <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> Clickers!
-  </h3>
-    <div class="storage" style="display: flex; justify-content: space-evenly;  margin-top: 50px;   ">
-        <div class="tooltip-container">
-            <a href="Filenotfound.html"> <img style="height: 100px;"  src="icons/xxx.png" alt="">
-            <br> <span style="color: red;">Visual Novel </span></a>
-            <div class="tooltip-text">
-                <h4>?</h4>
-                <hr>
-                <br>Visual Novel</div>
-        </div>
-      
-    </div>
- 
-  </div>
-
-  </center>
-  
- 
-
-  </th>
-  <td valign="top">
-    <iframe scrolling="no" style="min-height: 1200px; width: 179px;" src="dated.html" frameborder="0"></iframe>
-  </td>
-
-  </tr>
-
-  </table>
- 
-<div style="background: rgb(15, 51, 105);">
-    <div style="color: white;padding: 10px; text-align: center;"> <i class="fa-solid fa-skull"></i>  Copyright © 2024 Skullmare. All rights reserved. <i class="fa-solid fa-book-skull"></i> </div>
-  
-  </div>
-
 </body>
-
 </html>

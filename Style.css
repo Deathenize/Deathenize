@@ -160,8 +160,9 @@ body {
 
 }
 .infopil p{
-    border: 1px solid black;
+    border: 3px solid #002e79;
     border-radius: 10px;
+    margin-bottom: 10px;
 
 }
 .infopil p{
@@ -229,6 +230,7 @@ list-style: none;}
 .switcheroo button:hover{
 background-color: grey;
 }
+
 .Mona{
     text-decoration: none;
     background-color: black;
