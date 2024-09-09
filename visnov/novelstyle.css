@@ -1,0 +1,182 @@
+
+
+:root {
+    --color1: rgb(134, 134, 134);
+    --color2: rgb(112, 112, 112);
+    --color3: rgb(188, 0, 0);
+
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(backgrounds/stars.png) ;
+    background-size: 200px;
+}
+
+
+.corners-bottom {
+    border-radius: 0px 0px 30px 30px;
+}
+/* chapter box  */
+
+.dialogueBox {
+    padding: 10px;
+    min-width: 710px;
+    border: 5px solid white; 
+    border-radius: 10px 10px 10px 10px;
+}
+
+.visual {
+    position: relative;
+    width: 730px;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    border-radius: 5px 5px 5px 5px;
+}
+/* characters name color */
+.char {
+    opacity: 0;
+}
+
+.char2 {
+    opacity: 0;
+    transform: scaleX(-1);
+}
+
+.Artemiy {
+    color: rgb(133, 165, 199);
+}
+
+
+.Erik {
+    color: rgb(41, 130, 0);
+}
+
+/* end */
+.Brodie {
+    color: rgb(255, 0, 28);
+}
+
+.Death {
+    color: rgb(102, 102, 102);
+}
+
+.Eve {
+    color: rgb(255, 210, 234);
+}
+
+.Samael {
+    color: rgb(255, 140, 115);
+}
+
+.STOPLOOKINGHERE {
+    color: rgb(0, 0, 0);
+}
+
+.think {
+    color: rgb(90, 90, 90);
+}
+
+.Juno {
+    color: rgb(0, 255, 149);
+}
+
+.Barl {
+    color: rgb(255, 255, 255);
+}
+
+.bg {
+   position: absolute;
+}
+
+
+
+.button {
+    cursor: pointer;
+    font-size: 30px;
+}
+/* Main vis box */
+
+.box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    border-radius: 15px;
+}
+/* end vis box */
+h1 {
+    font-family: "h1";
+    margin: -3px;
+    color: white;
+    font-size: 15px;
+}
+
+h2 {
+    font-family: "h2";
+    margin: 2px;
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    color: var(--color1);
+    text-decoration: underline 2px white;
+}
+ 
+a:visited {
+    text-decoration: underline 2px white;
+    color: var(--color1);
+}
+
+@media screen and (max-width: 730px) {    
+    h1 {
+      font-size: 5vw;
+    }
+    
+    h2 {
+      font-size: 6vw;
+    }
+
+    img {
+        max-width: 97vw;
+    }
+
+    .visual {
+        width: 97vw;
+    }
+
+    .char {
+        max-width: 50vw;
+        max-height: 50vw;
+    }
+
+    .char2 {
+        max-width: 50vw;
+        max-height: 50vw;
+    }
+
+    .dialogueBox {
+        min-width: 90vw;
+    }
+
+    .box {
+        max-width: 90vw;
+    }
+}
+

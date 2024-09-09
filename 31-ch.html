@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-
-
-
-<title>DEATHENIZE</title>
-
 <html>
 
 <head>
+    <title>DEATHENIZE</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="icon" type="image/x-icon" href="faviconnie.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,477 +21,495 @@
         rel="stylesheet">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="content-style-type" content="text/css">
-   <meta http-equiv="content-script-type" content="text/javascript">
-  <link rel="icon" href="symbols/cakered.png" type="image/x-icon">    <link href="https://toyhou.se/css/site_bootstrap.css?cachebust=1702717457" rel="stylesheet">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <link rel="icon" href="symbols/cakered.png" type="image/x-icon">
+    <link href="https://toyhou.se/css/site_bootstrap.css?cachebust=1702717457" rel="stylesheet">
     <meta name="layout-dark" content="0" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
         rel="stylesheet">
 
-    <style>
-        body {
-            overflow-x: hidden;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-        }
+    <head>
 
-        /* CSS for smaller screens (mobile devices) */
-        @media only screen and (max-width: 768px) {
-            .TTT {
-                width: 150%;
-                /* Make the table full width */
-                overflow-x: auto;
-                /* Enable horizontal scrolling for content that overflows */
+        <style>
+            @keyframes shake {
+                0% {
+                    transform: translate(1px, 1px) rotate(0deg);
+                }
+
+                10% {
+                    transform: translate(-1px, -2px) rotate(-1deg);
+                }
+
+                20% {
+                    transform: translate(-3px, 0px) rotate(1deg);
+                }
+
+                30% {
+                    transform: translate(3px, 2px) rotate(0deg);
+                }
+
+                40% {
+                    transform: translate(1px, -1px) rotate(1deg);
+                }
+
+                50% {
+                    transform: translate(-1px, 2px) rotate(-1deg);
+                }
+
+                60% {
+                    transform: translate(-3px, 1px) rotate(0deg);
+                }
+
+                70% {
+                    transform: translate(3px, 1px) rotate(-1deg);
+                }
+
+                80% {
+                    transform: translate(-1px, -1px) rotate(1deg);
+                }
+
+                90% {
+                    transform: translate(1px, 2px) rotate(0deg);
+                }
+
+                100% {
+                    transform: translate(1px, -2px) rotate(-1deg);
+                }
             }
 
-            .TTT table {
-                width: 120%;
-                /* Increase table width to allow content to overflow */
+            .shake {
+                animation: shake 0.01s;
+                /* Duration of the shaking effect */
+                animation-iteration-count: infinite;
+                /* Repeat the animation infinitely */
             }
 
-            .TTT table td {
-                white-space: nowrap;
-                /* Prevent text from wrapping */
+
+
+            body {
+                overflow-x: hidden;
             }
-        }
 
-        .custom-box {
-            width: 300px;
-            min-height: 120px;
-            border: 1px solid #3c4345;
-            border-radius: 10px;
-            overflow: hidden;
-            /* Hides overflow from child elements */
-        }
+            .mainC {
+                border-radius: 10px;
+                width: 700px;
+                margin-bottom: 10px;
+            }
 
-        .top-part {
-            background-color: #568a97;
-            padding: 1px;
-            color: white;
-        }
+            .hover-image {
+                height: 15px;
+                border-radius: 20px;
+                transition: all 0.3s ease;
+            }
 
-        .bottom-part {
-            background-color: white;
-            padding: 20px;
-            color: black;
-        }
-
-        .selectedLabel {
-            font-weight: bold;
-        }
+            .hover-image:hover {
+                content: url('Flags/Bisexual.png');
+                height: 20px;
+                border-radius: 30px;
+            }
 
 
+            .custom-box {
+                width: 300px;
+                min-height: 100px;
+                border: 1px solid #3c4345;
+                border-radius: 10px;
+                overflow: hidden;
+                /* Hides overflow from child elements */
+            }
 
-        .buttonize a {
-            border-radius: 10px;
+            .hovesexul {}
 
-            padding: 20px;
-            background-color: rgb(0, 0, 0);
-            color: white;
-            text-decoration: none;
-            border: 1px white solid;
-            border-top: 3px white solid;
-        }
+            .hovesexul :hover {
+                background: url(Flags/Bisexual.png);
+            }
 
-        .buttonize a:hover {
-            background-color: rgb(116, 119, 119);
-            color: rgb(0, 0, 0);
+            .top-part {
+                background-color: #568a97;
+                padding: 1px;
+                color: white;
+            }
 
-        }
+            .bottom-part {
+                background-color: white;
+                padding: 20px;
+                color: black;
+            }
 
+            .rhover {
+                color: red;
+            }
 
-        .bg-faded {
-            background: white;
-        }
-
-        .nav-link.active {
-            background-color: black !important;
-            color: white;
-            font-weight: bold;
-            border-radius: 20px !important;
-        }
-
-        .nav-link {
-            color: black;
-            font-weight: bold;
-
-        }
-
+            .rhover:hover {
+                background: yellow;
+            }
 
 
+            .bg-faded {
+                background: white;
+            }
+
+            .nav-link.active {
+                background-color: #002e79 !important;
+                color: white;
+                font-weight: bold;
+                border-radius: 20px !important;
+            }
+
+            .nav-link {
+                color: #002e79;
+                font-weight: bold;
+
+            }
+
+            .fixed-size-div {
+                width: 900px;
+                height: auto;
+                /* Adjust as needed */
+                background-color: white;
+                border: 5px #002e79 solid;
+                margin: auto;
+                border-radius: 10px;
+            }
 
 
-        .menu th {
-            padding: 10px
-        }
 
-        .carousel-container {
-            position: relative;
-            overflow: hidden;
-        }
+            header {
+                background: url(foruse/Headertitles/headerbackgrounds/back01.png) repeat-x 50% 0;
+                border-radius:
+            }
 
-        .carousel-slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
+            #header-inner {
+                color: #fff;
+                padding: 10px 20px;
+                min-height: 70
+            }
 
-        .carousel-slide {
-            flex: 0 0 100%;
-        }
+            .tooltip-container {
+                position: relative;
+                display: inline-block;
+            }
 
-        .iwillrot img:hover {
-            transform: rotate(-20deg);
-
-
-        }
-
-        .Socialpop img:hover {
-            transform: rotate(-20deg);
-
-
-        }
-
-        .Socialpop a img:hover {
-            animation: rotate-pulse 1s ease-in-out infinite;
-        }
-
-        @keyframes rotate-pulse {
-            0% {
-                transform: rotate(0deg) scale(1);
+            .tooltip-container:hover .tooltip-text {
+                visibility: visible;
                 opacity: 1;
             }
 
-            50% {
-                transform: rotate(180deg) scale(1.2);
-                opacity: 0.5;
+            .tooltip-text {
+                visibility: hidden;
+                width: 120px;
+                background-color: #246e9f;
+                color: #ffffff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                font-weight: bold;
+                font-size: 10px;
+
+                /* Position the tooltip */
+                position: absolute;
+                z-index: 1;
+                bottom: 110%;
+                left: 50%;
+                margin-left: -60px;
             }
+        </style>
+    </head>
+    <!-- header image link  -->
 
-            100% {
-                transform: rotate(360deg) scale(1);
-                opacity: 1;
-            }
-        }
-
-
-        .carousel-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 50px;
-            height: 50px;
-            background-color: rgb(189, 211, 212);
-            border: none;
-            border-radius: 20px;
-            font-size: 24px;
-            color: #333;
-            cursor: pointer;
-        }
-
-        .carousel-button-prev {
-            left: 50px;
-        }
-
-        .carousel-button-next {
-            right: 50px;
-        }
-
-        .carousel-slide img {
-            height: 400px;
-            margin-top: 10px;
-            border-radius: 20px;
-            border: 2px solid white;
-
-        }
-
-        .flag img {
-            height: 20px;
-        }
-    </style>
-</head>
-
-<body style="background: url(Subs/background2.png); background-size: 150px; background-attachment: fixed; margin: 0">
-
-    <table width="100%" height="155" cellspacing="0" cellpadding="0" border="0" background="Subs/checking.png"
-        align="center">
-        <tbody>
-            <tr>
-                <td style="text-align: center;">
-                    <table width="1060" height="125" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                   <td>
-                  <a href="index.html">
-                  <img hspace="" style="" src="Subs/titleskull.png" height="140px" onmouseover="this.src='Subs/Titlehover.png' "
-                    onmouseout="this.src='Subs/titleskull.png'" alt="" />
-                </a>
-              </td>
-                                <td>
-                                    <img src="foruse/headD.png" alt="" width="" hspace="22" height="100" />
-                                </td>
-                                <!-- title -->
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-
-    </table>
-
-    <div style="text-align: center;">
-                                      <!-- title -->
-
-        <table align="center" cellspacing="5">
-            <tr>
-                <th style="background-color: white; border: 5px #002e79 solid; border-radius: 10px;" min-height="1000px"
-                    width="900px">
-                    <div>
-                        <!--  -->
+<body
+    style="background: url(foruse/backgrounds/background2.png); background-size: 300px; background-attachment: fixed; margin: 0">
+    <div style="background: white; min-height: 500px; width: 920px; border: rgb(0, 1, 74) solid 5px; margin: auto;">
+        <div>
+            <header>
+                <center>
+                    <div style="margin: auto; " id="header-inner">
+                        <h1 style="visibility: hidden;">DEATNEIZE</h1>
+                        <h1 style="visibility: hidden;">DEATNEIZE</h1>
 
                     </div>
-    </div>
-
-    <!-- menu -->
-
-    <!-- banner -->
-
-
-    <!-- content -->
-
-    <center>
-
-
-        <div>
-            <br>
 
 
 
-            <div style="text-align: right; position: relative; left: -10px;">
-                <img src="pixels/moonright.png" alt="">
-                <img src="pixels/moonleft.png" alt="">
-                <img src="pixels/moonleft2.png" alt="">
-                <img src="pixels/moonrighthalf.png" alt="">
-                <img src="pixels/moonright.png" alt="">
-                <img src="pixels/cloudmoon.png" alt="">
+                </center>
+            </header>
+            <div style="display: flex; justify-content: center;">
+                <a sty href="index.html"> <img style="margin-right: 20px;" src="foruse/Headertitles/header.png"
+                        height="90px" onmouseover="this.src='foruse/Headertitles/header2.png' "
+                        onmouseout="this.src='foruse/Headertitles/header.png'" alt="" /></a>
 
             </div>
-            <img src="foruse/bar.png" alt="">
 
         </div>
 
- 
-        <div class="sircle" style="display: flex; justify-content:space-evenly;">
-            <a href="About.html"><img src="menu/about.png" alt="">
-              <br> ABOUT  </a>
-              
-            <a href="Minilore.html"><img src="menu/Minilore.png" alt="">
-              <br> MINILORE  </a>
-              
-            <a href="personages.html"><img src="menu/personages.png" alt="">
-              <br> PERSONAGES  </a>
-              
-            <a href="Portfolio.html"><img src="menu/portfolio.png" alt="">
-              <br> PORTFOLIO  </a>
-              
-              
-            <a href="Filenotfound.html"><img src="menu/officials.png" alt="">
-              <br> OFFICIALS  </a>
-              
-            <a href="Bookmarkies.html"><img src="menu/markies.png" alt="">
-              <br> LINKS  </a>
-              
-           </div>
-        
 
-        <div
-            style="background: white; width: 800px; margin-top: 40px; border: 5px solid rgb(0, 0, 0);border-radius: 20px; ">
+        <div style="display: flex; justify-content: center; margin-top: 10px;">
 
 
+            <a href="About.html"> <img style="margin-left: px;" src="foruse/menu/about.png" height="35"
+                    onmouseover="this.src='foruse/menu/about2.png' " onmouseout="this.src='foruse/menu/about.png'"
+                    alt="" /></a>
 
-            <h3
-                style="text-align: left;margin: 0 40px; background: #acc9d0; border-radius:20px 20px; color: rgb(18, 5, 91); margin-top: 10px;">
-                <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> Nummeral: 0031
-            </h3>
-
-
-
-            <div style=" border: 2px solid black; width: 700px; border-radius: 5px; margin-top: 50px;" class="">
-
-                <div style="max-width:750px;" align="center">
-
-                    <div style="max-width:650px;border-radius:0px;">
-                        <ul class="nav nav-pills nav-justified" id="twittertablist">
-                            <li class="nav-item"><a class="nav-link active" data-toggle="pill"
-                                    style="border-radius:0px;" href="#tweets-tab">Profile <img src="pixels/cloud.png"
-                                        alt=""> </a></li>
-
-                            <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px;"
-                                    href="#replies-tab">Biography <img src="pixels/moonhalf.png" alt=""></a></li>
+            <a href="Characters.html"> <img style="margin-left: px;" src="foruse/menu/characters.png" height="35"
+                    onmouseover="this.src='foruse/menu/characters2.png' "
+                    onmouseout="this.src='foruse/menu/characters.png'" alt="" /></a>
 
 
+            <a href="Minilore.html"><img style="margin-left:;" src="foruse/menu/lore.png" height="35"
+                    onmouseover="this.src='foruse/menu/lore2.png' " onmouseout="this.src='foruse/menu/lore.png'"
+                    alt="" /></a>
 
-                        </ul>
-                    </div>
-                    <div style="border: 1px solid black;"></div>
+            <a href="Filenotfound.html"><img style="margin-left:;" src="foruse/menu/officials.png" height="35"
+                    onmouseover="this.src='foruse/menu/officials2.png' "
+                    onmouseout="this.src='foruse/menu/officials.png'" alt="" /></a>
 
-                    <div class="tab-content bg-faded" style="overflow:auto;height:890px;" align="left">
-                        <!-- Portrait section -->
+            <a href="Portfolio.html"><img style="margin-left:;" src="foruse/menu/portfolio.png" height="35"
+                    onmouseover="this.src='foruse/menu/portfolio2.png' "
+                    onmouseout="this.src='foruse/menu/portfolio.png'" alt="" /></a>
+            <a href="Logboarding.html"><img style="margin-left:;" src="foruse/menu/Logs.png" height="35"
+                    onmouseover="this.src='foruse/menu/logs2.png' " onmouseout="this.src='foruse/menu/logs.png'"
+                    alt="" /></a>
 
-                        <br>
-                        <div class="tab-pane fade show active" id="tweets-tab">
-                            <center>
-                                <h5
-                                    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration-line:underline;">
-                                </h5>
+            <a href="Bookmarkies.html"> <img style="margin-left: " src="foruse/menu/links.png" height="35"
+                    onmouseover="this.src='foruse/menu/links2.png' " onmouseout="this.src='foruse/menu/links.png'"
+                    alt="" /></a>
+        </div>
+        <br>
+        <br>
+        <!-- nummeral -->
+        <h3
+            style="text-align: left;margin: 0 40px; background: #002e79; border-radius:20px; color: rgb(255, 255, 255);">
+            <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> <img height="30px"
+                src="foruse/decoration/smalldecos/starfly.png" alt=""> Nummeral: 0031 <img src="pixels/cloudmoon.png"
+                alt="">
+        </h3>
 
-                            </center>
-                            <center>
-                                <img style="height: 850px;" src="Characterportraits/Bibi.png" alt="">
+        <center>
+            <div class="nexts"
+                style="display: flex; background: #002e79; width: 400px; justify-content:space-between; padding: 10px; border-radius: 10px;margin-top: 15px;">
+                <a style=" color: #fff;" href="30-ch.html"> ← Previous</a>
+                <a style=" color: #fff;" href="Characters.html">Character List <i class="fa-solid fa-star"></i></a>
+                <a style=" color: #fff; " href="32-ch.html">Next →</a>
+            </div>
+        </center>
+        <center>
+            <div style="background: white; width: 800px; margin-top: 40px; ;border-radius: 20px; ">
 
-                            </center>
+
+                <!--  -->
+
+                <div style="         <!--  -->
+ width: 700px; border-radius: 5px; margin-top: 50px;" class="">
+
+                    <div style="max-width:750px;" align="center">
+
+                        <div style="max-width:650px;border-radius:0px;">
+                            <ul class="nav nav-pills nav-justified" id="twittertablist">
+                                <li class="nav-item"><a class="nav-link active" data-toggle="pill"
+                                        style="border-radius:0px;" href="#tweets-tab">Profile <img
+                                            src="pixels/cloud.png" alt=""> </a></li>
+
+                                <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px;"
+                                        href="#replies-tab">Biography <img src="pixels/moonhalf.png" alt=""></a></li>
 
 
+
+                            </ul>
                         </div>
-                        <!-- End of portrait section -->
+                        <div style="border: 1px dashed #002e79;"></div>
 
-                        <!-- biography section -->
-                        <div class="tab-pane fade" id="replies-tab" style="overflow-x: hidden;">
-                            <h4><i class="fa-solid fa-star"></i> Biography</h4>
-                            <img src="Subs/dotterin.png" alt="">
-                            <center>
-                                <div>
-                                    <i class="fa-solid fa-crow"></i>
-                                    <h5 style="background: black; color: white; border-radius: 10px; width: 400px;">
-                                        Information</h5>
-                                    <br>
+                        <div class="tab-content bg-faded" align="left">
+                            <!-- Portrait section -->
+
+                            <br>
+                            <div class="tab-pane fade show active" id="tweets-tab">
+                                <center>
+                                    <h5
+                                        style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration-line:underline;">
+                                    </h5>
+
+                                </center>
+                                <center>
+                                    <img style="height: 910px;" src="Characterportraits/oyani.png" alt="">
+
+                                </center>
+
+
+                            </div>
+                            <!-- End of portrait section -->
+
+                            <!-- biography section -->
+                            <div class="tab-pane fade" id="replies-tab" style="overflow-x: hidden;">
+                                <strong>
+                                    <h4 style="margin-left: 20px; color: #002e79;"><i class="fa-solid fa-star"></i>
+                                        Biography</h4>
+                                </strong>
+                                <img src="Subs/dotterin.png" alt="">
+                                <center>
                                     <div>
-                                        Bibi is one of the main high messengers of the Eth Realm. They're very active
-                                        and responsive but also incredibly shy. They have a huge love for bunnies and
-                                        believe that they are the true secret of life. That's why they try to converse
-                                        with them through their secret language.
-                                    </div>
-                                </div>
-                                <br>
-                                <img src="pixels/diamondyellow.png" alt="">
-                                <br>
-                                <br>
-                                <i class="fa-solid fa-table"></i>
-                                <h5
-                                    style="background: black; color: white; border-radius: 10px; width: 400px; padding: 3px;">
-                                    <div> General physical Information</div>
-                                </h5>
-
-                                <div
-                                    style=" height: 300px; width: 300px; margin-top: 10px; border-radius: 20px; border: 1px solid black;">
-                                    <div class="infopil" style="width: 200px;">
+                                        <i style="color: #002e79;" class="fa-solid fa-crow"></i>
+                                        <h5
+                                            style="background: #002e79; color: white; border-radius: 10px; width: 400px;">
+                                            Information</h5>
                                         <br>
+                                        <div
+                                            style="width: 550px; border-radius: 10px; border: darkblue 5px double; padding: 10px;">
+                                            <p style="line-height: 25px; text-align:center; color: #002e79;">
+
+                                                Oyani is a mute girl who can make cute noises. She is a mermaid-lobster
+                                                hybrid with many dreams and can blow water bubbles. She loves her
+                                                girlfriend, Autilus, but can be a bit pouty at times. her relations to helvetic are a bit unknown, even tho they look alike
+
+                                            </p>
 
 
-                                        <p style="color: black; background: white; font-weight: bolder;"> <i
-                                                class="fa-solid fa-star"></i>Naam: Bibi</p>
-
-                                        <p style="color: black;   background: white; font-weight: bolder;">
-                                            <i class="fa-solid fa-font-awesome"></i> Gender: <i
-                                                class="fa-solid fa-genderless"></i>
-                                        </p>
-
-                                        <p style="color: black;   background: white; font-weight: bolder;">
-                                            <i class="fa-solid fa-font-awesome"></i> sexualiteit:
-                                            <img style="height: 15px; border-radius: 20px;" src="Flags/pansexual.png"
-                                                alt="">
-                                            <img style="height: 15px; border-radius: 20px;" src="Flags/NonBinary.png"
-                                                alt="">
 
 
-                                        </p>
 
-                                        <p style="color: black; font-weight: bolder;  background: white;"><i
-                                                class="fa-regular fa-star"></i> VoornaamW: They/Them</p>
 
-                                        <p style="color: black; background: white; font-weight: bolder;"><i
-                                                class="fa-solid fa-earth-asia"></i> Species Type:   Eth</p>
 
-                                        <p style="color: black; background: white; font-weight: bolder;"><i
-                                                class="fa-solid fa-earth-asia"></i> Realm: <img
-                                                src="pixels/realmeths.png" alt=""></p>
 
-                                        <p style="color: black;  background: white;font-weight: bolder;">
-                                            <i class="fa-regular fa-calendar"></i> Birthdate: ?
-                                        </p>
+
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i style="color: #002e79;" class="fa-solid fa-table"></i>
+                                    <h5
+                                        style="background: #002e79; color: white; border-radius: 10px; width: 400px; padding: 3px;">
+                                        <div> General physical Information</div>
+                                    </h5>
+
+                                    <div
+                                        style=" height: 370px; width: 300px; margin-top: 10px; border-radius: 20px; border: 3px solid #002e79;">
+                                        <div class="infopil" style="width: 200px;">
+                                            <br>
+
+
+                                            <p style="color: #002e79; background: white; font-weight: bolder;"> <i
+                                                    class="fa-solid fa-star"></i>Naam: oyani</p>
+
+
+
+                                            <div class="tooltip-container">
+                                                <p style="color: #002e79;   background: white; font-weight: bolder;">
+                                                    <i class="fa-regular fa-user"></i> Gender: <i
+                                                        class="fa-solid fa-venus"></i>
+                                                </p>
+
+                                            </div>
+
+
+
+
+
+                                            <p style="color: #002e79;   background: white; font-weight: bolder;">
+                                                <i class="fa-solid fa-font-awesome"></i> sexualiteit:
+
+                                                <img style="height: 15px; border-radius: 20px;"
+                                                    src="Flags/Transexual.png" alt="">
+                                                <img style="height: 15px; border-radius: 20px;"
+                                                    src="Flags/Bisexual.png" alt="">
+                                                <img style="height: 15px; border-radius: 20px;"
+                                                    src="Flags/transfem.png" alt="">
+
+                                            </p>
+
+                                            <p style="color:#002e79; font-weight: bolder;  background: white;"><i
+                                                    class="fa-regular fa-star"></i> VoornaamW: She/her</p>
+
+                                            <p style="color: #002e79; background: white; font-weight: bolder;">
+                                                <i class="fa-solid fa-hand-sparkles"></i> Species Type: LunarianMyth
+                                            </p>
+
+                                            <p style="color: #002e79; background: white; font-weight: bolder; "><i
+                                                    class="fa-solid fa-earth-asia"></i> Realm:
+                                                <img style="margin-bottom: 2px; margin-top: 2px;"
+                                                    src="pixels/worlds/myth.png" alt="">
+
+                                            </p>
+                                            <p style="color: #002e79; background: white; font-weight: bolder; ">
+                                                <i class="fa-solid fa-hand-holding-heart"></i> Symbolic Power: <br>
+
+                                                <img src="pixels/symbolpower/water.png" alt="">
+                                                <img src="pixels/symbolpower/love.png" alt="">
+                                                <img src="pixels/symbolpower/Light.png" alt="">
+
+
+
+                                            </p>
+
+                                            <p style="color: #002e79;  background: white;font-weight: bolder;">
+                                                <i class="fa-regular fa-calendar"></i> Birthdate: ?
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <i style="color: #002e79;" class="fa-solid fa-link"></i>
+                                    <h5
+                                        style="background: #002e79; color: white; border-radius: 10px; width: 400px; padding: 3px;">
+                                        Relationships <img height="20" src="foruse/decoration/smalldecos/starfly.png"
+                                            alt=""></h5>
+                                    <div style="margin-bottom: 10px;">
+
+
+                                        <a href="25-ch.html"><img style="height: 50px; border: 2px #002e79 solid; border-radius: 7px;box-shadow: #568a97 3px 3px; " src="icons/Aurora.png"
+                                            alt=""></a>
+                                      
+
 
                                     </div>
 
-                                </div>
-                                <br>
-                                <br>
-                                <i class="fa-solid fa-link"></i>
-                                <h5
-                                    style="background: black; color: white; border-radius: 10px; width: 400px; padding: 3px;">
-                                    Relationships</h5>
-                              
-                                <a href="32-ch.html"><img style="height: 50px; border: 1px black solid;"
-                                        src="icons/Pray.png" alt=""></a>
-                               
+                                </center>
 
-                            </center>
+                            </div>
+
+
+                            <!-- End of biography section -->
+
+                            <!-- Extra beta section -->
+
+
 
                         </div>
-
-
-                        <!-- End of biography section -->
-
-                        <!-- Extra beta section -->
-
-
-
                     </div>
                 </div>
-            </div>
-            <img src="pixels/date.png" alt="">
-            <div style="  color: rgba(124, 128, 128, 0.589); border-radius: 100px;">
+                <!--  -->
+                <img src="pixels/date.png" alt="">
+                <div style="  color: rgba(124, 128, 128, 0.589); border-radius: 100px;">
 
-                <i class="fa-solid fa-skull"></i>
-                Copyright © 2024 Skullmare. All rights reserved.
+
+                </div>
+            </div>
+        </center>
+
+        <div style="display: flex; justify-content: center;">
+
+            <div class="mainC">
+
 
             </div>
         </div>
 
+        <center>
+
+        </center>
+        <p
+            style="text-align: center; background-color: #002e79; color: white; border-radius: 10px; padding: 10px; width: 700px; margin: auto; margin-bottom: 10px;">
+            © 2023-2024 DEATHENIZE. All rights reserved. <img height="30" src="foruse/decoration/smalldecos/starfly.png"
+                alt=""> </p>
+    </div>
 
 
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-        <br>
-        <br>
-
-    </center>
-
-
-    </th>
-
-    </tr>
-
-    </table>
-
+    </div>
 
 
 
