@@ -1,343 +1,233 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>DEATHENIZE</title>
-    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+  <title>DEATHENIZE</title>
+  <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-style-type" content="text/css">
+  <meta http-equiv="content-script-type" content="text/javascript">
+  <link rel="stylesheet" href="style.css">
 
-    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
-    <meta http-equiv="Content-Script-Type" content="text/javascript">
-    <meta http-equiv="Content-Style-Type" content="text/css">
-    <meta http-equiv="imagetoolbar" content="no">
-    <meta name="viewport">
+  <link rel="icon" href="symbols/cakered.png" type="image/x-icon">
 
-     <!--  -->
-    <style>
-        body {
-            overflow-x: hidden;
-        }
+  <style>
+   .custom-box {
+    width: 250px;
+    min-height: 100px;
+    border: 1px solid #3c4345;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Hides overflow from child elements */
+  }
+    .top-part {
+    background-color: #3c3838;
+    padding: 1px;
+    color: white;
+  }
 
-        .mainC {
-            border-radius: 10px;
-            width: 700px;
-            margin-bottom: 10px;
-        }
-.Storyb img{
-    border: black solid 1px;
+  .bottom-part {
+    background-color: white;
+    padding: 20px;
+    color: black;
+  }
+  .rhover{
+    color: red;
+  }
+  .rhover:hover{
+   background: yellow;
+  }
+
+    .fixed-size-div {
+      width: 900px;
+      height: auto; /* Adjust as needed */
+      background-color: white;
+      border: 5px #000000 solid;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+   .maintable {
+    background-color: #ffffff;
+    width: 850px;
+    border: rgb(95, 95, 95) solid 5px; margin: auto;
+}
+.links{
+    border: 2px black solid;
+    border-radius: 10px;
+    position: relative;
+    left: -40px;
+   
+
+
+}
+.rechts{
+    
+
 }
 
+.chek{
+    background-color: #000000;
+    border-color: #000000;
+    height: 30px;
+}
 
-        .fixed-size-div {
-            width: 900px;
-            height: auto;
-            /* Adjust as needed */
-            background-color: white;
-            border: 5px #002e79 solid;
-            margin: auto;
-            border-radius: 10px;
-        }
+header {
+      background: url(foruse/Headertitles/headerbackgrounds/back01.png) repeat-x 50% 0;
+      border-radius:
+    }
 
-
-        header {
-            background: url(foruse/Headertitles/headerbackgrounds/back01.png) repeat-x 50% 0;
-            border-radius:
-        }
-
-        #header-inner {
-            color: #fff;
-            padding: 10px 20px;
-            min-height: 70
-        }
-
-        .rhover {
-            color: red;
-        }
-
-        .rhover:hover {
-            background: yellow;
-        }
-
-        .koiar a {
-            color: #207b92;
-            padding-left: 10px;
-
-
-        }
-
-        .koiar a:hover {
-            color: #d7c520;
-
-        }
-        .Bordersit{
-            width: 500px;
-           min-height: 500px;
-            border: #002e79 solid 7px;
-            border-radius: 10px;
-            margin: auto;
-        }
-    </style>
+    #header-inner {
+      color: #fff;
+      padding: 10px 20px;
+      min-height: 70
+    }
+  </style>
 </head>
 <!-- header image link  -->
 
 <body
-    style="background: url(foruse/backgrounds/background2.png); background-size: 300px; background-attachment: fixed; margin: 0">
-    <div style="background: white; min-height: 500px; width: 920px; border: rgb(95, 95, 95) solid 5px; margin: auto;">
-        <div>
-            <header>
-                <center>
-                    <div style="margin: auto; " id="header-inner">
-                        <!-- サイト名 -->
-                        <h1 style="visibility: hidden;">DEATNEIZE</h1>
+  style="background: url(foruse/backgrounds/background2.png); background-size: 300px; background-attachment: fixed; margin: 0">
 
-                    </div>
+  <div  align="center">
+   <table cellspacing="0" align="center" class="maintable">
+    <tbody >
+        <tr>
+            <td align="center">
+                <div>
+                    <header>
+                      <center>
+                        <div style="margin: auto; " id="header-inner">
+                          <!-- サイト名 -->
+                          <h1 style="visibility: hidden;">DEATNEIZE</h1>
+              
+                        </div>
+              
+              
+              
+                      </center>
+                    </header><!-- ▲ヘッダ▲ -->
+                  
+                  </div>
+                 <img height="190px" src="Artwork/banner/Banner.png" alt="">
+                <br>
+               <!-- Nav -->
+               <a href="index.html"> <img style="float: left;" src="foruse/menu/header.png" height="120"
+                onmouseover="this.src='foruse/menu/header2.png' " onmouseout="this.src='foruse/menu/header.png'" alt="" /></a>
+
+               <div style="display: flex; justify-content: center; margin-top: 50px;">
 
 
+                <a href="About.html"> <img style="margin-left: px;" src="foruse/menu/about.png" height="40"
+                    onmouseover="this.src='foruse/menu/about2.png' " onmouseout="this.src='foruse/menu/about.png'" alt="" /></a>
+          
+                <a href="Characters.html"> <img style="margin-left: px;" src="foruse/menu/characters.png" height="40"
+                    onmouseover="this.src='foruse/menu/characters2.png' " onmouseout="this.src='foruse/menu/characters.png'"
+                    alt="" /></a>
+          
+          
+                <a href="Minilore.html"><img style="margin-left:;" src="foruse/menu/lore.png" height="40"
+                    onmouseover="this.src='foruse/menu/lore2.png' " onmouseout="this.src='foruse/menu/lore.png'" alt="" /></a>
+          
+             
+          
+                <a href="Portfolio.html"><img style="margin-left:;" src="foruse/menu/portfolio.png" height="40"
+                    onmouseover="this.src='foruse/menu/portfolio2.png' " onmouseout="this.src='foruse/menu/portfolio.png'"
+                    alt="" /></a>
+             
+                <a href="Bookmarkies.html"> <img style="margin-left: " src="foruse/menu/links.png" height="40"
+                    onmouseover="this.src='foruse/menu/links2.png' " onmouseout="this.src='foruse/menu/links.png'" alt="" /></a>
+              </div>
+<!--  -->
+    
+<!--  -->
+    
+<table  cellspacing="15" class="centert">
+    <tr>
+        
+        <td style="vertical-align: top;" class="links">
+        
 
-                </center>
-            </header><!-- ▲ヘッダ▲ -->
-            <div style="display: flex; justify-content: center;">
-                <a sty href="index.html"> <img style="margin-right: 20px;" src="foruse/Headertitles/header.png"
-                        height="90px" onmouseover="this.src='foruse/Headertitles/header2.png' "
-                        onmouseout="this.src='foruse/Headertitles/header.png'" alt="" /></a>
-
+            <div>
+                <div class="Tab">
+                    <iframe scrolling="no" style="min-height: 1270px; width: 179px;" src="dated.html" frameborder="0"></iframe>
+            
+                  </div>
+            
             </div>
 
-        </div>
-
-        <div style="display: flex; justify-content: center; margin-top: 10px;">
 
 
-             <a href="About.html"> <img style="margin-left: px;" src="foruse/menu/about.png" height="35"
-                    onmouseover="this.src='foruse/menu/about2.png' " onmouseout="this.src='foruse/menu/about.png'"
-                    alt="" /></a>
+        </td>
 
-            <a href="Characters.html"> <img style="margin-left: px;" src="foruse/menu/characters.png" height="35"
-                    onmouseover="this.src='foruse/menu/characters2.png' "
-                    onmouseout="this.src='foruse/menu/characters.png'" alt="" /></a>
-
-
-            <a href="Minilore.html"><img style="margin-left:;" src="foruse/menu/lore.png" height="35"
-                    onmouseover="this.src='foruse/menu/lore2.png' " onmouseout="this.src='foruse/menu/lore.png'"
-                    alt="" /></a>
-
-            <a href="Filenotfound.html"><img style="margin-left:;" src="foruse/menu/officials.png" height="35"
-                    onmouseover="this.src='foruse/menu/officials2.png' "
-                    onmouseout="this.src='foruse/menu/officials.png'" alt="" /></a>
-
-            <a href="Portfolio.html"><img style="margin-left:;" src="foruse/menu/portfolio.png" height="35"
-                    onmouseover="this.src='foruse/menu/portfolio2.png' "
-                    onmouseout="this.src='foruse/menu/portfolio.png'" alt="" /></a>
-         
-
-            <a href="Bookmarkies.html"> <img style="margin-left: " src="foruse/menu/links.png" height="35"
-                    onmouseover="this.src='foruse/menu/links2.png' " onmouseout="this.src='foruse/menu/links.png'"
-                    alt="" /></a>
-        </div>
-
-        <div style="display: flex; justify-content: center;">
-
-            <div class="mainC">
-                <div class="Bordersit">
-<center>
-    
-<p style="background: #002e79; color: white; padding: 5px; width: 200px; border-radius: 5px;">
-    <strong><i class="fa-regular fa-star"></i> About MiniComics</strong>
-
+        <td style="vertical-align: top;" class="rechts">
+            <table>
+                <tr>
+                    <center>
+              
+<!-- barleverl -->
+          <!-- Start -->
+          <div class="speech-bubble">
+            <p> MINILORE <i class="fa-solid fa-star"></i>   <img height="20px" src="foruse/clickables/comica4.png" alt=""></p>
+          </div>
+        
+             
+       
+                 
+         <center>
+<p style="font-size: 12px;"> 
+    labled red: Sexual impplications or enhanced violence (be warned)
 </p>
-<div style="margin-top: 15px; display: flex; justify-content: space-around;">
-    <img style="height: 100px; margin-top: 70px;" src="foruse/clickables/comica4.png" alt="">
-    <p>
-    </p>
-    <p style="background: #8bc1ce; color: white; padding: 5px; border-radius: 5px; width: 200px;">
-        <strong><i class="fa-solid fa-star"></i> READ</strong>
-        <br>
-        Welcome to the mini comic section, a place for short stories involving DTNE characters.
-        <br>
-        Note: <i class="fa-solid fa-square"></i> labeled Blue are <span style="color: rgb(12, 120, 170);">R:16</span>, containing all of the TWs in the 
-        <a style="color: rgb(27, 111, 168);" href="DTNERules.html">Guidelines</a>.
-        <br>
-        <span style="font-size: 10px;">Note: Mini comics can explain lore, but they are not as in-depth as the official ones.</span>
-    </p>
+
+<strong>
+
+<a href="Hollowworld-0.html">     <p style="font-size: 12px; color: goldenrod;">  <i class="fa-solid fa-star"></i> <span style="color: #000000;"> Hollow World </span></p> </a>
+<a href="Hollowworld-2.html">     <p style="font-size: 12px; color: goldenrod;">  <i class="fa-solid fa-star"></i> <span style="color: #000000;"> Hollow World2 </span></p> </a>
+<a href="Overkill-1.html">     <p style="font-size: 12px; color: goldenrod;">  <i class="fa-solid fa-star"></i> <span style="color: #000000;"> Thats Overkill</span></p> </a>
+<a href="Thereapersfuneral-1.html">     <p style="font-size: 12px; color: goldenrod;">  <i class="fa-solid fa-star"></i> <span style="color: #000000;"> The Reapers Funeral</span></p> </a>
+<a href="Thereapersfuneral-2.html">     <p style="font-size: 12px; color: goldenrod;">  <i class="fa-solid fa-star"></i> <span style="color: #000000;"> The Reapers Funeral-2</span></p> </a>
+<a href="thereapersGuillotine.html">     <p style="font-size: 12px; color: goldenrod;">  <i class="fa-solid fa-star"></i> <span style="color: #000000;"> The Reapers Guillotine</span></p> </a>
+<a href="skunkskit-1.html">     <p style="font-size: 12px; color: goldenrod;">  <i class="fa-solid fa-star"></i> <span style="color: #000000;"> Skunkskit</span></p> </a>
+<a href="PraisemeObeyme.html">     <p style="font-size: 12px; color: goldenrod;">  <i class="fa-solid fa-star"></i> <span style="color: #000000;"> Praise me and Obey me</span></p> </a>
+<a href="bloodoftheorchestra.html">     <p style="font-size: 12px; color: goldenrod;">  <i class="fa-solid fa-star"></i> <span style="color: #000000;"> Blood of the Orchestra</span></p> </a>
+<a href="various.html">     <p style="font-size: 12px; color: goldenrod;">  <i class="fa-solid fa-star"></i> <span style="color: #970000;"> Various</span></p> </a>
+</strong>    
+<div class="speech-bubble">
+  <p> MANUAL <i class="fa-solid fa-star"></i>   <img height="20px" src="foruse/clickables/comica4.png" alt=""></p>
+</div>
     
-
-
-
-</div>
+         </center>
+        
+                
+                  
 </center>
-    <br>
-    <br>
-<p  style="background: #002e79; color: white; padding: 5px; width: 200px; border-radius: 5px; margin: auto;">
-    <strong><i class="fa-regular fa-star"></i> Minicomics ˚₊· ͟͟͞͞➳❥</strong>
-
-
-</p>
-<center>
-    <small style="color: #6aaebf;">* Note newest comics get added from the right ✿</small>
-
-</center>
+                      
+                      
 <br>
-<center>
 
-    <strong style="color: #6aaebf">
-        <ins>        ╰┈➤ <i class="fa-solid fa-skull"></i> Hollow World
-        </ins>
-    </strong>
-    <br>
-    <br>
-   <div class="Storyb">
-    <a href="Hollowworld-4.html"> <img style="border-radius: px; height: 30px; " src="Thumbnails/Comicthumbs/NUBg.png" alt=""></a>     
-    <a href="Hollowworld-3.html"> <img style="border-radius: ; height: 30px;" src="stories/Minicomics/Squarethumbnails/2waysforlove.png" alt=""></a>     
-    <a href="Hollowworld-2.html"> <img style="border-radius: ; height: 30px;" src="stories/Minicomics/Squarethumbnails/alienvampiresdoexist.png" alt=""></a>     
-    <a href="Hollowworld-1.html"> <img style="border-radius: ; height: 30px;" src="stories/Minicomics/Squarethumbnails/hollowworld1.png" alt=""></a>     
-    <a href="Hollowworld-0.html"> <img style="border-radius: ; height: 30px;" src="Thumbnails/Comicthumbs/tohollowb.png" alt=""></a>     
+          
+</tr>
 
-   </div>
-   <br>
+</table>
 
-    <strong style="color: #207b92">
-        <ins>   ╰┈➤ <i class="fa-solid fa-skull"></i> The Reapers Funeral
-        </ins>
-    </strong>
-    <br>
-    <br>
-   <div class="Storyb">
-    <a href="Thereapersfuneral-2.html"> <img style="border-radius: ; height: 30px;" src="Thumbnails/Comicthumbs/dddsquare.png" alt=""></a>     
-    <a href="Thereapersfuneral-1.html"> <img style="border-radius: ; height: 30px;" src="stories/Minicomics/Squarethumbnails/murella.png" alt=""></a>     
-  
-   </div>
-   <br>
+        </td>
 
-    <strong style="color: #125772">
-        <ins>   ╰┈➤ <i class="fa-solid fa-skull"></i> The Reapers Guillotine
-        </ins>
-    </strong>
-    <br>
-    <br>
-   <div class="Storyb">
-    <a href="thereapersGuillotine.html"> <img style="border-radius: ; height: 30px;" src="stories/Minicomics/Squarethumbnails/Waiting.png" alt=""></a>     
-
-
-   </div>
-   <br>
-
-    <strong style="color: #0a4a75">
-        <ins>   ╰┈➤ <i class="fa-solid fa-skull"></i> Praise Me, Obey Me
-        </ins>
-    </strong>
-    <br>
-    <br>
-   <div class="Storyb">
-    <a href="PraisemeObeyme2.html"> <img style="border-radius: ; height: 30px;" src="stories/Minicomics/Squarethumbnails/Harpsongs.png" alt=""></a>     
+    </tr>
     
-    <a href="PraisemeObeyme0.html"> <img style="border-radius: ; height: 30px;" src="Thumbnails/Comicthumbs/AngelsbargainB2.png" alt=""></a>     
-    <a href="PraisemeObeyme1.html"> <img style="border-radius:; height: 30px;" src="Thumbnails/Comicthumbs/Angelsbargain2b.png" alt=""></a>     
-
-
-   </div>
-   <br>
-
-    <strong style="color: #052f53">
-        <ins>   ╰┈➤ <i class="fa-solid fa-fish"></i> OverKill
-        </ins>
-    </strong>
-    <br>
-    <br>
-   <div class="Storyb">
-    <a href="Overkill-1.html"> <img style="border-radius: px; height: 30px;" src="Thumbnails/Comicthumbs/overkill1b2.png" alt=""></a>     
-
-
-   </div>
-   <br>
-
-    <strong style="color: #060044">
-        <ins>   ╰┈➤ <i class="fa-solid fa-fish"></i> Skunkskit
-        </ins>
-    </strong>
-    <br>
-    <br>
-   <div class="Storyb">
-    <a href="skunkskit-2.html"> <img style="border-radius: ; height: 30px;" src="Thumbnails/Comicthumbs/skunkskit-2g.png" alt=""></a>     
-    <a href="skunkskit-1.html"> <img style="border-radius: ; height: 30px;" src="Thumbnails/Comicthumbs/skunkskit-1g.png" alt=""></a>     
-  
-
-   </div>
-   <br>
-   <br>
-      
-<p style="background: #002e79; color: white; padding: 5px; width: 200px; border-radius: 5px;">
-    <strong><i class="fa-regular fa-star"></i> Grafkist</strong>
-
-</p>
-<div style="margin-top: 15px; display: flex; justify-content: space-around;">
-    <img style="height: 120px; margin-top: 30px;" src="foruse/clickables/grafkistlore.png" alt="">
-    <p>
-    </p>
-    <p style="background: #8bc1ce; color: white; padding: 5px; border-radius: 5px; width: 200px;">
-        <strong><i class="fa-solid fa-star"></i> READ</strong>
-        <br>
-        <br>
-        Low effort Doodle comics. <br>
-        <small style="color: #ffffff;">* These are uncategorized ✿</small>
-
-    </p>
-    
-
+</table>
+<div style="width: 700px; margin: auto;">
+  <p style="text-align: center; background-color: #000000;  color: rgb(225, 184, 0); border-radius: 10px; padding: 10px;">
+    © 2023-2024 DEATHENIZE. All rights reserved. <img height="30" src="foruse/decoration/smalldecos/starfly.png"
+      alt=""> </p>
 </div>
+</td>
+</tr>
 
-<strong style="color: #060044">
-    <ins>   ╰┈➤ ⚘ </i> Doodle Comics 1
-    </ins>
-</strong>
-<br>
-<div class="Storyb">
+</tbody>
 
-<a href="DeathkidsGraveyard.html"> <img style="border-radius: px; height: 30px;" src="stories/Grafkiststories/Thumbnails/Lunchbox1.png" alt=""></a>     
-<a href="Hollowworldgraveyard2.html"> <img style="border-radius: px; height: 30px;" src="stories/Grafkiststories/Thumbnails/Addictedtoyou.png" alt=""></a>     
-<a href="Hollowworldgraveyard.html"> <img style="border-radius: px; height: 30px;" src="stories/Grafkiststories/Thumbnails/shoelace.png" alt=""></a>     
-<a href="thereapersfuneralGraveyard3.html"> <img style="border-radius: px; height: 30px;" src="stories/Grafkiststories/Thumbnails/babay.png" alt=""></a>     
-<a href="Thereapersfuneralgraveyard2.html"> <img style="border-radius: px; height: 30px;" src="stories/Grafkiststories/Thumbnails/preferences.png" alt=""></a>     
-<a href="thereapersfuneralGraveyard.html"> <img style="border-radius: px; height: 30px;" src="stories/Grafkiststories/Thumbnails/BrokenRegrets.png" alt=""></a>     
-</div>
-<br>
-
-<strong style="color: #060044">
-    <ins>   ╰┈➤ ⚘ </i> Doodle Comics 2
-    </ins>
-</strong>
-<br>
-<div  class="Storyb">
-<a style="color: #0a4a75;" href="Doodlekist-2.html"><i class="fa-solid fa-cube"></i></a>
-<a style="color: #0a4a75;" href="Doodlekist-1.html"><i class="fa-solid fa-cube"></i></a>
-<a style="color: #0a4a75;" href="Doodlekist-0.html"><i class="fa-solid fa-cube"></i></a>
-</div>
-<br>
-
-
-</center>
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-            </div>
-
-        </div>
-        <div style="width: 700px; margin: auto;">
-            <p style="text-align: center; background-color: #002e79; color: white; border-radius: 10px; padding: 10px;">
-                © 2023-2024 DEATHENIZE. All rights reserved. <img height="30"
-                    src="foruse/decoration/smalldecos/starfly.png" alt=""> </p>
-        </div>
-
-    </div>
-
-
-</body>
-
-</html>
+</table>
+<!--  -->
+<!-- not here -->
+ </div>
+ </body>
+ </html>

@@ -1,36 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
- 
-  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
-  <meta http-equiv="Content-Script-Type" content="text/javascript">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <link rel="stylesheet" href="stylec.css">
 
-  <meta http-equiv="imagetoolbar" content="no">
-   <!--  -->
-   <!--  -->
-  
+<head>
   <title>DEATHENIZE</title>
-  
-    
+  <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-style-type" content="text/css">
+  <meta http-equiv="content-script-type" content="text/javascript">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="symbols/cakered.png" type="image/x-icon">
 
   <style>
-    body {
-      overflow-x: hidden;
-    }
-    .mainC{
-      border: #969696 solid 3px;
-      border-radius: 10px;
-    border-radius: 10px;
-    width: 700px;
-    margin-bottom: 10px;
-}
-  
-    
-.custom-box {
-    width: 300px;
+   .custom-box {
+    width: 250px;
     min-height: 100px;
     border: 1px solid #3c4345;
     border-radius: 10px;
@@ -64,194 +47,251 @@
       border-radius: 10px;
     }
 
-        
-header{
-background:url(foruse/Headertitles/headerbackgrounds/back01.png) repeat-x 50% 0;
-border-radius:
+   .maintable {
+    background-color: #ffffff;
+    width: 850px;
+    border: rgb(95, 95, 95) solid 5px; margin: auto;
 }
-#header-inner{
-color:#fff;
-padding:10px 20px;
-min-height:70
+.links{
+    border: 2px black solid;
+    border-radius: 10px;
+    position: relative;
+    left: -40px;
+   
+
+
 }
-    </style>
+.rechts{
+    
+
+}
+
+.chek{
+    background-color: #000000;
+    border-color: #000000;
+    height: 30px;
+}
+
+header {
+      background: url(foruse/Headertitles/headerbackgrounds/back01.png) repeat-x 50% 0;
+      border-radius:
+    }
+
+    #header-inner {
+      color: #fff;
+      padding: 10px 20px;
+      min-height: 70
+    }
+  </style>
 </head>
 <!-- header image link  -->
-<body style="background: url(foruse/backgrounds/background2.png); background-size: 300px; background-attachment: fixed; margin: 0">
-   <div style="background: white; min-height: 500px; width: 920px; border: rgb(95, 95, 95) solid 5px; margin: auto;">
-<div>
-    <header>
-      <center>
-        <div style="margin: auto; " id="header-inner">
-            <!-- サイト名 -->
-           <h1 style="visibility: hidden;">DEATNEIZE</h1>
+
+<body
+  style="background: url(foruse/backgrounds/background2.png); background-size: 300px; background-attachment: fixed; margin: 0">
+
+  <div  align="center">
+   <table cellspacing="0" align="center" class="maintable">
+    <tbody >
+        <tr>
+            <td align="center">
+                <div>
+                    <header>
+                      <center>
+                        <div style="margin: auto; " id="header-inner">
+                          <!-- サイト名 -->
+                          <h1 style="visibility: hidden;">DEATNEIZE</h1>
+              
+                        </div>
+              
+              
+              
+                      </center>
+                    </header><!-- ▲ヘッダ▲ -->
                   
-                </div>
+                  </div>
+                 <img height="190px" src="Artwork/banner/Banner.png" alt="">
+                <br>
+               <!-- Nav -->
+               <a href="index.html"> <img style="float: left;" src="foruse/menu/header.png" height="120"
+                onmouseover="this.src='foruse/menu/header2.png' " onmouseout="this.src='foruse/menu/header.png'" alt="" /></a>
+
+               <div style="display: flex; justify-content: center; margin-top: 50px;">
 
 
-   
-      </center>
-            </header><!-- ▲ヘッダ▲ -->
-   <div style="display: flex; justify-content: center;">
-    <a sty href="index.html">  <img style="margin-right: 20px;" src="foruse/Headertitles/header.png" height="90px" onmouseover="this.src='foruse/Headertitles/header2.png' "
-      onmouseout="this.src='foruse/Headertitles/header.png'" alt="" /></a>         
-            
-   </div>
-
-</div>
-
-    <div style="display: flex; justify-content: center; margin-top: 10px;">
-
-
-      <a href="About.html"> <img style="margin-left: px;" src="foruse/menu/about.png" height="35"
-          onmouseover="this.src='foruse/menu/about2.png' " onmouseout="this.src='foruse/menu/about.png'" alt="" /></a>
-
-      <a href="Characters.html"> <img style="margin-left: px;" src="foruse/menu/characters.png" height="35"
-          onmouseover="this.src='foruse/menu/characters2.png' " onmouseout="this.src='foruse/menu/characters.png'"
-          alt="" /></a>
-
-
-      <a href="Minilore.html"><img style="margin-left:;" src="foruse/menu/lore.png" height="35"
-          onmouseover="this.src='foruse/menu/lore2.png' " onmouseout="this.src='foruse/menu/lore.png'" alt="" /></a>
-
-      <a href="Filenotfound.html"><img style="margin-left:;" src="foruse/menu/officials.png" height="35"
-          onmouseover="this.src='foruse/menu/officials2.png' " onmouseout="this.src='foruse/menu/officials.png'" alt="" /></a>
-
-      <a href="Portfolio.html"><img style="margin-left:;" src="foruse/menu/portfolio.png" height="35"
-          onmouseover="this.src='foruse/menu/portfolio2.png' " onmouseout="this.src='foruse/menu/portfolio.png'"
-          alt="" /></a>
-   
-      <a href="Bookmarkies.html"> <img style="margin-left: " src="foruse/menu/links.png" height="35"
-          onmouseover="this.src='foruse/menu/links2.png' " onmouseout="this.src='foruse/menu/links.png'" alt="" /></a>
-    </div>
-<br>
-<br>
-
-<h3 style="text-align: left;margin: 0 40px; background: #000000; border-radius:20px; color: var(--Yellow); ">
-  <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> <img height="30px"
-    src="foruse/decoration/smalldecos/starfly.png" alt=""> About Me<img src="pixels/cloudmoon.png" alt="">
-</h3> 
-<br>
-
-<div style="display: flex; justify-content: center;">
-
-  <div class="mainC">
-    
-    <center>
-      <br>
-     
-      <!--  -->
-      <div style="display: flex;">
-       <img height="300" src="foruse/smallpictures/star.png" alt=""> 
-
-
-       <div >
-        <div style="float: left; margin-top: 30px; border: 3px solid #1b1b1b; margin: ;" class="custom-box">
-          <div class="top-part">
-            <strong>      <p style="color: var(--Yellow);">About This Website <img src="pixels/smoothiebrown.png" alt=""></p></strong>
-      
-          </div>
-          <div class="bottom-part">
-            <span style=" font-size: 14px; color: var(--brown);"><i class="fa-solid fa-star"></i>
-             <strong> Alias</strong></span> :
-            <span style=" font-size: 14px; color: #928080; "> <em>Mal Hier/ GhosticFace</em></span>
-            <br>
-            <span style=" font-size: 14px; color:  var(--brown);"><i class="fa-solid fa-star"></i> 
-              <strong>
-              Host media
-            </strong>
-          </span> :
-            <span style=" font-size: 14px; color: #928080;"> <em>DEATHENIZE!</em></span>
-            <br>
-            <span style=" font-size: 14px; color: var(--brown);"><i class="fa-solid fa-star"></i>
-             <strong> Founded</strong></span> :
-            <span style=" font-size: 14px; color: #928080;"> 1st Of January 2024</span>
-            <hr>
-            <span style=" font-size: 14px; color: #928080;"><i class="fa-solid fa-heart"></i> INTP/
-            <img src="pixels/enby.png" alt="">    <img src="pixels/pansexual.png" alt=""> <img src="pixels/aego.png" alt="">/ 19th Of June </span>
-      
-            <span style=" font-size: 14px; color: #928080;"><i class="fa-solid fa-heart"></i> Languages/Ethnicity:
-            <img src="pixels/sierreleonian.png" alt="">    <img src="pixels/netherlands.png" alt=""> </span>
-          </div>
+                <a href="About.html"> <img style="margin-left: px;" src="foruse/menu/about.png" height="40"
+                    onmouseover="this.src='foruse/menu/about2.png' " onmouseout="this.src='foruse/menu/about.png'" alt="" /></a>
           
-        </div>
-        
-      </div>
-      
-      </div>
+                <a href="Characters.html"> <img style="margin-left: px;" src="foruse/menu/characters.png" height="40"
+                    onmouseover="this.src='foruse/menu/characters2.png' " onmouseout="this.src='foruse/menu/characters.png'"
+                    alt="" /></a>
+          
+          
+                <a href="Minilore.html"><img style="margin-left:;" src="foruse/menu/lore.png" height="40"
+                    onmouseover="this.src='foruse/menu/lore2.png' " onmouseout="this.src='foruse/menu/lore.png'" alt="" /></a>
+          
+             
+          
+                <a href="Portfolio.html"><img style="margin-left:;" src="foruse/menu/portfolio.png" height="40"
+                    onmouseover="this.src='foruse/menu/portfolio2.png' " onmouseout="this.src='foruse/menu/portfolio.png'"
+                    alt="" /></a>
+             
+                <a href="Bookmarkies.html"> <img style="margin-left: " src="foruse/menu/links.png" height="40"
+                    onmouseover="this.src='foruse/menu/links2.png' " onmouseout="this.src='foruse/menu/links.png'" alt="" /></a>
+              </div>
+<!--  -->
     
-    </center>
-    <img height="1" style="margin-left:130px;"  src="foruse/decoration/Barlines/Dotted.png" alt="">
-<div style="width: 500px; margin: auto;">
-  
-  <p style="text-align: center;">
-    Hiya, the name's Mallie, this website is a personal storage for my stories, art and original characters.
-    Things that i like to draw are skulls, monsters and things related to the macabre, but im also big fan of fancy stuff like angels and jewelry
- <br>
- <img src="pixels/loveletterred.png" alt="">
+<!--  -->
+    
+<table  cellspacing="15" class="centert">
+    <tr>
+        
+        <td style="vertical-align: top;" class="links">
+        
 
- <br>
- <br>
- <strong style="color: #0c0c0c;">
- 🌟 Contact info => Deathenize@Gmail.com
-</strong>
-<br>
-  </p>
-  <em>
-  <center>
-    <strong>
-      <ins>      <p>Prohibited</p>      </ins>
-    </strong>
+            <div>
+                <div class="Tab">
+                    <iframe scrolling="no" style="min-height: 1270px; width: 179px;" src="dated.html" frameborder="0"></iframe>
+            
+                  </div>
+            
+            </div>
 
-  </center>
+
+
+        </td>
+
+        <td style="vertical-align: top;" class="rechts">
+            <table>
+                <tr>
+                    <center>
+              
+<!-- barleverl -->
+          <!-- Start -->
+          <div class="speech-bubble">
+            <p>About This Project <i class="fa-solid fa-star"></i></p>
+          </div>
+        
+             
+          <div style="display: flex;">
+            <img height="200" src="foruse/smallpictures/star.png" alt=""> 
+     
+     
+            <div >
+             <div style="float: left; margin-top: 30px; border: 3px solid #1b1b1b; margin: ;" class="custom-box">
+               <div class="top-part">
+                 <strong>      <p style="color: var(--Yellow);">Website Info <img src="pixels/smoothiebrown.png" alt=""></p></strong>
+           
+               </div>
+               <div class="bottom-part">
+                 <span style=" font-size: 14px; color: var(--brown);"><i class="fa-solid fa-star"></i>
+                  <strong> Alias</strong></span> :
+                 <span style=" font-size: 14px; color: #928080; "> <em>Mal Hier/ GhosticFace</em></span>
+                 <br>
+                 <span style=" font-size: 14px; color:  var(--brown);"><i class="fa-solid fa-star"></i> 
+                   <strong>
+                   Host media
+                 </strong>
+               </span> :
+                 <span style=" font-size: 14px; color: #928080;"> <em>DEATHENIZE!</em></span>
+                 <br>
+                 <span style=" font-size: 14px; color: var(--brown);"><i class="fa-solid fa-star"></i>
+                  <strong> Founded</strong></span> :
+                 <span style=" font-size: 14px; color: #928080;"> 1st Of January 2024</span>
+                 <hr>
+                 <span style=" font-size: 14px; color: #928080;"><i class="fa-solid fa-heart"></i> INTP/
+                 <img src="pixels/enby.png" alt="">    <img src="pixels/pansexual.png" alt=""> <img src="pixels/aego.png" alt="">/ 19th Of June </span>
+           
+                 <span style=" font-size: 14px; color: #928080;"><i class="fa-solid fa-heart"></i> Languages/Ethnicity:
+                 <img src="pixels/sierreleonian.png" alt="">    <img src="pixels/netherlands.png" alt=""> </span>
+               </div>
+               
+             </div>
+             
+           </div>
+           
+           </div>            
    
-    Due to incidents with reproduction of AI reposting of artwork is prohibited, allowance of profilepictures and banners are allowe
-  
-    <p style="color: red; text-align: center;">
-      <strong>WARNING:</strong> Website content is intended for user that are 16+ CW/TW(Netherlands rating: <strong> <a class="rhover" href="https://www.kijkwijzer.nl/">KIJKWIJZER</a></strong>): Subjects like mental illness, drug use, violence swearwords and sugestive expressions are made!
-      be Warned!! please read more about the websites guidelines here => <strong> <a class="rhover" href="DTNERules.html">DTNE RULESET</a></strong>
- 
-     </p>
-  </em>
-
-  <p style="text-align: center;">
-    <strong > Tools Used </strong>
-    <hr>
-    <br>
-  
-  </p>
-  <p style="text-align: center;">
-    <strong>• PaintToolSai 2</strong>
-    <br>
-    <strong>• Ibispaint X </strong>
-    <br>
-    • VS code and Mv RPG maker
-
-  </p>
-</div>
-<center>
-  <img height="200" src="foruse/smallpictures/Wish.png" alt="">
-
+                 
+           <div style="width: 500px; margin: auto; font-size: 12px;">
+            <p style="text-align: center;">
+              Hiya, the name's Mallie, this website is a personal storage for my stories, art and original characters.
+              Things that i like to draw are skulls, monsters and things related to the macabre, but im also big fan of fancy stuff like angels and jewelry
+           <br>
+           <img src="pixels/loveletterred.png" alt="">
+          
+           <br>
+           <br>
+           <strong style="color: #0c0c0c;">
+           🌟 Contact info => Deathenize@Gmail.com
+          </strong>
+          <br>
+            </p>
+            <center>
+              <strong>
+                <ins>      <p>Prohibited</p>      </ins>
+              </strong>
+          
+            </center>
+             
+              Due to incidents with reproduction of AI reposting of artwork is prohibited, allowance of profilepictures and banners are allowe
+            
+              <p style="color: red; text-align: center;">
+                <strong>WARNING:</strong> Website content is intended for user that are 16+ CW/TW(Netherlands rating: <strong> <a class="rhover" href="https://www.kijkwijzer.nl/">KIJKWIJZER</a></strong>): Subjects like mental illness, drug use, violence swearwords and sugestive expressions are made!
+                be Warned!! please read more about the websites guidelines here => <strong> <a class="rhover" href="DTNERules.html">DTNE RULESET</a></strong>
+           
+               </p>
+            </em>
+          
+            <p style="text-align: center;">
+              <strong > Tools Used </strong>
+              <hr>
+              <br>
+            
+            </p>
+            <p style="text-align: center;">
+              <strong>• PaintToolSai 2</strong>
+              <br>
+              <strong>• Ibispaint X </strong>
+              <br>
+              • VS code and Mv RPG maker
+          
+            </p>
+          </div>
+          <center>
+            <img height="200" src="foruse/smallpictures/Wish.png" alt="">
+          
+          </center>
+</div>              
+                
+                  
 </center>
-
-  </div>
-
-
-  <div style="" class="Tab">
-    <iframe scrolling="no" style="min-height: 1270px; width: 179px;" src="dated.html" frameborder="0"></iframe>
-
-  </div>
- </div>
- <div style="width: 700px; margin: auto;">
-      <p style="text-align: center; background-color: #000000;  color: rgb(225, 184, 0); border-radius: 10px; padding: 10px;">
-        © 2023-2024 DEATHENIZE. All rights reserved. <img height="30" src="foruse/decoration/smalldecos/starfly.png"
-          alt=""> </p>
-    </div>
-
+                      
+                      
 <br>
 
-   </div> 
+          
+</tr>
 
+</table>
 
-</body>
-</html>
+        </td>
+
+    </tr>
+    
+</table>
+<div style="width: 700px; margin: auto;">
+  <p style="text-align: center; background-color: #000000;  color: rgb(225, 184, 0); border-radius: 10px; padding: 10px;">
+    © 2023-2024 DEATHENIZE. All rights reserved. <img height="30" src="foruse/decoration/smalldecos/starfly.png"
+      alt=""> </p>
+</div>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+<!--  -->
+<!-- not here -->
+ </div>
+ </body>
+ </html>

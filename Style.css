@@ -163,7 +163,7 @@ body {
 
 }
 .infopil p{
-    border: 3px solid #002e79;
+    border: 3px solid #5b4b43;
     border-radius: 10px;
     margin-bottom: 10px;
 
@@ -370,3 +370,40 @@ color: rgb(182, 118, 0);
       left: -10px; /* Move the book image 200 pixels to the right */
     }
   }
+  .speech-bubble p {
+  padding: 10px 20px;
+
+  }
+  .speech-bubble {
+    position: relative;
+    background-color: #181717;
+    border-radius: 10px;
+    width: 500px;
+    margin: 20px;
+    color: var(--Yellow);
+    font-size: 15px;
+  }
+  
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #181717;
+    border-bottom: 0;
+    margin-left: -15px;
+    margin-bottom: -12px;
+  }
+  :root {
+    --Yellow: rgb(255, 213, 0);
+    --black: #000000;
+    --brown:  #3c3838;
+    --brown2:  #181717;
+    /* color: var(--yellow); */
+    /* color: var(--brown); */
+    /* color: var(--black); */
+   
+}
