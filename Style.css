@@ -372,6 +372,7 @@ color: rgb(182, 118, 0);
   }
   .speech-bubble p {
   padding: 10px 20px;
+  font-size: 15px;
 
   }
   .speech-bubble {
@@ -406,4 +407,22 @@ color: rgb(182, 118, 0);
     /* color: var(--brown); */
     /* color: var(--black); */
    
+}
+#statuscafe {
+    padding: .5em;
+    background-color: rgb(243, 216, 216);
+    border-radius: 10px;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+    color: palevioletred;
+}
+#statuscafe-username a{
+    margin-bottom: .5em;
+    color: palevioletred;
+    text-decoration: none;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+    color: palevioletred;
 }

@@ -1,27 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>DEATHENIZE</title>
-  <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="content-style-type" content="text/css">
-  <meta http-equiv="content-script-type" content="text/javascript">
-  <link rel="stylesheet" href="../novelstyle.css">
-  <link rel="stylesheet" href="novelstylech1.css">
-  <script src="script.js" defer></script>
-  <script src="../testnovel.js" defer></script>
-  <link rel="icon" href="symbols/cakered.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <link rel="stylesheet" href="../novelstyle.css">
+    <link rel="stylesheet" href="novelstylech1.css">
+    <script src="script.js" defer></script> <!-- JavaScript file for typing effect and interaction -->
+    <script src="../testnovel.js" defer></script>
+    <link rel="icon" href="symbols/cakered.png" type="image/x-icon">
 </head>
 <style>
     @keyframes blackWhite {
-    0% { color: black; }
-    50% { color: rgb(255, 255, 255); }
-    100% { color: black; }
+        0% { color: rgb(216, 159, 27); }
+        50% { color:  rgba(216, 159, 27, 0.313); }
+        100% { color:  rgb(216, 159, 27); }
+    }
 
-}
+    /* Apply the animation to the button */
+    .button {
+        animation: blackWhite 0.5s infinite;
+    }
 
-/* Apply the animation to the button */
-.button {
-    animation: blackWhite 0.5s infinite;
-}
+   
 </style>
 <body>
     <div class="box corners-top">
@@ -31,20 +34,24 @@
         <div class="visual" id="visual">
             <img height="400px" class="bg" id="bg" src="backgrounds/bg.png">
             <img height="400px" class="char" id="char1" src="../CharacterSprites/STOPLOOKINGHEREIDLE.png">
-            <img height="400px" class="char2" id="char2" src="../CharacterSprites/STOPLOOKINGHEREIDLE.png"> 
+            <img height="400px" class="char" id="char2" src="../CharacterSprites/STOPLOOKINGHEREIDLE.png" style="display:none;">
         </div>
         <br>
+        <!-- Dialogue container -->
         <div class="dialogueBox">
-            <h2 id="dialogue">
-                <span class="">DEV:</span>
-                  <p>Theres malfunctions in the system</p>
-            </h2>
+            <h2 id="characterName"><!-- Character name will be set here --></h2>
+            <h5 id="dialogue"><!-- Text will be typed here --></h5>
+            <div class="choices" id="choices"><!-- Choices will be displayed here --></div>
+
         </div>
         <br>
-            <h2  class="button" id="button"><i class="fa-solid fa-circle-arrow-right"></i></h2>
+       
+        <!-- Next button to proceed through dialogues -->
+        <h2 class="button" id="button"><i class="fa-solid fa-right-long"></i></h2>
     </div>
     <div class="box corners-bottom">
-    <a href="../../index.html"><h2><i class="fa-solid fa-circle-arrow-left"></i> Back to officials</h2></a>
+        <a href="../../index.html"><h2><i class="fa-solid fa-circle-arrow-left"></i> Back to officials</h2></a>
     </div>
-    
+
 </body>
+</html>

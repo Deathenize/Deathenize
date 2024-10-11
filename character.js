@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
 function checkPassword() {
     // Numbercode
     var code = document.getElementById("codeInput").value;

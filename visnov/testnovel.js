@@ -6,6 +6,13 @@ const background = document.getElementById("bg");
 let dialogueBetter = script[0];
 
 const animations = { 
+    "wobble": [
+        { transform: "translateY(0)" },
+        { transform: "translateY(15px)" },
+        { transform: "translateY(-15px)" },
+        { transform: "translateY(15px)" },
+        { transform: "translateY(0)" },
+    ],
     "shake": [
         { transform: "translateX(0)" },
         { transform: "translateX(15px)" },
@@ -31,6 +38,10 @@ const animations = {
 };
 
 const timings = {
+    "wobble": {
+        duration: 200,
+        iterations: 2,
+    },
     "shake": {
         duration: 200,
         iterations: 2,
@@ -85,6 +96,11 @@ const extensions = { // aint this a mess
     "HUNGOVER2": ".png",
     "HUNGOVER3": ".png",
     "WAH": ".png",
+    "STAND": ".png",
+    "UNSURE": ".png",
+    "SMILE": ".png",
+    "CUNNING": ".png",
+    "YIPEEE": ".png",
     "WAH1": ".png",
     "WAH2": ".png",
     "WAH3": ".png",
