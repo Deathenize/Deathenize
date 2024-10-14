@@ -382,7 +382,7 @@ color: rgb(182, 118, 0);
     width: 500px;
     margin: 20px;
     color: var(--Yellow);
-    font-size: 12px;
+    font-size: 15px;
   }
   
   .speech-bubble::after {

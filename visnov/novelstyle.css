@@ -28,9 +28,9 @@ body {
 .dialogueBox {
     padding: 5px;
     min-width: 710px;
-    border: inset mediumvioletred; 
+    border: inset rgb(181, 122, 13); 
     border-radius: 10px 10px 10px 10px;
-    background: pink;
+    background: rgb(198, 188, 146);
 }
 
 .visual {
@@ -65,10 +65,7 @@ img {
     color: rgb(55, 58, 59);
     font-size: 15px;
 }
-.Artemiy {
-    color: pink;
-    font-size: 15px;
-}
+
 .Grace {
     color: rgb(168, 0, 89);
 }
@@ -80,37 +77,30 @@ img {
 }
 
 /* end */
-.Brodie {
-    color: rgb(255, 0, 28);
+.Jack {
+    color: rgb(210, 157, 11);
 }
-
-.Death {
-    color: rgb(102, 102, 102);
+.Diaz {
+    color: rgb(183, 20, 20);
 }
-
-.Eve {
-    color: rgb(255, 210, 234);
+.Muertoz {
+    color: rgb(107, 0, 0);
 }
-
-.Samael {
-    color: rgb(255, 140, 115);
+.Phasaphia {
+    color: rgb(202, 46, 111);
+}
+.Phasaphia {
+    color: rgb(202, 46, 111);
+}
+.Draziel {
+    color: rgb(32, 95, 106);
 }
 
 .STOPLOOKINGHERE {
     color:  rgb(7, 6, 6);
 }
 
-.think {
-    color: rgb(90, 90, 90);
-}
 
-.Juno {
-    color: rgb(0, 255, 149);
-}
-
-.Barl {
-    color: rgb(255, 255, 255);
-}
 
 .bg {
    position: absolute;
@@ -132,9 +122,9 @@ img {
     padding: 20px;
     width: 100%;
     max-width: 900px;
-    background-color: rgb(92, 56, 75);
+    background-color: rgb(32, 22, 22);
     height: auto;
-    border: 3px solid rgb(181, 171, 145);
+    border: 3px solid rgb(116, 100, 57);
     border-radius: 15px;
 }
 /* end vis box */
@@ -222,3 +212,31 @@ a:visited {
     
 }
 
+.speech-bubble p {
+  padding: 10px 20px;
+  font-size: 15px;
+
+  }
+  .speech-bubble {
+    position: relative;
+    background-color: rgb(32, 22, 22);
+    border-radius: 10px;
+    width: 500px;
+    margin: 20px;
+    color: rgb(197, 140, 54);
+    font-size: 12px;
+  }
+  
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color:rgb(32, 22, 22);
+    border-bottom: 0;
+    margin-left: -15px;
+    margin-bottom: -12px;
+  }
