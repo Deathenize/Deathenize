@@ -76,6 +76,7 @@ const extensions = { // aint this a mess
     "OWIE": ".png",
     "MAD": ".png",
     "SMUG": ".png",
+    "EH": ".png",
     "GEARDUP": ".png",
     "GEARDUPTIRED": ".png",
     "GEARDUPSCARED": ".png",

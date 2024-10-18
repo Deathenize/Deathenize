@@ -7,7 +7,7 @@ const script = [
             "name": ""
         },
         "talker": "char1",
-        "say": "October 24th, 09:26 ✦",
+        "say": "Using terrible sprites for this one to test the machine",
         "choices": []
     },
     
@@ -31,7 +31,7 @@ const script = [
     {
         "bg": "house",
         "char1": {
-            "emotion": "UNSURE",
+            "emotion": "SMILE",
             "animation": "",
             "name": "Deathenize",
             "src": "../CharacterSprites/DeathenizeSTAND.png"
@@ -67,7 +67,7 @@ const script = [
             "src": "../CharacterSprites/DeathenizeSTAND.png"
         },
         "talker": "char1",
-        "say": "BUT you finnaly did it with script and html, and css",
+        "say": "BUT YOU FINALLY DID IT",
         "choices": [
            
         ]
@@ -76,18 +76,48 @@ const script = [
     {
         "bg": "house",
         "char1": {
-            "emotion": "UNSURE",
+            "emotion": "SMILE",
             "animation": "",
             "name": "Deathenize",
             "src": "../CharacterSprites/DeathenizeSTAND.png"
         },
         "talker": "char1",
-        "say": "Now all the  a test",
+        "say": "script html and css, i refuse to use rpg maker for visual novels",
         "choices": [
            
         ]
     },
     // Scene 7: Artemiy wakes up and asks for a choice
+    {
+        "bg": "house",
+        "char1": {
+            "emotion": "EH",
+            "animation": "",
+            "name": "Deathenize",
+            "src": "../CharacterSprites/DeathenizeSTAND.png"
+        },
+        "talker": "char1",
+        "say": "i decided to code this on website instead of using rpg maker cause,",
+        "choices": [
+           
+        ]
+    },
+    // Scene 8: Artemiy wakes up and asks for a choice
+    {
+        "bg": "house",
+        "char1": {
+            "emotion": "EH",
+            "animation": "",
+            "name": "Deathenize",
+            "src": "../CharacterSprites/DeathenizeSTAND.png"
+        },
+        "talker": "char1",
+        "say": " i feel like a visual novel for my standards does not deserve an itch io page. ",
+        "choices": [
+           
+        ]
+    },
+    // Scene 9: Artemiy wakes up and asks for a choice
     {
         "bg": "house",
         "char1": {
@@ -97,12 +127,58 @@ const script = [
             "src": "../CharacterSprites/DeathenizeSTAND.png"
         },
         "talker": "char1",
-        "say": "i got help ",
+        "say": "  i feel like its more of a visual medium of story telling ",
         "choices": [
            
         ]
     },
-    // Scene 8: Artemiy wakes up and asks for a choice
+    // Scene 10: Artemiy wakes up and asks for a choice
+    {
+        "bg": "house",
+        "char1": {
+            "emotion": "SMILE",
+            "animation": "",
+            "name": "Deathenize",
+            "src": "../CharacterSprites/DeathenizeSTAND.png"
+        },
+        "talker": "char1",
+        "say": " thus im using it as website content, ",
+        "choices": [
+           
+        ]
+    },
+    // Scene 11: Artemiy wakes up and asks for a choice
+    {
+        "bg": "house",
+        "char1": {
+            "emotion": "CUNNING",
+            "animation": "",
+            "name": "Deathenize",
+            "src": "../CharacterSprites/DeathenizeSTAND.png"
+        },
+        "talker": "char1",
+        "say": "i decided to modify the system (with extra script) from barrel to a typing based vis novel",
+        "choices": [
+           
+        ]
+    },
+    // Scene 12: Artemiy wakes up and asks for a choice
+    {
+        "bg": "house",
+        "char1": {
+            "emotion": "SMILE",
+            "animation": "",
+            "name": "Deathenize",
+            "src": "../CharacterSprites/DeathenizeSTAND.png"
+        },
+        "talker": "char1",
+        "say": "witch choices, to make it more interactive with routes",
+        "choices": [
+           
+        ]
+    },
+   
+    // Scene 13: Artemiy wakes up and asks for a choice
     {
         "bg": "house",
         "char1": {
@@ -117,13 +193,13 @@ const script = [
            
         ]
     },
-    // Scene 8: Artemiy wakes up and asks for a choice
+    // Scene 14: Artemiy wakes up and asks for a choice
     {
         "bg": "muerANGY",
         "char1": {
             "emotion": "NONE",
             "animation": "",
-            "name": "Artemiy",
+            "name": "STOPLOOKINGHERE",
             "src": ""
         },
         "talker": "char1",
@@ -134,33 +210,33 @@ const script = [
     },
    
    
-       // Scene 10: Artemiy wakes up and asks for a choice
+       // Scene 15: Artemiy wakes up and asks for a choice
 
     {
        "bg": "muerANGY",
        "char1": {
         "emotion": "NONE",
         "animation": "",
-        "name": "Artemiy",
+        "name": "STOPLOOKINGHERE",
         "src": ""
     },
         "talker": "char1",
         "say": "Should we give him toys or flowers",
         "choices": [
-            { text: "Give him flowers", next: 10 }, //leads to scene 11
+            { text: "Give him flowers", next: 15 }, //leads to scene 16
             { text: "Give him toys to play with", next: 11 } //leads to scene 12
         ]
     },
     
     
-       // Scene 11: Artemiy wakes up and asks for a choice
+       // Scene 16: Artemiy wakes up and asks for a choice
 
     {
         "bg": "../backgrounds/muerBLOOM.png",
         "char1": {
             "emotion": "NONE",
             "animation": "",
-            "name": "Artemiy",
+            "name": "STOPLOOKINGHERE",
             "src": ""
         },
         "talker": "char1",
@@ -176,7 +252,7 @@ const script = [
     
     
 
-    // Scene 9: Thank you message
+    // Scene 17: Thank you message
     {
         "bg": "blackScreen",
         "char1": {
@@ -236,7 +312,7 @@ function updateVisuals(dialogue) {
 
 
 let currentDialogue = 0;
-const typingSpeed = 10;
+const typingSpeed = 20;
 function showDialogue(index) {
     const dialogue = script[index];  // Get the dialogue at the current index
     if (dialogue) {
