@@ -1,9 +1,13 @@
+=
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>DEATHENIZE</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="stylec.css">
+
+    <link rel="icon" href="coffinfavicon.png" type="image/x-icon">
     <link rel="icon" type="image/x-icon" href="faviconnie.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,6 +102,18 @@
                 margin-bottom: 10px;
             }
 
+            .hover-image {
+                height: 15px;
+                border-radius: 20px;
+                transition: all 0.3s ease;
+            }
+
+            .hover-image:hover {
+                content: url('Flags/Bisexual.png');
+                height: 20px;
+                border-radius: 30px;
+            }
+
 
             .custom-box {
                 width: 300px;
@@ -106,6 +122,12 @@
                 border-radius: 10px;
                 overflow: hidden;
                 /* Hides overflow from child elements */
+            }
+
+            .hovesexul {}
+
+            .hovesexul :hover {
+                background: url(Flags/Bisexual.png);
             }
 
             .top-part {
@@ -133,18 +155,18 @@
                 background: white;
             }
 
-           .nav-link.active {
-        background-color: #292626 !important;
-        color:#dab200 !important;
-        font-weight: bold;
-        border-radius: 20px !important;
-      }
+            .nav-link.active {
+                background-color: #292626 !important;
+                color: #dab200 !important;
+                font-weight: bold;
+                border-radius: 20px !important;
+            }
 
-      .nav-link {
-        color: #dab200;
-        font-weight: bold;
+            .nav-link {
+                color: #dab200;
+                font-weight: bold;
 
-      }
+            }
 
             .fixed-size-div {
                 width: 900px;
@@ -208,7 +230,6 @@
             <header>
                 <center>
                     <div style="margin: auto; " id="header-inner">
-                        <!-- サイト名 -->
                         <h1 style="visibility: hidden;">DEATNEIZE</h1>
                         <h1 style="visibility: hidden;">DEATNEIZE</h1>
 
@@ -217,58 +238,63 @@
 
 
                 </center>
-            </header><!-- ▲ヘッダ▲ -->
+            </header>
 
 
         </div>
+
 
         <div style="display: flex; justify-content: center; margin-top: 10px;">
 
 
-           <!-- Nav -->
-               <a href="index.html"> <img style="float: left;" src="foruse/menu/header.png" height="120"
-                onmouseover="this.src='foruse/menu/header2.png' " onmouseout="this.src='foruse/menu/header.png'" alt="" /></a>
+            <!-- Nav -->
+            <a href="index.html"> <img style="float: left;" src="foruse/menu/header.png" height="120"
+                    onmouseover="this.src='foruse/menu/header2.png' " onmouseout="this.src='foruse/menu/header.png'"
+                    alt="" /></a>
 
-               <div style="display: flex; justify-content: center; margin-top: 50px; margin-right: 40px;">
+            <div style="display: flex; justify-content: center; margin-top: 50px; margin-right: 40px;">
 
 
                 <a href="About.html"> <img style="margin-left: px;" src="foruse/menu/about.png" height="40"
-                    onmouseover="this.src='foruse/menu/about2.png' " onmouseout="this.src='foruse/menu/about.png'" alt="" /></a>
-          
+                        onmouseover="this.src='foruse/menu/about2.png' " onmouseout="this.src='foruse/menu/about.png'"
+                        alt="" /></a>
+
                 <a href="Characters.html"> <img style="margin-left: px;" src="foruse/menu/characters.png" height="40"
-                    onmouseover="this.src='foruse/menu/characters2.png' " onmouseout="this.src='foruse/menu/characters.png'"
-                    alt="" /></a>
-          
-          
+                        onmouseover="this.src='foruse/menu/characters2.png' "
+                        onmouseout="this.src='foruse/menu/characters.png'" alt="" /></a>
+
+
                 <a href="Minilore.html"><img style="margin-left:;" src="foruse/menu/lore.png" height="40"
-                    onmouseover="this.src='foruse/menu/lore2.png' " onmouseout="this.src='foruse/menu/lore.png'" alt="" /></a>
-          
-             
-          
+                        onmouseover="this.src='foruse/menu/lore2.png' " onmouseout="this.src='foruse/menu/lore.png'"
+                        alt="" /></a>
+
+
+
                 <a href="Portfolio.html"><img style="margin-left:;" src="foruse/menu/portfolio.png" height="40"
-                    onmouseover="this.src='foruse/menu/portfolio2.png' " onmouseout="this.src='foruse/menu/portfolio.png'"
-                    alt="" /></a>
-             
+                        onmouseover="this.src='foruse/menu/portfolio2.png' "
+                        onmouseout="this.src='foruse/menu/portfolio.png'" alt="" /></a>
+
                 <a href="Bookmarkies.html"> <img style="margin-left: " src="foruse/menu/links.png" height="40"
-                    onmouseover="this.src='foruse/menu/links2.png' " onmouseout="this.src='foruse/menu/links.png'" alt="" /></a>
-              </div>
-<!--  -->
+                        onmouseover="this.src='foruse/menu/links2.png' " onmouseout="this.src='foruse/menu/links.png'"
+                        alt="" /></a>
+            </div>
+            <!--  -->
         </div>
         <br>
         <br>
         <!-- nummeral -->
-                  <h3 style="text-align: left;margin: 0 40px; background: #2c2c2c; border-radius:20px; color: rgb(210, 178, 0);">
-      <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> <img height="30px"
-        src="foruse/decoration/smalldecos/starfly.png" alt=""> Nummeral: 0023<img src="pixels/mochi.png"
-                alt="">
+        <h3 style="text-align: left;margin: 0 40px; background: #2c2c2c; border-radius:20px; color: rgb(210, 178, 0);">
+            <i style="font-size: 10px;margin-left: 10px;" class="fa-solid fa-star"></i> <img height="30px"
+                src="foruse/decoration/smalldecos/starfly.png" alt=""> Nummeral: 0023<img src="pixels/mochi.png" alt="">
         </h3>
 
         <center>
             <div class="nexts"
                 style="display: flex; background: #2c2c2c; width: 400px; justify-content:space-between; padding: 10px; border-radius: 10px;margin-top: 15px;">
                 <a style=" color:rgb(231, 196, 0);" href="22-ch.html"> ← Previous</a>
-                <a style=" color:rgb(231, 196, 0);" href="Characters.html">Character List <i class="fa-solid fa-star"></i></a>
-                 <a style=" color:rgb(231, 196, 0);" href="24-ch.html">Next →</a>
+                <a style=" color:rgb(231, 196, 0);" href="Characters.html">Character List <i
+                        class="fa-solid fa-star"></i></a>
+                <a style=" color:rgb(231, 196, 0);" href="24-ch.html">Next →</a>
             </div>
         </center>
         <center>
@@ -295,8 +321,8 @@
 
                             </ul>
                         </div>
-            
-                        <div class="tab-content bg-faded" >
+
+                        <div class="tab-content bg-faded" align="left">
                             <!-- Portrait section -->
 
                             <br>
@@ -308,7 +334,7 @@
 
                                 </center>
                                 <center>
-                                    <img style="height: 900px;" src="Characterportraits/spes.png" alt="">
+                                    <img style="height: 910px;" src="Characterportraits/Vincent.png" alt="">
 
                                 </center>
 
@@ -318,7 +344,7 @@
 
                             <!-- biography section -->
                             <div class="tab-pane fade" id="replies-tab" style="overflow-x: hidden;">
-                                                               <strong>
+                                <strong>
                                     <h4 style="margin-left: 20px; color:#1b1c1d;"><i class="fa-solid fa-star"></i>
                                         Biography</h4>
                                 </strong>
@@ -326,53 +352,55 @@
                                 <center>
                                     <div>
                                         <i style="color: #1b1c1d;" class="fa-solid fa-crow"></i>
-                    <h5 style="background: #1d1e1f; color: gold; border-radius: 10px; width: 400px;">
-                      Information</h5>
-                    <br>
-                    <div style="width: 550px; border-radius: 10px; border: rgb(32, 32, 35) 5px double; padding: 10px;">
-                      <p style="line-height: 25px; color: #1f2022;">
-                                                Spes, a silly angel worker under Pray, isn't serious and loves causing
-                                                chaos with colleagues. They're jolly, with many hobbies and secret
-                                                activities. One favorite pastime is playing games while working, sharing
-                                                a dorm with Honores. They playfully tease him but have a close
-                                                relationship.
-
-
-                                            <p style="font-size: 10px;">Glasses like goggles, they can see from afar</p>
-
-
-
-
-
-
+                                        <h5
+                                            style="background: #1d1e1f; color: gold; border-radius: 10px; width: 400px;">
+                                            Information</h5>
+                                        <br>
+                                        <div
+                                            style="width: 550px; border-radius: 10px; border: rgb(32, 32, 35) 5px double; padding: 10px;">
+                                            <p style="line-height: 25px; color: #1f2022;">
+                                                A very dorky father who sometimes struggles to think straight, he didn’t
+                                                exactly peak in high school and is, at best, a bit of a lovable loser.
+                                                He's new in town, and being a single father isn’t easy! Despite his
+                                                shortcomings, he loves his daughter dearly and never fails to cheer her
+                                                up. He also enjoys spending time with his childhood friend Michael.
+                                                Beyond that, he has a very—very—oddly obsessive crush on Mei, though
+                                                he's too much of a wimp to confess his feelings
                                             </p>
+
+
+
+
+
+
+
+
 
                                         </div>
                                     </div>
                                     <br>
                                     <br>
                                     <br>
-                                   <i style="color: #000000;" class="fa-solid fa-table"></i>
-                  <h5 style="background: #242525; color: rgb(243, 194, 0); border-radius: 10px; width: 400px; padding: 3px;">
-                    <div> General physical Information</div>
-                  </h5>
+                                    <i style="color: #000000;" class="fa-solid fa-table"></i>
+                                    <h5
+                                        style="background: #242525; color: rgb(243, 194, 0); border-radius: 10px; width: 400px; padding: 3px;">
+                                        <div> General physical Information</div>
+                                    </h5>
 
                                     <div
-                                                                                                                   style=" height: 370px; width: 300px; margin-top: 10px; border-radius: 20px; border: 3px solid #1f1f1f;">
-
+                                        style=" height: 410px; width: 300px; margin-top: 10px; border-radius: 20px; border: 3px solid  #1b1c1d">
                                         <div class="infopil" style="width: 200px;">
                                             <br>
 
-
                                             <p style="color: #1b1c1d; background: white; font-weight: bolder; "> <i
-                                                    class="fa-solid fa-star"></i>Naam: Spes</p>
+                                                    class="fa-solid fa-star"></i>Naam: Vincent</p>
 
 
 
                                             <div class="tooltip-container">
-                                                 <p style="color: #1b1c1d;     background: white; font-weight: bolder;">
-                                                    <i class="fa-regular fa-user"></i> Gender: <i
-                                                        class="fa-solid fa-genderless"></i>
+                                                <p style="color: #1b1c1d;;   background: white; font-weight: bolder;">
+                                                    <i class="fa-regular fa-user"></i>
+                                                    <br> Gender: <i class="fa-solid fa-mars"></i>
                                                 </p>
 
                                             </div>
@@ -380,59 +408,68 @@
 
 
 
-                                                <p style="color:  #1b1c1d;   background: white; font-weight: bolder;">
+
+                                            <p style="color:  #1b1c1d;   background: white; font-weight: bolder;">
                                                 <i class="fa-solid fa-font-awesome"></i> sexualiteit:
+
                                                 <img style="height: 15px; border-radius: 20px;"
-                                                    src="Flags/NonBinary.png" alt="">
+                                                    src="Flags/pansexual.png" alt="">
                                                 <img style="height: 15px; border-radius: 20px;"
-                                                    src="Flags/Bisexual.png" alt="">
+                                                    src="Flags/Transexual.png" alt="">
+
 
                                             </p>
 
-                                            <p style="color: #1b1c1d; background: white; font-weight: bolder;  background: white;"><i
-                                                    class="fa-regular fa-star"></i> VoornaamW: ALL</p>
+                                            <p
+                                                style="color: #1b1c1d; background: white; font-weight: bolder;  background: white;">
+                                                <i class="fa-regular fa-star"></i> VoornaamW: Him/They
+                                            </p>
 
                                             <p style="color: #1b1c1d; background: white; font-weight: bolder; ">
-                                                <i class="fa-solid fa-hand-sparkles"></i> Species Type: Ethereal
+                                                <i class="fa-solid fa-hand-sparkles"></i> Species Type: <br> Earthkin
                                             </p>
 
-                                            <p  style="color: #1b1c1d; background: white; font-weight: bolder; "><i
+                                            <p style="color: #1b1c1d; background: white; font-weight: bolder; "><i
                                                     class="fa-solid fa-earth-asia"></i> Realm:
                                                 <img style="margin-bottom: 2px; margin-top: 2px;"
-                                                    src="pixels/worlds/ethereals.png" alt="">
+                                                    src="pixels/worlds/earthkin.png" alt="">
 
                                             </p>
-                                            <p  style="color: #1b1c1d; background: white; font-weight: bolder; ">
+                                            <p style="color: #1b1c1d; background: white; font-weight: bolder; ">
                                                 <i class="fa-solid fa-hand-holding-heart"></i> Symbolic Power: <br>
 
-                                                <img src="pixels/symbolpower/Light.png" alt="">
-                                                <img src="pixels/symbolpower/fire.png" alt="">
+                                                <img src="pixels/symbolpower/normal.png" alt="">
+                                                <img src="pixels/symbolpower/blood.png" alt="">
 
 
                                             </p>
 
-                                            <p  style= "color: #1b1c1d; background: white; font-weight: bolder;">
-                        <i class="fa-regular fa-calendar"></i> Birthdate: 7th Of October
+                                            <p style="color: #1b1c1d; background: white; font-weight: bolder;">
+                                                <i class="fa-regular fa-calendar"></i> Birthdate: <br> 13th of December
                                             </p>
 
                                         </div>
 
                                     </div>
-                                     <br>
-                  <br>
-                  <i style="color: #dfbc0c;" class="fa-solid fa-link"></i>
-                  <h5 style="background:#1b1c1d; color:#dab200; border-radius: 10px; width: 400px; padding: 3px;">
-                    Relationships <img height="20" src="foruse/decoration/smalldecos/starfly.png" alt=""></h5>
-                  <div style="margin-bottom: 10px;">
+                                    <br>
+                                    <br>
+                                    <i style="color: #dfbc0c;" class="fa-solid fa-link"></i>
+                                    <h5
+                                        style="background:#1b1c1d; color:#dab200; border-radius: 10px; width: 400px; padding: 3px;">
+                                        Relationships <img height="20" src="foruse/decoration/smalldecos/starfly.png"
+                                            alt=""></h5>
+                                    <div style="margin-bottom: 10px;">
 
 
-                                        <a href="19-ch.html"><img
+                                        <a href="30-ch.html"><img
                                                 style="height: 50px; border: 2px #1c1e20 solid; border-radius: 7px;box-shadow: #827973 3px 3px; "
-                                                src="icons/fish.png" alt=""></a>
+                                                src="icons/pechi.png" alt=""></a>
 
-                                        <a href="1-ch.html"><img
-                                                style="height: 50px; border: 2px #1c1e20 solid; border-radius: 7px;box-shadow: #827973 3px 3px; "
-                                                src="icons/bibi.png" alt=""></a>
+
+
+
+
+
 
 
 
@@ -472,10 +509,10 @@
         <center>
 
         </center>
-          <p
-      style="text-align: center; background-color: #121213; color: rgb(234, 199, 0); border-radius: 10px; padding: 10px; width: 700px; margin: auto; margin-bottom: 10px;">
-      © 2023-2024 DEATHENIZE. All rights reserved. <img height="30" src="foruse/decoration/smalldecos/starfly.png"
-        alt=""> </p>
+        <p
+            style="text-align: center; background-color: #121213; color: rgb(234, 199, 0); border-radius: 10px; padding: 10px; width: 700px; margin: auto; margin-bottom: 10px;">
+            © 2023-2024 DEATHENIZE. All rights reserved. <img height="30" src="foruse/decoration/smalldecos/starfly.png"
+                alt=""> </p>
     </div>
 
 
