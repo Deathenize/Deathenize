@@ -1,0 +1,108 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Header Title */
+  h1 a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  h1 a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Menu Sidebar */
+  .menu {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .menu h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu ul {
+    list-style: none;
+  }
+  
+  .menu ul li {
+    margin: 8px 0;
+  }
+  
+  .menu ul li a {
+    color: #007bff;
+    font-size: 16px;
+  }
+  
+  .menu ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .menu p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Manga Image Display */
+  .photo {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* Page Navigation Links */
+  .centerbox {
+    margin-top: 10px;
+  }
+  
+  .centerbox p {
+    font-size: 16px;
+  }
+  
+  .centerbox a {
+    margin: 0 5px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .centerbox a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  

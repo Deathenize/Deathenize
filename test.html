@@ -1,177 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>sketchbook | ribose</title>
-	<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-  <style>
- 	* { box-sizing: border-box; }
-	body { background: url('../pngs/flower.png'); min-height: 100vh; color: black;}
-	section {
-		border: 0.8vw solid black;
-		background-color: white;
-		border-radius: 2vw;
-		width: 65vw;
-		height: 40vw;
-		display: none;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		padding: 0 0.2vw;
-	}
-  section a {
-    text-decoration: none;
-color:crimson;
-  }
-	section#start { 
-		display: flex;
-		z-index: 1;
-	}
-	section:target {
-		display: flex;
-		z-index: 2;
-	}
-	.pageL,	.pageR {
-		height: 100%;
-		width:50%;
-		display: inline-block;
-		position: relative;
-		border-radius: 1.5vw;
-		font-size: 32px;
-	}
-	.pageL { border-left: 0.1vw grey solid; }
-	.pageR { border-right: 0.1vw grey solid; }
-	a.pageL:hover::after, a.pageL:focus::after {
-		content: '←';
-		color: black;
-		position: absolute;
-		bottom: 1vw;
-		left: 1.2vw;
-    
-	}
-	a.pageR:hover::after, a.pageR:focus::after {
-		content: '→';
-		color: black;
-		position: absolute;
-		bottom: 1vw;
-		right: 1.2vw;
-	}
-	.mid { width: 1%; background: linear-gradient(to right, white, grey, white); }
-	img, h1, p { max-width: 90%; 
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%); 
-		image-rendering: auto;
-	}
-	h1 { text-align: center; top: 40%; }
-	section a:hover, section a:focus { background-color: transparent; }
-	.home {
-		position: fixed;
-		top: 20px;
-		right: 20px;
-		z-index: 3
-	}
-	.home a { color: teal; background-color: white; }
-	.home a:hover, .home a:focus { color: white; background-color: teal; }
-	
-	@media screen and (max-width: 1000px){
-		section {
-			width: 97.5vw;
-			height: 67.5vw;
-		}
-	}
-	
-	@media screen and (max-width: 600px){
-		main { 
-			display: flex;
-			width: 100%;
-			height: 100vh;
-			overflow-x: scroll;
-			overflow-y: hidden;
-		}
-		section {
-			width: 200vw;
-			height: fit-content;
-			align-content: center;
-			display:flex;
-			border: none;
-			border-radius: 0;
-			outline:none;
-			border-top: 3px outset lightgrey;
-			border-bottom: 3px outset lightgrey;
-		}
-		.mid { display: none; }
-		section { 	
-			position: static;
-			transform: translate(0,0);
-			margin: auto;
-		}
-		.pageL,	.pageR {
-			width: 100vw;
-			height: 60vh;
-			min-height: 98vw;
-			padding: 40px 0;
-			display: inline-block;
-			border-left: none;
-			border-right: none;
-		}
-		img { width: 100%; padding: 2vw; }
-		h1 { top: 50%; }
-		h1::after {
-			content: '-->';
-			display: block;
-			margin: 40px;
-			font-size: 40px;
-		}
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		body { background: url('../pngs/spring.png'); }
-	}
-  </style>
+    <title>Multi-Page Example</title>
+    <style>
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <button data-target="home">Home</button>
+        <button data-target="about">About</button>
+        <button data-target="contact">Contact</button>
+    </nav>
 
+    <div id="home" class="page active">
+        <h1>Home Page</h1>
+        <p>Welcome to the home page.</p>
+    </div>
 
-<main>
+    <div id="about" class="page">
+        <h1>About Page</h1>
+        <p>This is the about page.</p>
+    </div>
 
-<section id="start">
-	<div class="pageL">
-    <small style="font-size: 15px;">a funny fun journal of a nothing burger thoughts</small>
-    <!--  -->
-	</div>
-	<div class="mid"></div>
-	<a class="pageR" href="#01">
-    <small style="font-size: 15px;">a funny fun journal of a nothing burger thoughts</small>
-	</a>
-</section>
+    <div style="background: blue;" id="contact" class="page">
+        <h1>Contact Page</h1>
+        <p>Get in touch through the contact page.</p>
+    </div>
 
-<section id="01">
-	<a class="pageL" href="#start">
-    <small style="font-size: 15px;">AAA but haha you cant know yo ahah help</small>
-	</a>
-	<div class="mid"></div>
-	<a class="pageR" href="#02">
-    <!--  -->
-	</a>
-</section>
+    <script>
+        const buttons = document.querySelectorAll('nav button');
+        const pages = document.querySelectorAll('.page');
 
-<section id="02">
-	<a class="pageL" href="#01">
-    <!--  -->
-	</a>
-	<div class="mid"></div>
-	<div class="pageR">
-    <!--  -->
-	</div>
-</section>
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('data-target');
 
-</main>
-
+                pages.forEach(page => {
+                    if (page.id === target) {
+                        page.classList.add('active');
+                    } else {
+                        page.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-
