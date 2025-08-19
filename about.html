@@ -11,14 +11,18 @@
         a {
             text-decoration: none;
         }
+
+        body {
+            overflow-x: hidden;
+        }
     </style>
 
 </head>
 
 <body
-    style="background-attachment: fixed; background-image: url('websiteDec/backchrounds/background.png'); background-size: 100px; color: #ffffff; margin: 0;">
+    style="background-attachment: fixed; background-image: url('websiteDec/backchrounds/background.png'); background-size:50px; color: #ffffff; margin: 0;">
 
-    <table width="100%" height="135" cellspacing="0" cellpadding="0" border="0" align="center"
+    <table class="LLM" width="100%" height="135" cellspacing="0" cellpadding="0" border="0" align="center"
         style="background-image: url('websiteDec/decorations/droppings.png')">
         <tr>
             <td style="text-align: center;">
@@ -27,7 +31,9 @@
                         <td>
                             <div>
                                 <a href="index.html">
-                                    <img style="margin-top: 10px;" src="websiteDec/titles/mainheader.png" height="78" />
+                                    <img style="margin-left: -12px;" src="websiteDec/titles/mainheader.png"
+                                        height="90px" onmouseover="this.src='websiteDec/titles/mainheader2.png'"
+                                        onmouseout="this.src='websiteDec/titles/mainheader.png'" />
                                 </a>
                             </div>
                         </td>
@@ -35,33 +41,40 @@
 
                     <tr>
                         <!-- navigation -->
-                        <td colspan="2" style="text-align: center;">
+                        <td colspan="2" style="text-align: center; ;">
 
-                            <img height="50px" src="websiteDec/clickables/nav/side.png" />
 
 
                             <a href="about.html">
-                                <img style="margin-left: -12px;" src="websiteDec/clickables/nav/about.png" height="50px"
+                                <img style="margin-left: -1px;" src="websiteDec/clickables/nav/about.png" height="100px"
                                     onmouseover="this.src='websiteDec/clickables/nav/about2.png'"
                                     onmouseout="this.src='websiteDec/clickables/nav/about.png'" />
                             </a>
+
                             <a href="characters.html">
-                                <img style="margin-left: -4px;" src="websiteDec/clickables/nav/character2.png"
-                                    height="50px" onmouseover="this.src='websiteDec/clickables/nav/character.png'"
-                                    onmouseout="this.src='websiteDec/clickables/nav/character2.png'" />
-                            </a>
-                            <a href="about.html">
-                                <img style="margin-left: -4px;" src="websiteDec/clickables/nav/projects.png"
-                                    height="50px" onmouseover="this.src='websiteDec/clickables/nav/projects2.png'"
-                                    onmouseout="this.src='websiteDec/clickables/nav/projects.png'" />
-                            </a>
-                            <a href="about.html">
-                                <img style="margin-left: -4px;" src="websiteDec/clickables/nav/portfolio2.png"
-                                    height="50px" onmouseover="this.src='websiteDec/clickables/nav/portfolio.png'"
-                                    onmouseout="this.src='websiteDec/clickables/nav/portfolio2.png'" />
+                                <img style="margin-left: -9px;" src="websiteDec/clickables/nav/character.png"
+                                    height="100px" onmouseover="this.src='websiteDec/clickables/nav/character2.png'"
+                                    onmouseout="this.src='websiteDec/clickables/nav/character.png'" />
                             </a>
 
-                            <img style="margin-left: -17px;" height="50px" src="websiteDec/clickables/nav/side2.png" />
+                            <a href="projects.html">
+                                <img style="margin-left: -9px;" src="websiteDec/clickables/nav/projects.png"
+                                    height="100px" onmouseover="this.src='websiteDec/clickables/nav/projects2.png'"
+                                    onmouseout="this.src='websiteDec/clickables/nav/projects.png'" />
+                            </a>
+
+                            <a href="articles.html">
+                                <img style="margin-left: -9px;" src="websiteDec/clickables/nav/articles.png"
+                                    height="100px" onmouseover="this.src='websiteDec/clickables/nav/articles2.png'"
+                                    onmouseout="this.src='websiteDec/clickables/nav/articles.png'" />
+                            </a>
+
+                            <a href="portfolio.html">
+                                <img style="margin-left: -9px;" src="websiteDec/clickables/nav/portfolio.png"
+                                    height="100px" onmouseover="this.src='websiteDec/clickables/nav/portfolio2.png'"
+                                    onmouseout="this.src='websiteDec/clickables/nav/portfolio.png'" />
+                            </a>
+
 
 
                         </td>
@@ -73,7 +86,11 @@
     </table>
     <!--  -->
     <center>
-        <img style="margin-left: 110px; " height="250" src="Artworks/banner/banner.png" alt="">
+        <img style="margin-left: 110px; border-radius: 20px; border: 2px solid rgb(227, 106, 126);
+        border: 20px solid transparent;
+border-image: url('websiteDec/decorations/whitelace.png') 30 round;
+        
+        " height="200" src="Artworks/banner/banner.png" alt="">
 
     </center>
     <!-- main content -->
@@ -89,7 +106,7 @@
                                     <tbody>
                                         <tr>
                                             <td style="text-align: center;" valign="top">
-                                                <iframe scrolling="no" style="height: 838px; width: 155px;"
+                                                <iframe scrolling="no" style="height: 988px; width: 185px;"
                                                     src="sidebar.html" frameborder="0">
                                                 </iframe>
                                             </td>
@@ -100,70 +117,100 @@
 
                             <td valign="top" align="left">
                                 <!-- start -->
-                                <table style="border: 6px solid #1bb9c4; border-radius: 10px; background: #ffffff;"
-                                    width="878" height="800" cellspacing="5" cellpadding="0" border="0" align="center">
-                                    <tbody>
+                                <table
+                                    style="border: #ffffff00 solid 15px; border-image: url('websiteDec/decorations/lace.png') 10  round; background-color: transparent; /* Ensure no white fill */ ;border-radius: 5px; "
+                                    width="900" height="800" cellspacing="5" cellpadding="0" border="0" align="center">
+
+
+                                    <tbody style="background: white; outline: 5px solid; borda">
                                         <tr>
                                             <td style="text-align: left;" valign="top">
-                                                <!-- barlevel. here starts the content -->
-
                                                 <div>
+                                                    <!-- barlevel. here starts the content -->
+
+                                                    <div>
 
 
-                                                    <p class="paragraph"><b style="color: goldenrod;">★ About Me!</b>
-                                                    </p>
+                                                        <p class="paragraph"><b style="color: goldenrod;">★ About
+                                                                Me!</b>
+                                                        </p>
 
-                                                    <hr
-                                                        style="border: none; border-top: 2px dashed #1bb9c4; margin: 2rem 0;">
+                                                        <hr
+                                                            style="border: none; border-top: 2px dashed #756774;; margin: 2rem 0;">
 
-                                                    <section class="section">
-                                                        <p class="paragraph"> Hi, the name's Mal/Deathenize. I like
-                                                            drawing and creating stories.<br> I'm a big fan of the
-                                                            uncanny and the unknown, but I also love drawing cute
-                                                            things.</p>
-                                                            
-                                                            <p class="paragraph"> 
-                                                            <b><img src="pixels/cinnamon.png" alt=""> Little Facts</b>: ⇢ INTP/
-                                                            <img height="15" src="flags/Bisexual.png" alt="">
-                                                            <img height="15" src="flags/Transexual.png" alt="">
-                                                            
+                                                        <section class="section">
+                                                            <p class="paragraph">˚｡⋆𝜗𝜚˚₊˚⊹♡ Hi, the name’s
+                                                                Mal/Deathenize. I like drawing and creating stories. I’m
+                                                                a big fan of the uncanny valley, conspirarcy theories and the unknown, but I also
+                                                                love drawing cute things.</p>
 
-                                                             <br>
-                                                            <b>URL</b>: https://deathe5nize.github.io/Deathenize/ <br>
-                                                          </p>
+                                                            <p class="paragraph">
+                                                                <b><img src="pixels/cinnamon.png" alt=""> Little
+                                                                    Facts</b>: ⇢ INTP/
+                                                                <img height="15" src="flags/Bisexual.png" alt="">
+                                                                <img height="15" src="flags/Transexual.png" alt="">
 
 
-                                                        <img class="image-side" src="websiteDec/decorations/aboutpic.png" height="300">
+                                                                <br>
+                                                                <b>URL</b>: https://deathe5nize.github.io/Deathenize/
+                                                                <br>
+                                                            </p>
+
+
+                                                            <img class="image-side"
+                                                                src="websiteDec/decorations/aboutpic.png" height="300">
+
+                                                            <p class="paragraph">
+                                                                <b>Administrator</b>: Deathenize/DTNE <br>
+                                                                <b>URL</b>: https://deathenize.github.io/Deathenize/
+                                                                <br>
+                                                            </p>
+
+                                                            <p class="paragraph">
+                                                                <b>✦ Tools</b>:
+                                                                <br> Sai2, Ibispaint X , RPGMaker MV
+                                                            </p>
+
+                                                            <p class="paragraph">
+                                                                <b>✦ Media</b>: ⇢
+                                                                <a style="text-decoration: underline;color: #756774;;"
+                                                                    href="https://x.com/Deathenize">Twitter</a>,
+                                                                <a style="text-decoration: underline;color: #756774;;"
+                                                                    href="https://x.com/Deathenize">Strawpage</a>,
+                                                                <a style="text-decoration: underline;color: #756774;;"
+                                                                    href="https://x.com/Deathenize">Tumblr</a>,
+                                                                <br>
+                                                            </p>
+
+
+
+                                                            <p class="paragraph"> <span
+                                                                    style="color: red; font-size: smaller;"> Content
+                                                                    Warning: This work includes sexual/suggestive
+                                                                    content,<br> violence, and cursing. Please proceed
+                                                                    with caution(18+).
+                                                                    <br> <br>⋆ please do not use my work without credit,
+                                                                    or reproduce for profit , please read my <a style="background-color: yellow;" href="FAQ.html">FAQ</a> for guidelines and more clarifications</span></p>
+                                                            <img src="websiteDec/decorations/aboutpic2.png"
+                                                                height="290">
+
+<br>
+<br>
+<br>
+
+ <!-- copyright -->
+
+                                                    <a style="background: #dea5a5; color: #ffffff; padding: 15px; padding-left: 170px; padding-right: 170px; border-radius: 5px;"  href="">© 2025 Deathenize. All rights reserved. <i class="fa-solid fa-star"></i></a>
+                                                     <!-- ende copyright -->
+                                                      <br>
+                                                      <br>
+                                                      <br>
+
+                                                        </section>
                                                         
-                                                          <p class="paragraph"> 
-                                                            <b>Administrator</b>: Deathenize/DTNE <br>
-                                                            <b>URL</b>: https://deathenize.github.io/Deathenize/ <br>
-                                                          </p>
+                                                       </div> <!-- end construc start construct -->
 
-                                                          <p class="paragraph"> 
-                                                            <b>✦ Tools</b>:
-                                                            <br> Sai2, Ibispaint X , RPGMaker MV
-                                                          </p>
-
-                                                             <p class="paragraph"> 
-                                                            <b>✦ Media</b>: ⇢
-                                                             <a style="text-decoration: underline;color: #1bb9c4;" href="https://x.com/Deathenize">Twitter</a>,
-                                                             <a style="text-decoration: underline;color: #1bb9c4;" href="https://x.com/Deathenize">Strawpage</a>,
-                                                             <a style="text-decoration: underline;color: #1bb9c4;" href="https://x.com/Deathenize">Tumblr</a>,
-                                                             <br>
-                                                          </p>
-
-                                                          
-
-                                                        <p class="paragraph"> <span style="color: red; font-size: smaller;"> Content Warning: This work includes sexual/suggestive content,<br> violence, and cursing. Please proceed with caution(18+).
-                                                        <br> <br>⋆ please do not use my work without credit, or reproduce for profit</span></p>
-                                                        <img src="pi" height="370">
-
-
-                                                    </section>
-                                                    <!-- end construc start construct -->
-
-                                                </div>
+                                                    </div>
                                             </td>
                                         </tr>
                                     </tbody>

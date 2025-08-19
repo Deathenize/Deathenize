@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DEATHENIZE</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+        .ppp{
+            color: rgb(215, 105, 171);
+            text-decoration: underline;
+        }
+        i {
+            color: #354c6e;
+        }
+    </style>
+
+</head>
+
+<body
+    style="background-attachment: fixed; background-image: url('websiteDec/backchrounds/background2.png'); background-size:50px; color: #ffffff; margin: 0;">
+
+   <br>
+    <!--  -->
+    <center>
+       
+    </center>
+    <!-- main content -->
+    <tbody>
+        <tr>
+            <td>
+                <table width="1040" cellspacing="6" cellpadding="0" border="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;" valign="top">
+                              
+                            </td>
+
+                            <td valign="top" align="left">
+                                <!-- start -->
+                                <table
+                                    style="border: #ffffff00 solid 15px; border-image: url('websiteDec/decorations/lace.png') 10  round; background-color: transparent; /* Ensure no white fill */ ;border-radius: 5px; "
+                                    width="900" height="800" cellspacing="5" cellpadding="0" border="0" align="center">
+
+
+                                    <tbody style="background: white; outline: 5px solid; borda">
+                                        <tr>
+                                            <td style="text-align: left;" valign="top">
+                                                <div>
+                                                    <!-- barlevel. here starts the content -->
+
+                                                    <div>
+                                                      
+
+                                                        <br>
+
+                                                        <div style="margin: auto; text-align: center;">
+                                                            <!-- <a href=""><i class="fa-regular fa-circle-left"></i></a> -->
+                                                            <a href="portfolio.html"><i class="fa-regular fa-star"></i></a>
+
+                                                          <a href="MiscN2.html"><i class="fa-regular fa-circle-right"></i></a>
+
+
+                                                        </div>
+
+                                                        <p class="paragraph"><b style="color: #354c6e;">★ Misc: 0001</b>
+                                                        </p>
+
+                                                        <hr
+                                                            style="border: none; border-top: 2px dashed #756774;; margin: 2rem 0;">
+
+                                                        <section class="section">
+
+                                                            <small style="color: #a26f92;"> 
+                                                                <img height="700px" src="Artworks/misc/Hankuro.png" alt="">
+
+
+
+                                                    
+</small>
+
+                                                            
+                                                          
+<br>
+<br>
+<br>
+
+ <!-- copyright -->
+
+                                                    <a style="background: #354c6e; color: #ffffff; padding: 15px; padding-left: 170px; padding-right: 170px; border-radius: 5px;"  href="">© 2025 Deathenize. All rights reserved. <i style="color: #ffffff;" class="fa-solid fa-star"></i></a>
+                                                     <!-- ende copyright -->
+                                                      <br>
+                                                      <br>
+                                                      <br>
+
+                                                        </section>
+                                                        
+                                                       </div> <!-- end construc start construct -->
+
+                                                    </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- end -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+
+
+    <!-- endcontent -->
+
+
+
+
+
+
+    <script type="text/javascript">
+        // <![CDATA[
+        // Remove Bubble Cursor functionality
+        // The rest of the script can remain unaffected
+
+        function addLoadEvent(funky) {
+            var oldonload = window.onload;
+            if (typeof (oldonload) !== 'function') {
+                window.onload = funky;
+            } else {
+                window.onload = function () {
+                    if (oldonload) oldonload();
+                    funky();
+                };
+            }
+        }
+
+        addLoadEvent(function () {
+            set_scroll();
+            set_width();
+        });
+
+        // Adjust window size and scrolling position
+        window.onresize = set_width;
+        window.onscroll = set_scroll;
+
+        function set_width() {
+            var sw_min = 999999;
+            var sh_min = 999999;
+            if (document.documentElement && document.documentElement.clientWidth) {
+                if (document.documentElement.clientWidth > 0) sw_min = document.documentElement.clientWidth;
+                if (document.documentElement.clientHeight > 0) sh_min = document.documentElement.clientHeight;
+            }
+            if (typeof (self.innerWidth) === 'number' && self.innerWidth) {
+                if (self.innerWidth > 0 && self.innerWidth < sw_min) sw_min = self.innerWidth;
+                if (self.innerHeight > 0 && self.innerHeight < sh_min) sh_min = self.innerHeight;
+            }
+            if (document.body.clientWidth) {
+                if (document.body.clientWidth > 0 && document.body.clientWidth < sw_min) sw_min = document.body.clientWidth;
+                if (document.body.clientHeight > 0 && document.body.clientHeight < sh_min) sh_min = document.body.clientHeight;
+            }
+            if (sw_min === 999999 || sh_min === 999999) {
+                sw_min = 800;
+                sh_min = 600;
+            }
+            swide = sw_min;
+            shigh = sh_min;
+        }
+
+        function set_scroll() {
+            if (typeof (self.pageYOffset) === 'number') {
+                sdown = self.pageYOffset;
+                sleft = self.pageXOffset;
+            } else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+                sdown = document.body.scrollTop;
+                sleft = document.body.scrollLeft;
+            } else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+                sleft = document.documentElement.scrollLeft;
+                sdown = document.documentElement.scrollTop;
+            } else {
+                sdown = 0;
+                sleft = 0;
+            }
+        }
+
+        function createDiv(height, width) {
+            var div = document.createElement("div");
+            div.style.position = "absolute";
+            div.style.height = height;
+            div.style.width = width;
+            div.style.overflow = "hidden";
+            div.style.backgroundColor = "transparent";
+            return div;
+        }
+        // ]]>
+    </script>
+</body>
+
+</html>
